@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Code blocks use JetBrains Mono */
+code,
+pre,
+.highlight,
+.highlight pre,
+div.highlight,
+div.highlight pre,
+.literal-block,
+pre.literal-block,
+.code-block,
+tt,
+.rst-content tt,
+.rst-content code {
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: 400 !important;
+    font-size: 0.95em !important;
+}
+
+code.literal,
+tt.literal {
+    color: #AF1740;
+}
+
+a code.literal,
+a tt.literal {
+    text-decoration: none;
+}
+
+table.autosummary a {
+    text-decoration: none;
+}
+
+/* Inline code */
+/* code.literal,
+code.docutils,
+code.xref,
+span.pre {
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: 400 !important;
+} */
+
+/* Move theme switch button to the right */
+.theme-switch-button {
+    margin-left: auto !important;
+    order: 999 !important;
+}
+
+/* Ensure navbar flex layout */
+nav.navbar {
+    display: flex !important;
+    align-items: center !important;
+}
+
+
+/* Force the right-side icons to the far right */
+.bd-header .navbar-end {
+    justify-content: flex-end !important;
+    flex-grow: 1;
+}
+
+/* Ensure the center doesn't take up space if empty */
+.bd-header .navbar-center {
+    flex-grow: 1;
+}
+
+/* Hide the automatically generated nav links but keep the container */
+.bd-navbar-nav .nav-item:not(:first-child) {
+    display: none;
+}
+
+/* Remove the left sidebar column and stretch content */
+.primary-sidebar {
+    display: none !important;
+}
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 100%;  /* default is 60em */
+}
+
+/* Make Type Hints thinner and slightly smaller */
+.sig-param .api-type-hint {
+    font-weight: 200 !important;
+    opacity: 0.8;
+    font-size: 0.9em;
+    color: #4f4f4f; /* Subtle grey */
+}
+
+/* Make Default Values (after the '=') thinner */
+.sig-param .default_value {
+    font-weight: 100 !important;
+    color: #666; /* Subtle grey */
+}
+
+dl.field-list dd ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.field-list ul li {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0.8rem;  /* adjust this value */
+}
+
+table.autosummary {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.autosummary td:first-child {
+    width: 300px;
+}
+
+@media (max-width: 640px) {
+    table.autosummary td:first-child {
+        width: 235px;
+    }
+}
+
+table.autosummary td:last-child {
+    width: auto;
+}
+
+.highlight-default {
+    background: none !important;
+}
+
+dt.sig {
+    background-color: transparent !important;
+}
+
+/* Type hints in function signatures */
+.sig .n {
+    color: #640D5F;
+    font-weight: 500;
+}
+
+.sig .n:first-child {
+    color: inherit;
+    font-weight: inherit;
+}
+
+/* docs/_static/custom.css */
+.gray {
+    color: #808080 !important;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-left: 0.3ch;
+}
+
+
+/* Ensure the main container background is also clear */
+.output.text_html {
+    background: transparent !important;
+}
+
+/*remove code line numbers*/
+.linenos {
+    display: none !important;
+}
+/*adjust padding of code lines*/
+div.highlight pre {
+    padding-left: 1.5em !important;
+}
+
+/* Sets line highlight to a dark gray with 0.6 opacity */
+div.highlight .hll {
+    background-color: rgba(217, 61, 113, 0.1) !important;
+}
+a.reference.external {
+    font-weight: 600;
+}
+
+/* external code references underline color to text color */
+a.reference.external code {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+}
+
+/* Change the border color of the active tab and the content box */
+.sd-tab-set > input:checked + .sd-tab-label,
+.sd-tab-content {
+    border-color: var(--about-card-border) !important;
+    color: var(--pst-color-text-base) !important;
+}
+
+/*dataframe schema borders */
+.bd-content div.cell_output table.dataframe thead tr {
+  background-color: var(--pst-color-table-heading-bg);
+  border-bottom: 1px solid #4f4f4f;
+}
+
+.sig-param .reference.external {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sig-return-typehint .reference.external {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* About-Cellestial card on the index page */
+:root {
+    --about-card-border: #1f1f1f;
+    --about-card-footer-color: #000;
+    --about-card-shadow:
+        0 6px 10px -2px rgba(15, 23, 42, 0.55),
+        0 3px 5px -1px rgba(15, 23, 42, 0.4),
+        0 1px 2px rgba(15, 23, 42, 0.3);
+}
+html[data-theme="dark"] {
+    --about-card-border: #d1d5db;
+    --about-card-footer-color: #ffffff;
+    --about-card-shadow:
+        0 6px 10px -2px rgba(0, 0, 0, 0.95),
+        0 3px 5px -1px rgba(0, 0, 0, 0.8),
+        0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.about-card {
+    float: right;
+    position: relative;
+    width: 300px;
+    aspect-ratio: 3 / 4;
+    margin: 0.25rem 1rem 1.5rem 1.75rem;
+    padding: 1.25rem;
+    border: 2px solid var(--about-card-border);
+    border-radius: 14px;
+    background: var(--pst-color-on-background, #ffffff);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--about-card-shadow);
+    overflow: hidden;
+}
+
+.about-card-header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 2px dashed var(--about-card-border);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--pst-color-text-base);
+}
+
+.about-card-header img {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.about-card-body {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    margin: 0.85rem 0 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    color: var(--pst-color-text-muted);
+}
+
+.about-card-badges {
+    position: absolute;
+    inset: 4.6rem 0.9rem 4.4rem;
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-content: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+    pointer-events: none;
+}
+
+.about-card-badges span {
+    display: inline-block;
+    padding: 0.18rem 0.55rem;
+    border-radius: 999px;
+    background: #0075ff;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about-card-link,
+.about-card-link:link,
+.about-card-link:visited {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.85rem;
+    width: fit-content;
+    color: var(--pst-color-text-muted) !important;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.15s ease, gap 0.15s ease;
+}
+
+.about-card-link i,
+.about-card-link span {
+    color: inherit !important;
+}
+
+.about-card-link:hover,
+.about-card-link:hover i,
+.about-card-link:hover span {
+    color: #377eb8 !important;
+}
+
+.about-card-link:hover {
+    gap: 0.6rem;
+}
+
+.about-card-link-arrow {
+    font-size: 0.7rem;
+}
+
+.about-card-footer,
+.about-card-footer:link,
+.about-card-footer:visited {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.85rem;
+    padding-top: 0.85rem;
+    width: 100%;
+    border-top: 2px dashed var(--about-card-border);
+    color: var(--about-card-footer-color) !important;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.about-card-footer i,
+.about-card-footer span {
+    color: var(--about-card-footer-color) !important;
+}
+
+.about-card-footer:hover,
+.about-card-footer:hover i,
+.about-card-footer:hover span {
+    color: #377eb8 !important;
+}
+
+.api-issue-button,
+.api-issue-button:link,
+.api-issue-button:visited {
+    background-color: #3f3f3f !important;
+    border-color: #3f3f3f !important;
+    color: #f5f5f5 !important;
+}
+
+.api-issue-button:hover {
+    background-color: #2f2f2f !important;
+    border-color: #2f2f2f !important;
+    color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .about-card {
+        float: none;
+        width: 100%;
+        aspect-ratio: auto;
+        margin: 1rem 0;
+    }
+
+    .about-card-body {
+        flex-grow: 0;
+    }
+
+    .about-card-badges {
+        position: static;
+        margin-top: 1rem;
+        align-content: flex-start;
+    }
+}
+
+.bd-content h2,
+.bd-content h3,
+.bd-content h4,
+.bd-content h5,
+.bd-content h6 {
+    margin: 1.25rem 0 0.75rem !important;
+}
+
+.bd-content h1 {
+    margin-bottom: 0.75rem;
+}
+
+.mobile-plot {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile-experience-notice {
+    display: none;
+    margin: 1rem 0;
+    padding: 0.75rem 0.9rem;
+    border-left: 3px solid #377eb8;
+    background: var(--pst-color-surface);
+    color: var(--pst-color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.mobile-api-warning {
+    display: none;
+    margin: 1rem 0;
+    padding: 0.75rem 0.9rem;
+    border-left: 3px solid #b42318;
+    background: #fef3f2;
+    color: #7a271a;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+html[data-theme="dark"] .mobile-api-warning {
+    background: rgba(180, 35, 24, 0.18);
+    color: #fda29b;
+}
+
+@media (max-width: 640px) {
+    .mobile-experience-notice,
+    .mobile-api-warning {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-plot {
+        display: none !important;
+    }
+
+    .mobile-plot {
+        display: block;
+    }
+}

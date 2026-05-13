@@ -1,0 +1,11 @@
+{{ name | escape | underline }}
+
+.. raw:: html
+
+   <p class="mobile-api-warning">
+     API pages include interactive (HTML) plots that would possibly not render correctly on a mobile device.
+   </p>
+
+.. currentmodule:: {{ module }}
+
+.. autofunction:: {{ objname }}

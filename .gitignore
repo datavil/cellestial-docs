@@ -1,0 +1,40 @@
+# Sphinx build output — never commit, this is what bloated cellestial
+_build/
+build/
+generated/
+.doctrees/
+
+# Jupyter execution artifacts (from sphinx + nbsphinx/myst-nb)
+jupyter_execute/
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# uv
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets (just in case)
+.env
+.env.local
+
+data/

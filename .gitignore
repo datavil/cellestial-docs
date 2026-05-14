@@ -44,3 +44,9 @@ docs/
 
 sphinx/_static/index-mobile/
 sphinx/_static/mobile/
+assets/boxplot-bracket.svg
+assets/dimensionality-layers.svg
+assets/first-umap.svg
+assets/heatmap.svg
+assets/ridge.svg
+assets/spatial-categorical.svg

@@ -4,8 +4,13 @@ if [ "$1" = "-E" ]; then
     extra_sphinx_flag="-E"
 fi
 
-uv run --group docs sphinx-build sphinx/ docs/ -a -j auto ${extra_sphinx_flag}
-echo "cellestial.datavil.org" > docs/CNAME
+local_cellestial="$HOME/datavil/cellestial"
+
+uv sync --group docs
+uv pip install --reinstall --no-deps -e "$local_cellestial"
+uv run --no-sync --group docs sphinx-build sphinx/ _build/html/ -a -j auto ${extra_sphinx_flag}
+
+uv run --no-sync --group docs ghp-import -n -c cellestial.datavil.org -p -f -m "Deploy docs from $(git rev-parse --short HEAD)" _build/html/
 
 
 # Copy the SVGs used by README.md from their sphinx source locations into assets/.

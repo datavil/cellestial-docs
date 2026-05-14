@@ -1,7 +1,7 @@
 # Sphinx build output — never commit, this is what bloated cellestial
 _build/
 build/
-generated/
+sphinx/generated/
 .doctrees/
 
 # Jupyter execution artifacts (from sphinx + nbsphinx/myst-nb)

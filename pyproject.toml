@@ -50,6 +50,7 @@ docs = [
     "sphinx-copybutton>=0.5.2,<0.6.0",
     "sphinx-design>=0.7.0,<0.8.0",
     "squidpy>=1.8.1,<2.0.0",
+    "ghp-import>=2.1.0",
 ]
 
 [tool.uv]

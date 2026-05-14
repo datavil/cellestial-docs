@@ -10,7 +10,7 @@
 text {
    text-rendering: optimizeLegibility;
 }
-#pubUxG7 .plot-title {
+#pBALNGN .plot-title {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -18,7 +18,7 @@ font-family: Arial;
 font-size: 16.0px;
 
 }
-#pubUxG7 .plot-subtitle {
+#pBALNGN .plot-subtitle {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -26,7 +26,7 @@ font-family: Arial;
 font-size: 15.0px;
 
 }
-#pubUxG7 .plot-caption {
+#pBALNGN .plot-caption {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -34,7 +34,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#pubUxG7 .plot-tag {
+#pBALNGN .plot-tag {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -42,13 +42,13 @@ font-family: Arial;
 font-size: 16.0px;
 
 }
-#pubUxG7 .hyperlink-element {
+#pBALNGN .hyperlink-element {
 fill: #118ed8;
 font-weight: normal;
 font-style: normal;
 
 }
-#pubUxG7 .legend-title {
+#pBALNGN .legend-title {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -56,7 +56,7 @@ font-family: Arial;
 font-size: 15.0px;
 
 }
-#pubUxG7 .legend-item {
+#pBALNGN .legend-item {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -64,7 +64,7 @@ font-family: Arial;
 font-size: 11.0px;
 
 }
-#pubUxG7 .axis-title-x {
+#pBALNGN .axis-title-x {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -72,7 +72,7 @@ font-family: Arial;
 font-size: 15.0px;
 
 }
-#pubUxG7 .axis-text-x {
+#pBALNGN .axis-text-x {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -80,7 +80,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dhcJT5K .axis-tooltip-text-x {
+#dNz5NFa .axis-tooltip-text-x {
 fill: #ffffff;
 font-weight: normal;
 font-style: normal;
@@ -88,7 +88,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#pubUxG7 .axis-title-y {
+#pBALNGN .axis-title-y {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -96,7 +96,7 @@ font-family: Arial;
 font-size: 15.0px;
 
 }
-#pubUxG7 .axis-text-y {
+#pBALNGN .axis-text-y {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -104,7 +104,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dhcJT5K .axis-tooltip-text-y {
+#dNz5NFa .axis-tooltip-text-y {
 fill: #ffffff;
 font-weight: normal;
 font-style: normal;
@@ -112,7 +112,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#pubUxG7 .facet-strip-text-x {
+#pBALNGN .facet-strip-text-x {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -120,7 +120,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#pubUxG7 .facet-strip-text-y {
+#pBALNGN .facet-strip-text-y {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -128,7 +128,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dhcJT5K .tooltip-text {
+#dNz5NFa .tooltip-text {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -136,7 +136,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dhcJT5K .tooltip-title {
+#dNz5NFa .tooltip-title {
 fill: #1f1f1f;
 font-weight: bold;
 font-style: normal;
@@ -144,7 +144,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dhcJT5K .tooltip-label {
+#dNz5NFa .tooltip-label {
 fill: #1f1f1f;
 font-weight: bold;
 font-style: normal;
@@ -154,7 +154,7 @@ font-size: 13.0px;
 }
 
   </style>
-  <g id="pubUxG7">
+  <g id="pBALNGN">
     <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M158.11157639707932 0.0 L158.11157639707932 600.0 L641.8884236029207 600.0 L641.8884236029207 0.0 Z">
     </path>
     <g transform="translate(164.11157639707932 6.0 ) ">
@@ -168,7 +168,7 @@ font-size: 13.0px;
           </g>
         </g>
       </g>
-      <g clip-path="url(#cYj0ULr)" clip-bounds-jfx="[rect (17.961210910936405, 0.0), (401.128045374269, 515.2830622396735)]">
+      <g clip-path="url(#cAxKoOO)" clip-bounds-jfx="[rect (17.961210910936405, 0.0), (401.128045374269, 515.2830622396735)]">
         <g transform="translate(17.961210910936405 0.0 ) ">
           <g>
             <g buffered-rendering="static">
@@ -332,19 +332,19 @@ font-size: 13.0px;
           </g>
         </g>
         <defs>
-          <clipPath id="cwkBr79">
+          <clipPath id="cyEbm11">
             <rect x="17.961210910936405" y="0.0" width="401.128045374269" height="515.2830622396735">
             </rect>
           </clipPath>
         </defs>
         <defs>
-          <clipPath id="cQcLPYg">
+          <clipPath id="ciBfPWH">
             <rect x="17.961210910936405" y="0.0" width="401.128045374269" height="515.2830622396735">
             </rect>
           </clipPath>
         </defs>
         <defs>
-          <clipPath id="cYj0ULr">
+          <clipPath id="cAxKoOO">
             <rect x="17.961210910936405" y="0.0" width="401.128045374269" height="515.2830622396735">
             </rect>
           </clipPath>
@@ -779,6 +779,6 @@ font-size: 13.0px;
     <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M158.11157639707932 0.0 L158.11157639707932 600.0 L641.8884236029207 600.0 L641.8884236029207 0.0 Z" pointer-events="none">
     </path>
   </g>
-  <g id="dhcJT5K">
+  <g id="dNz5NFa">
   </g>
 </svg>

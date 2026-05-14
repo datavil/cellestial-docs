@@ -10,7 +10,7 @@
 text {
    text-rendering: optimizeLegibility;
 }
-#p8CB83s .plot-title {
+#pNYcvn6 .plot-title {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -18,7 +18,7 @@ font-family: Arial;
 font-size: 16.0px;
 
 }
-#p8CB83s .plot-subtitle {
+#pNYcvn6 .plot-subtitle {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -26,7 +26,7 @@ font-family: Arial;
 font-size: 15.0px;
 
 }
-#p8CB83s .plot-caption {
+#pNYcvn6 .plot-caption {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -34,7 +34,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#p8CB83s .plot-tag {
+#pNYcvn6 .plot-tag {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -42,13 +42,13 @@ font-family: Arial;
 font-size: 16.0px;
 
 }
-#p8CB83s .hyperlink-element {
+#pNYcvn6 .hyperlink-element {
 fill: #118ed8;
 font-weight: normal;
 font-style: normal;
 
 }
-#p8CB83s .legend-title {
+#pNYcvn6 .legend-title {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -56,7 +56,7 @@ font-family: Arial;
 font-size: 15.0px;
 
 }
-#p8CB83s .legend-item {
+#pNYcvn6 .legend-item {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -64,7 +64,7 @@ font-family: Arial;
 font-size: 11.0px;
 
 }
-#p8CB83s .axis-title-x {
+#pNYcvn6 .axis-title-x {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -72,7 +72,7 @@ font-family: Arial;
 font-size: 15.0px;
 
 }
-#p8CB83s .axis-text-x {
+#pNYcvn6 .axis-text-x {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -80,7 +80,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dfsjp5r .axis-tooltip-text-x {
+#dKeGeNE .axis-tooltip-text-x {
 fill: #ffffff;
 font-weight: normal;
 font-style: normal;
@@ -88,7 +88,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#p8CB83s .axis-title-y {
+#pNYcvn6 .axis-title-y {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -96,7 +96,7 @@ font-family: Arial;
 font-size: 15.0px;
 
 }
-#p8CB83s .axis-text-y {
+#pNYcvn6 .axis-text-y {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -104,7 +104,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dfsjp5r .axis-tooltip-text-y {
+#dKeGeNE .axis-tooltip-text-y {
 fill: #ffffff;
 font-weight: normal;
 font-style: normal;
@@ -112,7 +112,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#p8CB83s .facet-strip-text-x {
+#pNYcvn6 .facet-strip-text-x {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -120,7 +120,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#p8CB83s .facet-strip-text-y {
+#pNYcvn6 .facet-strip-text-y {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -128,7 +128,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dfsjp5r .tooltip-text {
+#dKeGeNE .tooltip-text {
 fill: #1f1f1f;
 font-weight: normal;
 font-style: normal;
@@ -136,7 +136,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dfsjp5r .tooltip-title {
+#dKeGeNE .tooltip-title {
 fill: #1f1f1f;
 font-weight: bold;
 font-style: normal;
@@ -144,7 +144,7 @@ font-family: Arial;
 font-size: 13.0px;
 
 }
-#dfsjp5r .tooltip-label {
+#dKeGeNE .tooltip-label {
 fill: #1f1f1f;
 font-weight: bold;
 font-style: normal;
@@ -154,7 +154,7 @@ font-size: 13.0px;
 }
 
   </style>
-  <g id="p8CB83s">
+  <g id="pNYcvn6">
     <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M70.86098180459078 0.0 L70.86098180459078 400.0 L529.1390181954092 400.0 L529.1390181954092 0.0 Z">
     </path>
     <g transform="translate(76.86098180459078 6.0 ) ">
@@ -168,7 +168,7 @@ font-size: 13.0px;
           </g>
         </g>
       </g>
-      <g clip-path="url(#cMN4pBG)" clip-bounds-jfx="[rect (0.0, 0.0), (372.674, 388.0)]">
+      <g clip-path="url(#ctHBvTy)" clip-bounds-jfx="[rect (0.0, 0.0), (372.674, 388.0)]">
         <g transform="">
           <g>
             <g buffered-rendering="static">
@@ -4045,13 +4045,13 @@ font-size: 13.0px;
           </g>
         </g>
         <defs>
-          <clipPath id="cApxHmd">
+          <clipPath id="cNy21dD">
             <rect x="0.0" y="0.0" width="372.674" height="388.0">
             </rect>
           </clipPath>
         </defs>
         <defs>
-          <clipPath id="cMN4pBG">
+          <clipPath id="ctHBvTy">
             <rect x="0.0" y="0.0" width="372.674" height="388.0">
             </rect>
           </clipPath>
@@ -4240,6 +4240,6 @@ font-size: 13.0px;
     <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M70.86098180459078 0.0 L70.86098180459078 400.0 L529.1390181954092 400.0 L529.1390181954092 0.0 Z" pointer-events="none">
     </path>
   </g>
-  <g id="dfsjp5r">
+  <g id="dKeGeNE">
   </g>
 </svg>

@@ -407,8 +407,6 @@ A few scanpy plotting helpers do not have a one-to-one replacement yet:
 
 - ``sc.pl.tracksplot``
 - ``sc.pl.embedding_density``
-- ``sc.pl.rank_genes_groups`` (the bar-style ranking view; use
-  ``cl.volcano`` for differential expression visualization)
 - ``sc.pl.paga`` and other trajectory-specific helpers
 
 Where To Next

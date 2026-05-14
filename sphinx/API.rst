@@ -42,6 +42,7 @@ QC
    :toctree: generated
    :nosignatures:
 
+   ~cellestial.markers
    ~cellestial.ridge
    ~cellestial.ridges
    ~cellestial.elbow

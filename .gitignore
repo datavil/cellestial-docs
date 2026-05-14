@@ -41,3 +41,6 @@ data/
 
 figures/
 docs/
+
+sphinx/_static/index-mobile/
+sphinx/_static/mobile/

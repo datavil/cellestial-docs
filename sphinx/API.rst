@@ -38,6 +38,10 @@ Basic
 
 QC
 ---
+.. note::
+
+   cl.markers 
+
 .. autosummary::
    :toctree: generated
    :nosignatures:
@@ -152,7 +156,8 @@ Utility
    ~cellestial.show_colors
    ~cellestial.get_mapping
    ~cellestial.retrieve
-   ~cellestial.slice
+   ~cellestial.get_figure
+   ~cellestial.get_figures
    ~cellestial.save
 
 Datasets

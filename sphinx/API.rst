@@ -38,9 +38,6 @@ Basic
 
 QC
 ---
-.. note::
-
-   cl.markers 
 
 .. autosummary::
    :toctree: generated

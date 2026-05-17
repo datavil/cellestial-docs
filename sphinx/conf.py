@@ -180,7 +180,7 @@ python_use_unqualified_type_names = True
 
 intersphinx_mapping = {
     "lets_plot": ("https://lets-plot.org/", None),
-    "anndata": ("https://anndata.readthedocs.io/en/latest/", None),
+    "anndata": ("https://anndata.readthedocs.io/en/latest/", "../assets/anndata-objects.inv"),
     "polars": ("https://docs.pola.rs/api/python/stable/", None),
 }
 

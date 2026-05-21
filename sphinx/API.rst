@@ -156,6 +156,8 @@ Utility
    ~cellestial.get_figure
    ~cellestial.get_figures
    ~cellestial.save
+   ~cellestial.marker_genes
+   ~cellestial.marker_genes_dict
 
 Datasets
 --------

@@ -41,6 +41,8 @@ data/
 
 figures/
 docs/
+.ruff*
+.claude
 
 sphinx/_static/index-mobile/
 sphinx/_static/mobile/

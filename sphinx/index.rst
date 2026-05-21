@@ -460,10 +460,10 @@ Documentation
 .. toctree::
    :hidden:
 
+   migrating_from_scanpy
+   quickstart
    philosophy
    performance
-   quickstart
-   migrating_from_scanpy
 
 About Lets-Plot
 ---------------

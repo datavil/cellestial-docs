@@ -88,10 +88,10 @@ Overlay categorical labels or gene expression on tissue coordinates.
 
    import cellestial as cl
 
-   data = sc.read_h5ad("data/pbmc3k_pped.h5ad")
-   data_spatial = sc.read_h5ad("data/V1_Human_Lymph_Node_pped.h5ad")
+   data = cl.datasets.pbmc3k()
+   data_spatial = cl.datasets.human_lymph_node()
    data_hne = sq.datasets.visium_hne_adata()
-   data_velocity = sc.read_h5ad("data/endocrinogenesis_day15_pped.h5ad")
+   data_velocity = cl.datasets.pancreas()
    index_mobile_example_dir = Path("sphinx/_static/index-mobile")
    index_mobile_example_dir.mkdir(parents=True, exist_ok=True)
 
@@ -121,6 +121,21 @@ Overlay categorical labels or gene expression on tissue coordinates.
 
          <img class="mobile-plot" src="_static/index-mobile/spatial-categorical.svg" alt="Spatial categorical example" loading="lazy" />
 
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            import squidpy as sq
+            from lets_plot import *
+
+            data_spatial = cl.datasets.human_lymph_node()
+            data_hne = sq.datasets.visium_hne_adata()
+
+            s1 = cl.spatial(data_spatial, key="clusters")
+            s2 = cl.spatial(data_hne, key="leiden")
+            spatial_categorical = gggrid([s1, s2], ncol=2) + ggsize(1000, 400) + ggtb(size_zoomin=-1)
+
    .. tab-item:: Expression
       :sync: spatial_numeric
 
@@ -132,6 +147,21 @@ Overlay categorical labels or gene expression on tissue coordinates.
       .. raw:: html
 
          <img class="mobile-plot" src="_static/index-mobile/spatial-expression.svg" alt="Spatial expression example" loading="lazy" />
+
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            import squidpy as sq
+            from lets_plot import *
+
+            data_spatial = cl.datasets.human_lymph_node()
+            data_hne = sq.datasets.visium_hne_adata()
+
+            s3 = cl.spatial(data_spatial, key="MS4A1") + scale_color_viridis(option="inferno")
+            s4 = cl.spatial(data_hne, key="Mef2c") + scale_color_viridis(option="inferno")
+            spatial_numeric = gggrid([s3, s4], ncol=2) + ggsize(1000, 400) + ggtb(size_zoomin=-1)
 
 Dimensionality Reduction
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -195,6 +225,31 @@ Also, cellestial-specific layers, providing utilities, could be added to dimensi
 
          <img class="mobile-plot" src="_static/index-mobile/dimensionality-simple.svg" alt="Dimensionality reduction example" loading="lazy" />
 
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            dims = gggrid(
+                [
+                    cl.umap(data, key="cell_type_lvl1", axis_type="arrow", size=1.5, legend_ondata=True)
+                    + scale_color_hue(),
+                    cl.tsne(
+                        data,
+                        key="NEAT1",
+                        tooltips=["NEAT1", "cell_type_lvl1"],
+                        axis_type="arrow",
+                        size=2,
+                        color_high="#219B9D",
+                        color_low="#f6f6f6",
+                    ),
+                ]
+            ) + ggtb(size_zoomin=-1)
+
    .. tab-item:: Layers
       :sync: layers
 
@@ -206,6 +261,35 @@ Also, cellestial-specific layers, providing utilities, could be added to dimensi
       .. raw:: html
 
          <img class="mobile-plot" src="_static/index-mobile/dimensionality-layers.svg" alt="Dimensionality reduction layers example" loading="lazy" />
+
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+            data_velocity = cl.datasets.pancreas()
+
+            outlined = (
+                cl.umap(data, key="cell_type_lvl1", axis_type="arrow", size=1.5, legend_ondata=True)
+                + scale_color_hue()
+                + cl.cluster_outlines(groups=["Lymphocytes", "B Cells"])
+            )
+            streamed = (
+                cl.umap(
+                    data_velocity,
+                    key="clusters_coarse",
+                    axis_type="arrow",
+                    size=4,
+                    alpha=0.4,
+                    legend_ondata=True,
+                    ondata_color="black",
+                )
+                + cl.stream()
+            )
+            layers = gggrid([outlined, streamed]) + ggtb(size_zoomin=-1)
 
 Heatmaps
 ~~~~~~~~
@@ -282,6 +366,49 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
 
          <img class="mobile-plot" src="_static/index-mobile/heatmap.svg" alt="Heatmap example" loading="lazy" />
 
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            markers = [
+                "PSAP",
+                "LYZ",
+                "CST3",
+                "CD79A",
+                "CD79B",
+                "IL7R",
+                "CD3D",
+                "CD3E",
+                "CD4",
+                "CD8A",
+                "CD8B",
+                "NKG7",
+                "GNLY",
+                "KLRD1",
+                "HLA-DRA",
+                "FCER1A",
+            ]
+            htmp = (
+                cl.heatmap(
+                    data,
+                    group_by="cell_type_lvl1",
+                    keys=markers,
+                    geom="raster",
+                    group_lines_size=0.5,
+                    group_lines_color="white",
+                    dendrogram=True,
+                    dendrogram_size=1,
+                    group_bars_labels=True,
+                    group_bars=True,
+                )
+                + scale_fill_viridis()
+            )
+
    .. tab-item:: matrixplot
       :sync: matrixplot
 
@@ -293,6 +420,43 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
       .. raw:: html
 
          <img class="mobile-plot" src="_static/index-mobile/matrixplot.svg" alt="Matrixplot example" loading="lazy" />
+
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            markers = [
+                "PSAP",
+                "LYZ",
+                "CST3",
+                "CD79A",
+                "CD79B",
+                "IL7R",
+                "CD3D",
+                "CD3E",
+                "CD4",
+                "CD8A",
+                "CD8B",
+                "NKG7",
+                "GNLY",
+                "KLRD1",
+                "HLA-DRA",
+                "FCER1A",
+            ]
+            mtrx = cl.matrixplot(
+                data,
+                group_by="leiden",
+                keys=markers,
+                group_lines_size=0.5,
+                group_lines_color="white",
+                dendrogram=True,
+                dendrogram_size=1,
+            ) + scale_fill_viridis(option="inferno", begin=0.1)
 
    .. tab-item:: stacked violin
       :sync: stacked_violin
@@ -306,6 +470,41 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
 
          <img class="mobile-plot" src="_static/index-mobile/stacked-violin.svg" alt="Stacked violin example" loading="lazy" />
 
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            markers = [
+                "PSAP",
+                "LYZ",
+                "CST3",
+                "CD79A",
+                "CD79B",
+                "IL7R",
+                "CD3D",
+                "CD3E",
+                "CD4",
+                "CD8A",
+                "CD8B",
+                "NKG7",
+                "GNLY",
+                "KLRD1",
+                "HLA-DRA",
+                "FCER1A",
+            ]
+            stck = cl.stacked_violin(
+                data,
+                group_by="leiden_res_0.50",
+                keys=markers,
+                dendrogram=True,
+                dendrogram_size=1,
+            )
+
    .. tab-item:: dotplot
       :sync: dotplot
 
@@ -317,6 +516,41 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
       .. raw:: html
 
          <img class="mobile-plot" src="_static/index-mobile/dotplot.svg" alt="Dotplot example" loading="lazy" />
+
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            markers = [
+                "PSAP",
+                "LYZ",
+                "CST3",
+                "CD79A",
+                "CD79B",
+                "IL7R",
+                "CD3D",
+                "CD3E",
+                "CD4",
+                "CD8A",
+                "CD8B",
+                "NKG7",
+                "GNLY",
+                "KLRD1",
+                "HLA-DRA",
+                "FCER1A",
+            ]
+            dtplt = cl.dotplot(
+                data,
+                group_by="leiden_res_0.50",
+                keys=markers,
+                dendrogram=True,
+                dendrogram_size=1,
+            )
 
 Distribution
 ~~~~~~~~~~~~
@@ -367,6 +601,25 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
 
          <img class="mobile-plot" src="_static/index-mobile/boxplot.svg" alt="Boxplot example" loading="lazy" />
 
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            bx = (
+                cl.boxplot(
+                    data,
+                    key="CD3D",
+                    fill="cell_type_lvl1",
+                    threshold=0.1,
+                )
+                + scale_fill_hue()
+            )
+
    .. tab-item:: boxplot with brackets
       :sync: boxplot_bracket
 
@@ -378,6 +631,36 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
       .. raw:: html
 
          <img class="mobile-plot" src="_static/index-mobile/boxplot-bracket.svg" alt="Boxplot with brackets example" loading="lazy" />
+
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            bx = (
+                cl.boxplot(
+                    data,
+                    key="CD3D",
+                    fill="cell_type_lvl1",
+                    threshold=0.1,
+                )
+                + scale_fill_hue()
+            )
+            bx_brckt = bx + cl.bracket(
+                y_padding=0.2,
+                label="pvalue",
+                prefix_style="<",
+                prefix="p",
+                comparisons=[
+                    ("Lymphocytes", "Monocytes"),
+                    ("Monocytes", "Erythroid"),
+                    ("Monocytes", "B Cells"),
+                ],
+            )
 
    .. tab-item:: violin
       :sync: violin
@@ -391,6 +674,25 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
 
          <img class="mobile-plot" src="_static/index-mobile/violin.svg" alt="Violin example" loading="lazy" />
 
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            vln = (
+                cl.violin(
+                    data,
+                    key="CD3D",
+                    fill="cell_type_lvl1",
+                    threshold=0.1,
+                )
+                + scale_fill_viridis()
+            )
+
    .. tab-item:: violin with brackets
       :sync: violin_bracket
 
@@ -402,6 +704,36 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
       .. raw:: html
 
          <img class="mobile-plot" src="_static/index-mobile/violin-bracket.svg" alt="Violin with brackets example" loading="lazy" />
+
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            vln = (
+                cl.violin(
+                    data,
+                    key="CD3D",
+                    fill="cell_type_lvl1",
+                    threshold=0.1,
+                )
+                + scale_fill_viridis()
+            )
+            vln_brckt = vln + cl.bracket(
+                y_padding=0.2,
+                label="pvalue",
+                prefix_style="<",
+                prefix="p",
+                comparisons=[
+                    ("Lymphocytes", "Monocytes"),
+                    ("Monocytes", "Erythroid"),
+                    ("Monocytes", "B Cells"),
+                ],
+            )
 
 Exploratory
 ~~~~~~~~~~~
@@ -434,6 +766,25 @@ Cellestial ships with quick exploratory plots.
 
          <img class="mobile-plot" src="_static/index-mobile/ridge.svg" alt="Ridge example" loading="lazy" />
 
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            rdg = (
+                cl.ridge(
+                    data,
+                    key="B2M",
+                    alpha=0.6,
+                    group_by="cell_type_lvl1",
+                )
+                + scale_fill_hue()
+            )
+
    .. tab-item:: highest expressed genes
       :sync: highest_expressed_genes
 
@@ -445,6 +796,17 @@ Cellestial ships with quick exploratory plots.
       .. raw:: html
 
          <img class="mobile-plot" src="_static/index-mobile/highest-expressed-genes.svg" alt="Highest expressed genes example" loading="lazy" />
+
+      .. dropdown:: Show code
+
+         .. code-block:: python
+
+            import cellestial as cl
+            from lets_plot import *
+
+            data = cl.datasets.pbmc3k()
+
+            hexp = cl.highest_expressed_genes(data, n=20) + scale_fill_viridis()
 
 
 Documentation

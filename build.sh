@@ -11,3 +11,4 @@ uv pip install --reinstall --no-deps -e "$local_cellestial"
 uv run --no-sync --group docs sphinx-build sphinx/ _build/html/ -a -j auto ${extra_sphinx_flag}
 
 echo "Built at _build/html/index.html"
+open _build/html/index.html

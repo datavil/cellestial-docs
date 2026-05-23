@@ -11,11 +11,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Ensure signatures have appropriate padding and layout
-    const sigs = document.querySelectorAll('dt.sig');
-    sigs.forEach(sig => {
-        // Any dynamic adjustments can go here
-    });
+    // Type hint toggle — only on pages that have a function signature
+    const pageH1 = document.querySelector('article.bd-article h1');
+    if (pageH1 && document.querySelector('dt.sig')) {
+        const hidden = localStorage.getItem('cellestial-hide-types') === 'true';
+        if (hidden) document.body.classList.add('hide-types');
+
+        const btn = document.createElement('button');
+        btn.className = 'type-toggle';
+        btn.textContent = hidden ? 'show types' : 'hide types';
+
+        btn.addEventListener('click', () => {
+            const nowHidden = document.body.classList.toggle('hide-types');
+            btn.textContent = nowHidden ? 'show types' : 'hide types';
+            localStorage.setItem('cellestial-hide-types', nowHidden);
+        });
+
+        pageH1.appendChild(btn);
+    }
 
     // Mark interactive examples that have mobile SVG companions.
     const mobilePlots = document.querySelectorAll(".mobile-plot");

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 /* Code blocks use JetBrains Mono */
@@ -15,13 +15,14 @@ tt,
 .rst-content tt,
 .rst-content code {
     font-family: "JetBrains Mono", monospace !important;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
     font-size: 0.95em !important;
 }
 
 code.literal,
 tt.literal {
     color: #AF1740;
+    font-weight: 400 !important;
 }
 
 a code.literal,
@@ -455,4 +456,94 @@ html[data-theme="dark"] .mobile-api-warning {
     .mobile-plot {
         display: block;
     }
+}
+
+/* Type hint toggle */
+body.hide-types em.sig-param > .p,
+body.hide-types em.sig-param > .p + .w,
+body.hide-types em.sig-param > .p ~ .n,
+body.hide-types .sig-return {
+    display: none;
+}
+
+h1:has(button.type-toggle) {
+    display: flex;
+    align-items: center;
+}
+
+button.type-toggle {
+    margin-left: auto;
+    flex-shrink: 0;
+    border-radius: 999px;
+    border: 1px solid var(--pst-color-text-muted);
+    padding: 0.2em 0.8em;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--pst-color-text-muted);
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+button.type-toggle:hover {
+    color: var(--pst-color-primary, #377eb8);
+    border-color: var(--pst-color-primary, #377eb8);
+}
+
+/* Show code toggles — GitHub readme style */
+details.sd-dropdown,
+.bd-content details.sd-dropdown.sd-card {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0.5rem 0 0.25rem !important;
+    padding: 0 !important;
+}
+
+details.sd-dropdown summary.sd-summary-title {
+    display: inline-flex !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    font-family: "JetBrains Mono", monospace !important;
+    font-size: 0.78rem !important;
+    font-weight: 500 !important;
+    color: var(--pst-color-text-base) !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    transition: color 0.15s ease;
+    justify-content: flex-start !important;
+    gap: 0.35em;
+}
+
+details.sd-dropdown summary.sd-summary-title:hover {
+    color: var(--pst-color-primary, #377eb8) !important;
+}
+
+details.sd-dropdown summary.sd-summary-title .sd-summary-state-marker {
+    order: -1;
+}
+
+details.sd-dropdown summary.sd-summary-title .sd-summary-state-marker svg {
+    width: 0.65em;
+    height: 0.65em;
+    opacity: 1;
+    fill: currentColor;
+    transition: transform 0.2s ease, opacity 0.15s ease;
+}
+
+details.sd-dropdown summary.sd-summary-title:hover .sd-summary-state-marker svg {
+    opacity: 1;
+}
+
+details.sd-dropdown .sd-summary-content,
+details.sd-dropdown.sd-card summary.sd-card-header + div.sd-summary-content {
+    padding: 0 !important;
+    border: none !important;
+    border-left: none !important;
+    background: transparent !important;
+    margin-top: 0.3rem !important;
+    margin-left: 1.1em !important;
 }

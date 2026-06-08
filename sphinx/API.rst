@@ -18,13 +18,49 @@ Could not find what you are looking for?
 
    Open a Feature Request
 
-Base
------------
+Dimensionality Reduction
+--------------------------------
+
 .. autosummary::
    :toctree: generated
    :nosignatures:
 
-   ~cellestial.plot
+   ~cellestial.dimensional
+   ~cellestial.umap
+   ~cellestial.pca
+   ~cellestial.tsne
+   ~cellestial.expression
+   ~cellestial.dimensionals
+   ~cellestial.umaps
+   ~cellestial.pcas
+   ~cellestial.tsnes
+   ~cellestial.expressions
+
+
+Heatmap
+-------------
+
+.. autosummary::
+   :toctree: generated
+   :nosignatures:
+
+   ~cellestial.heatmap
+   ~cellestial.matrixplot
+   ~cellestial.dotplot
+   ~cellestial.stacked_violin
+
+
+Distributions
+-------------
+
+.. autosummary::
+   :toctree: generated
+   :nosignatures:
+
+   ~cellestial.boxplot
+   ~cellestial.violin
+   ~cellestial.boxplots
+   ~cellestial.violins
 
 Basic
 -----------
@@ -33,6 +69,7 @@ Basic
    :toctree: generated
    :nosignatures:
 
+   ~cellestial.plot
    ~cellestial.bar
    ~cellestial.scatter
 
@@ -59,17 +96,6 @@ Common
    ~cellestial.xyplot
    ~cellestial.xyplots
 
-Heatmap
--------------
-
-.. autosummary::
-   :toctree: generated
-   :nosignatures:
-
-   ~cellestial.heatmap
-   ~cellestial.matrixplot
-   ~cellestial.dotplot
-   ~cellestial.stacked_violin
 
 Differential Expression
 -----------------------
@@ -80,37 +106,7 @@ Differential Expression
 
    ~cellestial.volcano
    ~cellestial.volcanos
-   
 
-Dimensionality Reduction
---------------------------------
-
-.. autosummary::
-   :toctree: generated
-   :nosignatures:
-
-   ~cellestial.dimensional
-   ~cellestial.umap
-   ~cellestial.pca
-   ~cellestial.tsne
-   ~cellestial.expression
-   ~cellestial.dimensionals
-   ~cellestial.umaps
-   ~cellestial.pcas
-   ~cellestial.tsnes
-   ~cellestial.expressions
-
-Distributions
--------------
-
-.. autosummary::
-   :toctree: generated
-   :nosignatures:
-
-   ~cellestial.boxplot
-   ~cellestial.violin
-   ~cellestial.boxplots
-   ~cellestial.violins
 
 Spatial
 -------
@@ -120,6 +116,7 @@ Spatial
 
    ~cellestial.spatial
    ~cellestial.spatials
+
 
 Layers
 ------

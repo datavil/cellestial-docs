@@ -61,6 +61,8 @@ Distributions
    ~cellestial.violin
    ~cellestial.boxplots
    ~cellestial.violins
+   ~cellestial.histogram
+   ~cellestial.histograms
 
 Basic
 -----------

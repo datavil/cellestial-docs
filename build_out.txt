@@ -1,0 +1,334 @@
+Running Sphinx v9.1.0
+loading translations [en]... done
+loading intersphinx inventory 'anndata' from ../assets/anndata-objects.inv ...
+[autosummary] generating autosummary for: API.rst, _templates/autoapi/python/module.rst, _templates/autosummary/base.rst, features.rst, generated/cellestial.arrow_axis.rst, generated/cellestial.bar.rst, generated/cellestial.boxplot.rst, generated/cellestial.boxplots.rst, generated/cellestial.bracket.rst, generated/cellestial.build_frame.rst, ..., generated/cellestial.violins.rst, generated/cellestial.volcano.rst, generated/cellestial.volcanos.rst, generated/cellestial.xyplot.rst, generated/cellestial.xyplots.rst, index.rst, migrating_from_scanpy.rst, performance.rst, philosophy.rst, quickstart.rst
+building [mo]: all of 0 po files
+writing output... 
+building [html]: all source files
+updating environment: [new config] 65 added, 0 changed, 0 removed
+executing cellestial.cluster_outlines
+reading sources... [  8%] API .. generated/cellestial.arrow_axis
+Fontconfig error: Cannot load default config file: No such file: (null)
+executing cellestial.ridges
+executing cellestial.scatter
+executing cellestial.show_colors
+reading sources... [ 15%] generated/cellestial.bar .. generated/cellestial.build_frame
+executing cellestial.dimensional
+executing cellestial.dimensionals
+executing cellestial.dotplot
+reading sources... [ 23%] generated/cellestial.cluster_outlines .. generated/cellestial.datasets.human_lymph_node
+executing cellestial.elbow
+executing cellestial.expression
+executing cellestial.expressions
+executing cellestial.get_figure
+executing cellestial.get_figures
+reading sources... [ 31%] generated/cellestial.datasets.pancreas .. generated/cellestial.dotplot
+executing cellestial.marker_genes
+executing cellestial.marker_genes_dict
+executing cellestial.markers
+executing cellestial.matrixplot
+executing cellestial.ondata_legend
+reading sources... [ 38%] generated/cellestial.elbow .. generated/cellestial.get_figures
+executing cellestial.tsnes
+executing cellestial.umap
+executing cellestial.umaps
+executing cellestial.versions
+executing cellestial.violin
+reading sources... [ 46%] generated/cellestial.get_mapping .. generated/cellestial.histograms
+executing cellestial.pca
+executing cellestial.pcas
+executing cellestial.plot
+executing cellestial.retrieve
+executing cellestial.ridge
+reading sources... [ 54%] generated/cellestial.marker_genes .. generated/cellestial.ondata_legend
+executing cellestial.get_mapping
+executing cellestial.heatmap
+executing cellestial.highest_expressed_genes
+executing cellestial.histogram
+executing cellestial.histograms
+reading sources... [ 62%] generated/cellestial.pca .. generated/cellestial.ridge
+executing cellestial.violins
+executing cellestial.volcano
+executing cellestial.volcanos
+executing cellestial.xyplot
+executing cellestial.xyplots
+reading sources... [ 69%] generated/cellestial.ridges .. generated/cellestial.slice
+executing cellestial.bar
+executing cellestial.boxplot
+executing cellestial.boxplots
+executing cellestial.bracket
+executing cellestial.build_frame
+reading sources... [ 77%] generated/cellestial.spatial .. generated/cellestial.tsne
+executing cellestial.spatial
+executing cellestial.spatials
+executing cellestial.stacked_violin
+executing cellestial.stream
+executing cellestial.tsne
+reading sources... [ 85%] generated/cellestial.tsnes .. generated/cellestial.violin
+executing index
+executing migrating_from_scanpy
+executing quickstart
+reading sources... [ 92%] generated/cellestial.violins .. generated/cellestial.xyplots
+executing features
+executing cellestial.arrow_axis
+reading sources... [100%] index .. quickstart
+
+WARNING: autodoc: failed to import 'slice' from module 'cellestial'; the following exception was raised:
+Traceback (most recent call last):
+  File "/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/sphinx/util/inspect.py", line 461, in safe_getattr
+    return getattr(obj, name, *defargs)
+AttributeError: module 'cellestial' has no attribute 'slice'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/sphinx/ext/autodoc/_dynamic/_importer.py", line 150, in _import_from_module_and_path
+    obj = get_attr(obj, mangled_name)
+  File "/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/sphinx/ext/autodoc/_shared.py", line 142, in __call__
+    return safe_getattr(obj, name, *defargs)
+  File "/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/sphinx/util/inspect.py", line 477, in safe_getattr
+    raise AttributeError(name) from exc
+AttributeError: slice
+ [autodoc.import_object]
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+
+WARNING: Cell printed to stderr:
+CellestialWarning: Multiple keys provided; `group_by='cell_type_lvl1'` cannot share the x-axis with the variable column.
+Falling back to `group_by='variable'`. For a per-key panel, use the plural variant (violins).
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+
+WARNING: Cell printed to stderr:
+CellestialWarning: Multiple keys provided; `group_by='cell_type_lvl1'` cannot share the x-axis with the variable column.
+Falling back to `group_by='variable'`. For a per-key panel, use the plural variant (boxplots).
+
+/Users/zaf4/datavil/cellestial/cellestial/single/heatmap/stacked_violin.py:docstring of cellestial.single.heatmap.stacked_violin.stacked_violin:114: WARNING: Inline strong start-string without end-string. [docutils]
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+
+/Users/zaf4/datavil/cellestial-docs/sphinx/index.rst:832: WARNING: Title underline too short.
+
+Documentation
+-------- [docutils]
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/seaborn/_base.py:1447: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  self.plot_data[axis] = cat_data
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/seaborn/_base.py:1447: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  self.plot_data[axis] = cat_data
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/seaborn/categorical.py:508: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  sub_data[self.orient] = adjusted_data
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/seaborn/categorical.py:419: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  data[col] = inv(data[col])
+
+WARNING: Cell printed to stderr:
+/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_61105/1357945157.py:1: FutureWarning: Use `squidpy.pl.spatial_scatter` instead.
+  sc.pl.spatial(
+
+/Users/zaf4/datavil/cellestial-docs/sphinx/_templates/autoapi/python/module.rst:5: ERROR: Error in "py:module" directive:
+maximum 1 argument(s) allowed, 3 supplied.
+
+.. py:module:: {{ obj.name }} [docutils]
+/Users/zaf4/datavil/cellestial-docs/sphinx/_templates/autosummary/base.rst:9: ERROR: Error in "currentmodule" directive:
+maximum 1 argument(s) allowed, 3 supplied.
+
+.. currentmodule:: {{ module }} [docutils]
+WARNING: invalid signature for autofunction ('{{ objname }}') [autodoc]
+WARNING: don't know which module to import for autodocumenting '{{ objname }}' (try placing a "module" or "currentmodule" directive in the document, or giving an explicit module name) [autodoc]
+/Users/zaf4/datavil/cellestial-docs/sphinx/features.rst:218: WARNING: Inline literal start-string without end-string. [docutils]
+WARNING: Cell printed to stderr:
+Fontconfig error: Cannot load default config file: No such file: (null)
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... /Users/zaf4/datavil/cellestial-docs/sphinx/_templates/autoapi/python/module.rst: WARNING: document isn't included in any toctree [toc.not_included]
+/Users/zaf4/datavil/cellestial-docs/sphinx/_templates/autosummary/base.rst: WARNING: document isn't included in any toctree [toc.not_included]
+/Users/zaf4/datavil/cellestial-docs/sphinx/generated/cellestial.slice.rst: WARNING: document isn't included in any toctree [toc.not_included]
+done
+preparing documents... done
+copying assets... 
+copying static files... 
+Writing evaluated template result to /Users/zaf4/datavil/cellestial-docs/_build/html/_static/basic.css
+Writing evaluated template result to /Users/zaf4/datavil/cellestial-docs/_build/html/_static/language_data.js
+Writing evaluated template result to /Users/zaf4/datavil/cellestial-docs/_build/html/_static/documentation_options.js
+Writing evaluated template result to /Users/zaf4/datavil/cellestial-docs/_build/html/_static/copybutton.js
+copying static files: done
+copying extra files... 
+copying extra files: done
+copying assets: done
+writing output... [  8%] _templates/autoapi/python/module .. generated/cellestial.bar
+writing output... [ 15%] generated/cellestial.boxplot .. generated/cellestial.cluster_outlines
+writing output... [ 23%] generated/cellestial.datasets.breast_cancer_atlas .. generated/cellestial.datasets.pancreas
+writing output... [ 31%] generated/cellestial.datasets.pbmc3k .. generated/cellestial.elbow
+writing output... [ 38%] generated/cellestial.expression .. generated/cellestial.get_mapping
+writing output... [ 46%] generated/cellestial.heatmap .. generated/cellestial.marker_genes
+writing output... [ 54%] generated/cellestial.marker_genes_dict .. generated/cellestial.pca
+writing output... [ 62%] generated/cellestial.pcas .. generated/cellestial.ridges
+writing output... [ 69%] generated/cellestial.save .. generated/cellestial.spatial
+writing output... [ 77%] generated/cellestial.spatials .. generated/cellestial.tsnes
+writing output... [ 85%] generated/cellestial.umap .. generated/cellestial.violins
+writing output... [ 92%] generated/cellestial.volcano .. index
+writing output... [100%] migrating_from_scanpy .. quickstart
+
+generating indices... genindex done
+writing additional pages... search done
+copying images... [ 17%] ../_build/jupyter_execute/migrating_from_scanpy_1_0.png
+copying images... [ 33%] ../_build/jupyter_execute/migrating_from_scanpy_3_0.png
+copying images... [ 50%] ../_build/jupyter_execute/migrating_from_scanpy_5_0.png
+copying images... [ 67%] ../_build/jupyter_execute/migrating_from_scanpy_7_1.png
+copying images... [ 83%] ../_build/jupyter_execute/migrating_from_scanpy_10_1.png
+copying images... [100%] _static/breast_cancer_atlas_umap.png
+
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded, 22 warnings.
+
+The HTML pages are in _build/html.

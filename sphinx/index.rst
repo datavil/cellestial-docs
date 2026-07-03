@@ -81,6 +81,8 @@ Overlay categorical labels or gene expression on tissue coordinates.
 .. jupyter-execute::
    :hide-code:
 
+   import contextlib
+   import os
    import scanpy as sc
    import squidpy as sq
    from pathlib import Path
@@ -95,8 +97,24 @@ Overlay categorical labels or gene expression on tissue coordinates.
    index_mobile_example_dir = Path("sphinx/_static/index-mobile")
    index_mobile_example_dir.mkdir(parents=True, exist_ok=True)
 
+   @contextlib.contextmanager
+   def _suppress_native_stdout():
+       # Lets-Plot's SVG exporter logs INFO messages via a native write to
+       # file descriptor 1, bypassing `sys.stdout`; silence it at the fd level.
+       saved_stdout_fd = os.dup(1)
+       devnull_fd = os.open(os.devnull, os.O_WRONLY)
+       os.dup2(devnull_fd, 1)
+       try:
+           yield
+       finally:
+           os.dup2(saved_stdout_fd, 1)
+           os.close(devnull_fd)
+           os.close(saved_stdout_fd)
+
    def save_index_mobile_svg(plot, filename):
-       (index_mobile_example_dir / filename).write_text(plot.to_svg(), encoding="utf-8")
+       with _suppress_native_stdout():
+           svg = plot.to_svg()
+       (index_mobile_example_dir / filename).write_text(svg, encoding="utf-8")
        return plot
 
    s1 = cl.spatial(data_spatial, key="clusters")
@@ -199,15 +217,17 @@ Also, cellestial-specific layers, providing utilities, could be added to dimensi
        groups=["Lymphocytes", "B Cells"],
    )
 
-   streamed = cl.umap(
-       data_velocity,
-       key="clusters_coarse",
-       axis_type="arrow",
-       size=4,
-       alpha=0.4,
-       legend_ondata=True,
-       ondata_color="black",
-   ) + cl.stream()
+   streamed = (
+       cl.umap(
+           data_velocity,
+           key="clusters_coarse",
+           axis_type="arrow",
+           size=4,
+           alpha=0.4,
+       )
+       + cl.stream()
+       + cl.ondata_legend(halo_width=1)
+   )
 
    layers = gggrid([outlined, streamed]) + ggtb(size_zoomin=-1)
 
@@ -278,16 +298,15 @@ Also, cellestial-specific layers, providing utilities, could be added to dimensi
                 + cl.cluster_outlines(groups=["Lymphocytes", "B Cells"])
             )
             streamed = (
-                cl.umap(
-                    data_velocity,
-                    key="clusters_coarse",
-                    axis_type="arrow",
-                    size=4,
-                    alpha=0.4,
-                    legend_ondata=True,
-                    ondata_color="black",
-                )
-                + cl.stream()
+               cl.umap(
+                     data_velocity,
+                     key="clusters_coarse",
+                     axis_type="arrow",
+                     size=4,
+                     alpha=0.4,
+               )
+               + cl.stream()
+               + cl.ondata_legend(halo_width=1)
             )
             layers = gggrid([outlined, streamed]) + ggtb(size_zoomin=-1)
 

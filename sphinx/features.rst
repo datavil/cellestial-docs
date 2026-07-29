@@ -648,7 +648,7 @@ itself.
 
    .. jupyter-execute::
 
-      velocity_data = sc.read("data/endocrinogenesis_day15_pped.h5ad")
+      velocity_data = cl.datasets.pancreas(cache_directory="data")
 
    .. code-block:: python
 

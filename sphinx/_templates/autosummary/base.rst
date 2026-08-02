@@ -8,4 +8,16 @@
 
 .. currentmodule:: {{ module }}
 
+{% if objname in ["spatial", "spatials"] %}
+
+.. jupyter-execute::
+   :hide-code:
+
+   from pathlib import Path
+
+   import scanpy as sc
+
+   sc.settings.datasetdir = Path.home() / ".cache" / "cellestial" / "datasets"
+
+{% endif %}
 .. autofunction:: {{ objname }}

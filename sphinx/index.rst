@@ -90,6 +90,8 @@ Overlay categorical labels or gene expression on tissue coordinates.
 
    import cellestial as cl
 
+   sc.settings.datasetdir = Path.home() / ".cache" / "cellestial" / "datasets"
+
    data = cl.datasets.pbmc3k()
    data_spatial = cl.datasets.human_lymph_node()
    data_hne = sq.datasets.visium_hne_adata()

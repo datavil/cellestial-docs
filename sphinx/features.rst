@@ -648,7 +648,7 @@ itself.
 
    .. jupyter-execute::
 
-      velocity_data = cl.datasets.pancreas(cache_directory="data")
+      velocity_data = cl.datasets.pancreas()
 
    .. code-block:: python
 

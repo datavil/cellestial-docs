@@ -1,3 +1,7 @@
+#!/bin/sh
+
+set -e
+
 extra_sphinx_flag=""
 
 if [ "$1" = "-E" ]; then

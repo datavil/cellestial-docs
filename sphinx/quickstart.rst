@@ -44,7 +44,7 @@ the cached copy.
 
    import cellestial as cl
 
-   data = cl.datasets.pbmc3k(cache_directory="data")
+   data = cl.datasets.pbmc3k()
 
 .. jupyter-execute::
    :hide-code:
@@ -54,7 +54,7 @@ the cached copy.
 
    import cellestial as cl
 
-   data = cl.datasets.pbmc3k(cache_directory="data")
+   data = cl.datasets.pbmc3k()
    quickstart_mobile_example_dir = Path("sphinx/_static/mobile/quickstart")
    quickstart_mobile_example_dir.mkdir(parents=True, exist_ok=True)
 
@@ -414,13 +414,13 @@ Spatial overlay on tissue coordinates:
 
 .. code-block:: python
 
-   spatial_data = cl.datasets.human_lymph_node(cache_directory="data")
+   spatial_data = cl.datasets.human_lymph_node()
    cl.spatial(spatial_data, key="clusters")
 
 .. jupyter-execute::
    :hide-code:
 
-   spatial_data = cl.datasets.human_lymph_node(cache_directory="data")
+   spatial_data = cl.datasets.human_lymph_node()
 
    save_quickstart_mobile_svg(
       cl.spatial(spatial_data, key="clusters"),
@@ -435,7 +435,7 @@ RNA velocity stream on a UMAP:
 
 .. code-block:: python
 
-   velocity_data = cl.datasets.pancreas(cache_directory="data")
+   velocity_data = cl.datasets.pancreas()
    (
       cl.umap(
          velocity_data,
@@ -452,7 +452,7 @@ RNA velocity stream on a UMAP:
 .. jupyter-execute::
    :hide-code:
 
-   velocity_data = cl.datasets.pancreas(cache_directory="data")
+   velocity_data = cl.datasets.pancreas()
 
    save_quickstart_mobile_svg(
       (

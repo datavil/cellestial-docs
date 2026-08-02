@@ -162,10 +162,30 @@ dt.sig {
 .linenos {
     display: none !important;
 }
-/*adjust padding of code lines*/
+/*adjust code block shape and padding*/
+div.highlight {
+    background: transparent;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
 div.highlight pre {
+    border-radius: inherit;
     padding-left: 1.5em !important;
 }
+
+.jupyter_container .cell_input.code_cell,
+.jupyter_container .cell_input.code_cell > div[class^="highlight-"],
+.jupyter_container .cell_input.code_cell div.highlight,
+.jupyter_container .cell_input.code_cell pre {
+    border-radius: 1rem !important;
+}
+
+.jupyter_container .cell_input.code_cell {
+    overflow: hidden !important;
+}
+
+
 
 /* Sets line highlight to a dark gray with 0.6 opacity */
 div.highlight .hll {

@@ -1,8 +1,29 @@
+const isApiFigurePreview = new URLSearchParams(window.location.search).has("figure-preview");
+
+if (isApiFigurePreview) {
+    let letsPlotCallDelegate = () => {};
+    let previewPlotAccepted = false;
+
+    Object.defineProperty(window, "letsPlotCall", {
+        configurable: true,
+        get() {
+            return callback => {
+                if (!previewPlotAccepted) {
+                    previewPlotAccepted = true;
+                    letsPlotCallDelegate(callback);
+                }
+            };
+        },
+        set(delegate) {
+            letsPlotCallDelegate = delegate;
+        },
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Cellestial documentation: soft styling and parameter formatting active.");
 
-    const previewParameters = new URLSearchParams(window.location.search);
-    if (previewParameters.has("figure-preview")) {
+    if (isApiFigurePreview) {
         const figureOutput = Array.from(document.querySelectorAll(".cell_output")).find(
             output => output.querySelector('[data-lets-plot-script="plot"]')
         );
@@ -14,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const plotScript = figureOutput.querySelector('[data-lets-plot-script="plot"]');
             const plotContainer = plotScript.previousElementSibling;
-            let plotObserver = null;
+            let observedFigure = null;
             let previousWidth = 0;
             let previousHeight = 0;
 
@@ -39,21 +60,39 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             function observeRenderedFigure() {
-                const renderedFigure = plotContainer.querySelector("svg, canvas");
-                if (!renderedFigure) {
+                const visualElements = new Set([
+                    plotContainer.firstElementChild,
+                    ...plotContainer.querySelectorAll("svg, canvas, img"),
+                ]);
+                visualElements.delete(null);
+
+                const renderedFigure = Array.from(visualElements).reduce((largest, element) => {
+                    const bounds = element.getBoundingClientRect();
+                    const area = bounds.width * bounds.height;
+                    return !largest || area > largest.area ? { element, area, bounds } : largest;
+                }, null);
+
+                if (
+                    !renderedFigure
+                    || renderedFigure.bounds.width < 80
+                    || renderedFigure.bounds.height < 80
+                ) {
                     return false;
                 }
 
-                plotObserver?.disconnect();
-                new ResizeObserver(() => announcePreview(renderedFigure)).observe(renderedFigure);
-                announcePreview(renderedFigure);
+                if (observedFigure !== renderedFigure.element) {
+                    sizeObserver.disconnect();
+                    observedFigure = renderedFigure.element;
+                    sizeObserver.observe(observedFigure);
+                }
+                announcePreview(observedFigure);
                 return true;
             }
 
-            if (!observeRenderedFigure()) {
-                plotObserver = new MutationObserver(observeRenderedFigure);
-                plotObserver.observe(plotContainer, { childList: true, subtree: true });
-            }
+            const sizeObserver = new ResizeObserver(observeRenderedFigure);
+            const plotObserver = new MutationObserver(observeRenderedFigure);
+            plotObserver.observe(plotContainer, { childList: true, subtree: true });
+            observeRenderedFigure();
         } else {
             window.parent.postMessage({
                 type: "cellestial-api-figure-preview",

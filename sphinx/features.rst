@@ -14,7 +14,7 @@ Below is an overview of key features with examples.
 
     import cellestial as cl
 
-    data = sc.read_h5ad("data/pbmc3k_pped.h5ad")
+    data = cl.datasets.pbmc3k()
     features_mobile_example_dir = Path("sphinx/_static/mobile/features")
     features_mobile_example_dir.mkdir(parents=True, exist_ok=True)
 

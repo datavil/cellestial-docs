@@ -8,9 +8,10 @@ local_cellestial="$HOME/datavil/cellestial"
 
 uv sync --group docs
 uv pip install --reinstall --no-deps -e "$local_cellestial"
-uv run --no-sync --group docs sphinx-build sphinx/ _build/html/ -a -j auto ${extra_sphinx_flag}
+rm -rf -- _build/html _build/doctrees
+uv run --no-sync --group docs sphinx-build sphinx/ _build/html/ -a -j auto -d _build/doctrees ${extra_sphinx_flag}
 
-uv run --no-sync --group docs ghp-import -n -c cellestial.datavil.org -p -f -m "Deploy docs from $(git rev-parse --short HEAD)" _build/html/
+uv run --no-sync --group docs ghp-import -n -c cellestial.datavil.org -p -f -o -m "Deploy docs from $(git rev-parse --short HEAD)" _build/html/
 
 
 # Copy the SVGs used by README.md from their sphinx source locations into assets/.

@@ -138,7 +138,7 @@ html_theme_options = {
     "navbar_align": "left",
     "header_links_before_dropdown": 2,
     "search_bar_text": "Search",
-    "pygments_light_style": "manni",
+    "pygments_light_style": "xcode",
     "pygments_dark_style": "material",
     "show_nav_level": 0,
     "use_edit_page_button": False,

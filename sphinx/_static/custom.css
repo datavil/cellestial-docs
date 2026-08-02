@@ -567,3 +567,70 @@ details.sd-dropdown.sd-card summary.sd-card-header + div.sd-summary-content {
     margin-top: 0.3rem !important;
     margin-left: 1.1em !important;
 }
+
+/* First-figure previews for API links */
+.api-figure-tooltip {
+    position: fixed;
+    z-index: 1100;
+    overflow: hidden;
+    border: 1px solid var(--pst-color-border, #d1d5db);
+    border-radius: 0.75rem;
+    background: var(--pst-color-on-background, #ffffff);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.24);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(4px);
+    transition: opacity 0.12s ease, transform 0.12s ease,
+        width 0.12s ease, height 0.12s ease;
+}
+
+.api-figure-tooltip::before {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: var(--pst-color-text-muted);
+    content: "Loading preview\2026";
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+}
+
+.api-figure-tooltip.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.api-figure-tooltip-frame {
+    width: 720px;
+    height: var(--api-figure-frame-height, 500px);
+    border: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(var(--api-figure-preview-scale));
+    transform-origin: top left;
+}
+
+.api-figure-tooltip.is-ready::before {
+    content: none;
+}
+
+.api-figure-tooltip.is-ready .api-figure-tooltip-frame {
+    opacity: 1;
+}
+
+.api-figure-preview-document,
+.api-figure-preview-document body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background: var(--pst-color-on-background, #ffffff) !important;
+}
+
+.api-figure-preview-content {
+    width: max-content;
+    min-width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+}

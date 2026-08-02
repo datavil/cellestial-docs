@@ -1,0 +1,1678 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>dotplot</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=05c22323" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=62b68512"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/cellestial.dotplot';</script>
+    <script src="../_static/custom.js?v=22fa3d50"></script>
+    <link rel="icon" href="../_static/cellestial.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="stacked_violin" href="cellestial.stacked_violin.html" />
+    <link rel="prev" title="matrixplot" href="cellestial.matrixplot.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.58.2" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search"
+         aria-label="Search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/cellestial.svg" class="logo__image only-light" alt=""/>
+    <img src="../_static/cellestial.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Cellestial</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../API.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features.html">
+    Features
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../migrating_from_scanpy.html">
+    Migrating from Scanpy
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../quickstart.html">
+    Quickstart
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../philosophy.html">
+    Design Philosophy
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../performance.html">
+    Performance & Scalability
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/datavil/cellestial" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/cellestial" title="PyPI" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/pypi.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../API.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features.html">
+    Features
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../migrating_from_scanpy.html">
+    Migrating from Scanpy
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../quickstart.html">
+    Quickstart
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../philosophy.html">
+    Design Philosophy
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../performance.html">
+    Performance & Scalability
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/datavil/cellestial" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/cellestial" title="PyPI" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/pypi.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../API.html" class="nav-link">API Reference</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">dotplot</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="dotplot">
+<h1>dotplot<a class="headerlink" href="#dotplot" title="Link to this heading">#</a></h1>
+<p class="mobile-api-warning">
+  API pages include interactive (HTML) plots that would possibly not render correctly on a mobile device.
+</p><dl class="py function">
+<dt class="sig sig-object py" id="cellestial.dotplot">
+<span class="sig-name descname"><span class="pre">dotplot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AnnData</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_by</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">markers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_genes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FeatureSpec</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'variable'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_low</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#e6e6e6'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_mid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_high</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#D2042D'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mid_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'mean'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'median'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'mid'</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'mid'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_by</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'ascending'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'descending'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'descending'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">percentage_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'pct_exp'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'avg_exp'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rectangle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dendrogram</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dendrogram_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'black'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dendrogram_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dendrogram_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dendrogram_kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rectangle_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rectangle_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#3f3f3f'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rectangle_kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_labels_text_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_labels_bracket_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_labels_text_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'black'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_labels_bracket_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'black'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_labels_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tooltips</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'none'</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">FeatureSpec</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">geom_kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PlotSpec</span></span></span><a class="headerlink" href="#cellestial.dotplot" title="Link to this definition">#</a></dt>
+<dd><p>Dotplot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<a class="reference external" href="https://anndata.readthedocs.io/en/latest/generated/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.13.0.dev184+gb314e745f)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a>) – The AnnData object of the single cell data.</p></li>
+<li><p><strong>keys</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence[str]</span> <span class="pre">|</span> <span class="pre">Mapping[str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence[str]]</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Variable keys to include, placed on the x-axis. A mapping assigns
+keys to group labels (no key in more than one group). Must be
+<cite>None</cite> when <cite>markers</cite> is set.</p></li>
+<li><p><strong>group_by</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – The key to group the data by. Inferred from a precomputed ranking
+when <cite>markers</cite> is set.</p></li>
+<li><p><strong>markers</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span> <span class="pre">|</span> <span class="pre">str</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – Derive <cite>keys</cite> from a precomputed ranking. Pass <cite>True</cite> to use the
+default ranking key, or a string to read a custom key (e.g.
+<cite>“rank_genes_groups_wilcoxon”</cite>).</p></li>
+<li><p><strong>n_genes</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">5</span></code>) – Number of top genes to take per group when <cite>markers</cite> is set.</p></li>
+<li><p><strong>groups</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence[str]</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Subset of groups to include when <cite>markers</cite> is set;
+<cite>None</cite> keeps all groups in their stored order.</p></li>
+<li><p><strong>mapping</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureSpec</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Aesthetic mappings for the plot, the result of <cite>aes()</cite>.</p></li>
+<li><p><strong>threshold</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">0</span></code>) – The expression threshold to consider a gene as expressed.</p></li>
+<li><p><strong>size_scale</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">1.0</span></code>) – Scaling factor for the point sizes in the plot.</p></li>
+<li><p><strong>variable_column</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'variable'</span></code>) – Name for the variable column after unpivoting.</p></li>
+<li><p><strong>color_low</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'#e6e6e6'</span></code>) – Color for low values in the gradient.</p></li>
+<li><p><strong>color_mid</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Color for mid values in the gradient.</p></li>
+<li><p><strong>color_high</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'#D2042D'</span></code>) – Color for high values in the gradient.</p></li>
+<li><p><strong>mid_point</strong> (<code class="docutils literal notranslate"><span class="pre">{'mean',</span> <span class="pre">'median',</span> <span class="pre">'mid'}</span></code> | float, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'mid'</span></code>) – Midpoint for the color gradient.</p></li>
+<li><p><strong>sort_by</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">Sequence[str]</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – The column or columns to sort the results by.</p></li>
+<li><p><strong>sort_order</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'descending'</span></code>) – The sort order, either ‘ascending’ or ‘descending’.</p></li>
+<li><p><strong>percentage_key</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'pct_exp'</span></code>) – The name of the percentage column.</p></li>
+<li><p><strong>mean_key</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'avg_exp'</span></code>) – The name of the mean expression column.</p></li>
+<li><p><strong>rectangle</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>) – Whether to add a rectangle border around the data area</p></li>
+<li><p><strong>dendrogram</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – Whether to add a dendrogram for the <cite>group_by</cite> axis.
+Uses <cite>scanpy.tl.dendrogram</cite> if not already computed.
+When True, group order is determined by the dendrogram.</p></li>
+<li><p><strong>dendrogram_color</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'black'</span></code>) – Color of the dendrogram segments.</p></li>
+<li><p><strong>dendrogram_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – Size (thickness) of the dendrogram segments.</p></li>
+<li><p><strong>dendrogram_key</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Specific key holding the precomputed dendrogram.
+By default, <cite>dendrogram_{group_by}</cite> is used.</p></li>
+<li><p><strong>dendrogram_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Additional parameters to pass to the dendrogram geom_segment.</p></li>
+<li><p><strong>rectangle_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">0.8</span></code>) – Size (thickness) of the rectangle border.</p></li>
+<li><p><strong>rectangle_color</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'#3f3f3f'</span></code>) – Color of the rectangle border.</p></li>
+<li><p><strong>rectangle_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Additional parameters to pass to the rectangle geom_rect.</p></li>
+<li><p><strong>key_labels</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>) – Whether to draw bracket labels above the plot when <cite>keys</cite> is a mapping.</p></li>
+<li><p><strong>key_labels_text_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">1.0</span></code>) – Scale multiplier on the auto-computed bracket label text size.</p></li>
+<li><p><strong>key_labels_bracket_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">0.6</span></code>) – Size (thickness) of the bracket lines.</p></li>
+<li><p><strong>key_labels_text_color</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'black'</span></code>) – Color of the bracket label text.</p></li>
+<li><p><strong>key_labels_bracket_color</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'black'</span></code>) – Color of the bracket lines.</p></li>
+<li><p><strong>key_labels_width</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">0.6</span></code>) – Bracket width (in column units) for a singleton group. Multi-key groups
+extend <cite>key_labels_width / 2</cite> past the first and last key on each side.</p></li>
+<li><p><strong>tooltips</strong> (<code class="docutils literal notranslate"><span class="pre">{'none'}</span></code> | Sequence[str] | FeatureSpec | None, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Tooltips to show when hovering over the geom.
+Accepts Sequence[str] or result of <cite>layer_tooltips()</cite> for more complex tooltips.
+Use ‘none’ to disable tooltips.</p></li>
+<li><p><strong>interactive</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – Whether to make the plot interactive.</p></li>
+<li><p><strong>**geom_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Any</span></code>) – Additional keyword arguments for the geom_point layer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://lets-plot.org/python/pages/api/lets_plot.plot.core.PlotSpec.html#lets_plot.plot.core.PlotSpec" title="(in lets-plot v4.11.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlotSpec</span></code></a> – Dotplot.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>UnsupportedDataTypeError</strong> – If <cite>data</cite> is not a supported single-cell data object.</p></li>
+<li><p><strong>KeyNotFoundError</strong> – If <cite>markers</cite> is enabled and the requested ranking result or
+    group is missing.</p></li>
+<li><p><strong>DuplicateKeysError</strong> – If a mapping passed to <cite>keys</cite> assigns the same key to multiple groups.</p></li>
+<li><p><strong>ValueError</strong> – If <cite>keys</cite> and <cite>group_by</cite> are missing while <cite>markers</cite> is
+    disabled.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>When <cite>dendrogram=True</cite> and the requested dendrogram is absent from
+<cite>data.uns</cite>, plot construction calls <cite>scanpy.tl.dendrogram</cite> and stores the
+result in <cite>data.uns</cite>. This mutates the input <cite>AnnData</cite>. Precompute the
+dendrogram under <cite>dendrogram_key</cite> to avoid mutation during plotting.</p>
+<p class="rubric">Examples</p>
+<p>A simple dotplot.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">scanpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sc</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">lets_plot</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">cellestial</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">cl</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">pbmc3k</span><span class="p">()</span>
+
+<span class="n">markers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;C1QA&quot;</span><span class="p">,</span> <span class="s2">&quot;PSAP&quot;</span><span class="p">,</span> <span class="s2">&quot;CD79A&quot;</span><span class="p">,</span> <span class="s2">&quot;CD79B&quot;</span><span class="p">,</span> <span class="s2">&quot;CST3&quot;</span><span class="p">,</span> <span class="s2">&quot;LYZ&quot;</span><span class="p">]</span>
+
+<span class="n">dot</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="p">,</span>
+    <span class="n">keys</span><span class="o">=</span><span class="n">markers</span><span class="p">,</span>
+    <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;cell_type_lvl1&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">dot</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="nWSflE"></div>
+<script type="text/javascript" data-lets-plot-script="library">
+    if(!window.letsPlotCallQueue) {
+        window.letsPlotCallQueue = [];
+    };
+    window.letsPlotCall = function(f) {
+        window.letsPlotCallQueue.push(f);
+    };
+    (function() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.11.0/js-package/distr/lets-plot.min.js";
+        script.onload = function() {
+            window.letsPlotCall = function(f) {f();};
+            window.letsPlotCallQueue.forEach(function(f) {f();});
+            window.letsPlotCallQueue = [];
+
+        };
+        script.onerror = function(event) {
+            window.letsPlotCall = function(f) {};    // noop
+            window.letsPlotCallQueue = [];
+            var div = document.createElement("div");
+            div.style.color = 'darkred';
+            div.textContent = 'Error loading Lets-Plot JS';
+            document.getElementById("nWSflE").appendChild(div);
+        };
+        var e = document.getElementById("nWSflE");
+        e.appendChild(script);
+    })()
+</script>
+</div><div class="output text_html">   <div id="W40JD4" ></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+
+   (function() {
+   // ----------
+
+   const forceImmediateRender = false;
+   const responsive = false;
+
+   let sizing = {
+       width_mode: "MIN",
+       height_mode: "SCALED",
+       width: null, 
+       height: null 
+   };
+
+   const preferredWidth = document.body.dataset.letsPlotPreferredWidth;
+   if (preferredWidth !== undefined) {
+       sizing = {
+           width_mode: 'FIXED',
+           height_mode: 'SCALED',
+           width: parseFloat(preferredWidth)
+       };
+   }
+
+   const containerDiv = document.getElementById("W40JD4");
+   let fig = null;
+
+   function renderPlot() {
+       if (fig === null) {
+           const plotSpec = {
+"data":{
+"cell_type_lvl1":["Lymphocytes","Erythroid","B Cells","Lymphocytes","B Cells","Monocytes","Lymphocytes","B Cells","Erythroid","Monocytes","Monocytes","Erythroid","Monocytes","Lymphocytes","Monocytes","Lymphocytes","B Cells","B Cells","B Cells","Erythroid","Monocytes","Lymphocytes","Erythroid","Erythroid"],
+"variable":["PSAP","LYZ","LYZ","CD79A","CD79A","PSAP","C1QA","CST3","CD79A","CD79B","C1QA","C1QA","LYZ","CST3","CD79A","CD79B","CD79B","PSAP","C1QA","PSAP","CST3","LYZ","CD79B","CST3"],
+"avg_exp":[0.286778062582016,0.1779816746711731,0.07903527468442917,0.06608607620000839,0.006611169781535864,2.156586170196533,0.0016207569278776646,0.014405783265829086,1.6982500553131104,0.0795520693063736,0.021221738308668137,0.0,3.775599956512451,0.11011239886283875,0.038867611438035965,0.13475686311721802,0.009294817224144936,0.06705227494239807,4.092900489922613E-4,0.25333958864212036,2.3115522861480713,0.2624756097793579,1.7575407028198242,0.05863718315958977],
+"pct_exp":[28.78304701162432,19.91304347826087,19.44922547332186,6.676267873675548,1.9506597819850833,98.54304635761589,0.14401810513321675,4.016064257028113,87.34782608695653,12.847682119205297,2.251655629139073,0.0,99.60264900662251,8.980557555807016,5.099337748344371,13.578849912560436,2.4670109007458403,17.096959265633966,0.05737234652897303,29.17391304347826,99.47019867549669,21.37640160477317,88.17391304347825,6.521739130434782],
+"position_x":[1.0,5.0,5.0,2.0,2.0,1.0,0.0,4.0,2.0,3.0,0.0,0.0,5.0,4.0,2.0,3.0,3.0,1.0,0.0,1.0,4.0,5.0,3.0,4.0],
+"position_y":[0.0,1.0,2.0,0.0,2.0,3.0,0.0,2.0,1.0,3.0,3.0,1.0,3.0,0.0,3.0,0.0,2.0,2.0,2.0,1.0,3.0,0.0,1.0,1.0]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"cell_type_lvl1"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"avg_exp"
+},{
+"type":"float",
+"column":"pct_exp"
+},{
+"type":"float",
+"column":"position_x"
+},{
+"type":"float",
+"column":"position_y"
+}]
+},
+"theme":{
+"name":"classic",
+"text":{
+"color":"#1f1f1f",
+"family":"Arial",
+"blank":false
+},
+"axis_title":{
+"blank":true
+},
+"axis_text_x":{
+"angle":90.0,
+"blank":false
+},
+"axis_line":{
+"blank":true
+},
+"legend_text":{
+"size":10.0,
+"blank":false
+},
+"legend_title":{
+"size":12.0,
+"blank":false
+},
+"legend_key_spacing_y":0.0,
+"legend_box_spacing":0.0,
+"panel_border":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"scale_mapper_kind":"color_gradient",
+"low":"#e6e6e6",
+"high":"#D2042D"
+},{
+"aesthetic":"size",
+"range":[2.0,20.0]
+},{
+"aesthetic":"x",
+"breaks":[0.0,1.0,2.0,3.0,4.0,5.0],
+"labels":["C1QA","PSAP","CD79A","CD79B","CST3","LYZ"],
+"limits":[-0.5,5.5],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"y",
+"breaks":[0.0,1.0,2.0,3.0],
+"labels":["Lymphocytes","Erythroid","B Cells","Monocytes"],
+"limits":[-0.5,3.5],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"size",
+"breaks":[25.0,50.0,75.0,100.0],
+"trans":"sqrt"
+}],
+"layers":[{
+"geom":"point",
+"mapping":{
+"x":"position_x",
+"y":"position_y",
+"size":"pct_exp",
+"color":"avg_exp"
+},
+"tooltips":{
+"formats":[],
+"variables":["cell_type_lvl1","variable","avg_exp","pct_exp"]
+},
+"data_meta":{
+},
+"data":{
+}
+},{
+"geom":"rect",
+"data":{
+"xmin":[-0.5],
+"xmax":[5.5],
+"ymin":[-0.5],
+"ymax":[3.5]
+},
+"mapping":{
+"xmin":"xmin",
+"xmax":"xmax",
+"ymin":"ymin",
+"ymax":"ymax"
+},
+"inherit_aes":false,
+"data_meta":{
+"series_annotations":[{
+"type":"float",
+"column":"xmin"
+},{
+"type":"float",
+"column":"xmax"
+},{
+"type":"float",
+"column":"ymin"
+},{
+"type":"float",
+"column":"ymax"
+}]
+},
+"color":"#3f3f3f",
+"size":0.8,
+"fill":"rgba(0,0,0,0)"
+}],
+"metainfo_list":[],
+"spec_id":"1"
+};
+           window.letsPlotCall(function() { fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing); });
+       } else {
+           fig.updateView({});
+       }
+   }
+
+   const renderImmediately = 
+       forceImmediateRender || (
+           sizing.width_mode === 'FIXED' && 
+           (sizing.height_mode === 'FIXED' || sizing.height_mode === 'SCALED')
+       );
+
+   if (renderImmediately) {
+       renderPlot();
+   }
+
+   if (!renderImmediately || responsive) {
+       // Set up observer for initial sizing or continuous monitoring
+       var observer = new ResizeObserver(function(entries) {
+           for (let entry of entries) {
+               if (entry.contentBoxSize && 
+                   entry.contentBoxSize[0].inlineSize > 0) {
+                   if (!responsive && observer) {
+                       observer.disconnect();
+                       observer = null;
+                   }
+                   renderPlot();
+                   if (!responsive) {
+                       break;
+                   }
+               }
+           }
+       });
+
+       observer.observe(containerDiv);
+   }
+
+   // ----------
+   })();
+
+   </script></div></div>
+</div>
+<p>Dotplot allows dendrograms among the groups.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dot</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="p">,</span>
+    <span class="n">keys</span><span class="o">=</span><span class="n">markers</span><span class="p">,</span>
+    <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;cell_type_lvl1&quot;</span><span class="p">,</span>
+<span class="hll">    <span class="n">dendrogram</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span class="p">)</span>
+<span class="n">dot</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">   <div id="RVtvxe" ></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+
+   (function() {
+   // ----------
+
+   const forceImmediateRender = false;
+   const responsive = false;
+
+   let sizing = {
+       width_mode: "MIN",
+       height_mode: "SCALED",
+       width: null, 
+       height: null 
+   };
+
+   const preferredWidth = document.body.dataset.letsPlotPreferredWidth;
+   if (preferredWidth !== undefined) {
+       sizing = {
+           width_mode: 'FIXED',
+           height_mode: 'SCALED',
+           width: parseFloat(preferredWidth)
+       };
+   }
+
+   const containerDiv = document.getElementById("RVtvxe");
+   let fig = null;
+
+   function renderPlot() {
+       if (fig === null) {
+           const plotSpec = {
+"data":{
+"cell_type_lvl1":["B Cells","Erythroid","B Cells","Monocytes","Monocytes","Lymphocytes","Erythroid","Monocytes","Lymphocytes","Lymphocytes","Lymphocytes","Monocytes","Erythroid","Monocytes","B Cells","Erythroid","Erythroid","Monocytes","Lymphocytes","B Cells","B Cells","Erythroid","B Cells","Lymphocytes"],
+"variable":["PSAP","PSAP","LYZ","C1QA","CD79B","CD79A","CD79B","LYZ","C1QA","PSAP","LYZ","CD79A","C1QA","PSAP","C1QA","CST3","LYZ","CST3","CD79B","CD79A","CD79B","CD79A","CST3","CST3"],
+"avg_exp":[0.06705227494239807,0.25333958864212036,0.07903527468442917,0.021221738308668137,0.0795520693063736,0.06608607620000839,1.7575407028198242,3.775599956512451,0.0016207569278776646,0.286778062582016,0.2624756097793579,0.038867611438035965,0.0,2.156586170196533,4.092900489922613E-4,0.05863718315958977,0.1779816746711731,2.3115522861480713,0.13475686311721802,0.006611169781535864,0.009294817224144936,1.6982500553131104,0.014405783265829086,0.11011239886283875],
+"pct_exp":[17.096959265633966,29.17391304347826,19.44922547332186,2.251655629139073,12.847682119205297,6.676267873675548,88.17391304347825,99.60264900662251,0.14401810513321675,28.78304701162432,21.37640160477317,5.099337748344371,0.0,98.54304635761589,0.05737234652897303,6.521739130434782,19.91304347826087,99.47019867549669,13.578849912560436,1.9506597819850833,2.4670109007458403,87.34782608695653,4.016064257028113,8.980557555807016],
+"position_x":[1.0,1.0,5.0,0.0,3.0,2.0,3.0,5.0,0.0,1.0,5.0,2.0,0.0,1.0,0.0,4.0,5.0,4.0,3.0,2.0,3.0,2.0,4.0,4.0],
+"position_y":[0.0,2.0,0.0,1.0,1.0,3.0,2.0,1.0,3.0,3.0,3.0,1.0,2.0,1.0,0.0,2.0,2.0,1.0,3.0,0.0,0.0,2.0,0.0,3.0]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"cell_type_lvl1"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"avg_exp"
+},{
+"type":"float",
+"column":"pct_exp"
+},{
+"type":"float",
+"column":"position_x"
+},{
+"type":"float",
+"column":"position_y"
+}]
+},
+"theme":{
+"name":"classic",
+"text":{
+"color":"#1f1f1f",
+"family":"Arial",
+"blank":false
+},
+"axis_title":{
+"blank":true
+},
+"axis_text_x":{
+"angle":90.0,
+"blank":false
+},
+"axis_line":{
+"blank":true
+},
+"legend_text":{
+"size":10.0,
+"blank":false
+},
+"legend_title":{
+"size":12.0,
+"blank":false
+},
+"legend_key_spacing_y":0.0,
+"legend_box_spacing":0.0,
+"panel_border":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"scale_mapper_kind":"color_gradient",
+"low":"#e6e6e6",
+"high":"#D2042D"
+},{
+"aesthetic":"size",
+"range":[2.0,20.0]
+},{
+"aesthetic":"x",
+"breaks":[0.0,1.0,2.0,3.0,4.0,5.0],
+"labels":["C1QA","PSAP","CD79A","CD79B","CST3","LYZ"],
+"limits":[-0.5,6.4],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"y",
+"breaks":[0.0,1.0,2.0,3.0],
+"labels":["B Cells","Monocytes","Erythroid","Lymphocytes"],
+"limits":[-0.5,3.5],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"size",
+"breaks":[25.0,50.0,75.0,100.0],
+"trans":"sqrt"
+}],
+"layers":[{
+"geom":"point",
+"mapping":{
+"x":"position_x",
+"y":"position_y",
+"size":"pct_exp",
+"color":"avg_exp"
+},
+"tooltips":{
+"formats":[],
+"variables":["cell_type_lvl1","variable","avg_exp","pct_exp"]
+},
+"data_meta":{
+},
+"data":{
+}
+},{
+"geom":"path",
+"data":{
+"x":[5.5,6.035357052034639,6.035357052034639,5.5,5.5,6.137826393309181,6.137826393309181,6.035357052034639,5.5,6.4,6.4,6.137826393309181],
+"y":[2.0,2.0,3.0,3.0,1.0,1.0,2.5,2.5,0.0,0.0,1.75,1.75],
+"group":[0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,2.0,2.0,2.0,2.0]
+},
+"mapping":{
+"x":"x",
+"y":"y",
+"group":"group"
+},
+"data_meta":{
+"series_annotations":[{
+"type":"float",
+"column":"x"
+},{
+"type":"float",
+"column":"y"
+},{
+"type":"int",
+"column":"group"
+}]
+},
+"color":"black",
+"size":0.5
+},{
+"geom":"rect",
+"data":{
+"xmin":[-0.5],
+"xmax":[5.5],
+"ymin":[-0.5],
+"ymax":[3.5]
+},
+"mapping":{
+"xmin":"xmin",
+"xmax":"xmax",
+"ymin":"ymin",
+"ymax":"ymax"
+},
+"inherit_aes":false,
+"data_meta":{
+"series_annotations":[{
+"type":"float",
+"column":"xmin"
+},{
+"type":"float",
+"column":"xmax"
+},{
+"type":"float",
+"column":"ymin"
+},{
+"type":"float",
+"column":"ymax"
+}]
+},
+"color":"#3f3f3f",
+"size":0.8,
+"fill":"rgba(0,0,0,0)"
+}],
+"metainfo_list":[],
+"spec_id":"2"
+};
+           window.letsPlotCall(function() { fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing); });
+       } else {
+           fig.updateView({});
+       }
+   }
+
+   const renderImmediately = 
+       forceImmediateRender || (
+           sizing.width_mode === 'FIXED' && 
+           (sizing.height_mode === 'FIXED' || sizing.height_mode === 'SCALED')
+       );
+
+   if (renderImmediately) {
+       renderPlot();
+   }
+
+   if (!renderImmediately || responsive) {
+       // Set up observer for initial sizing or continuous monitoring
+       var observer = new ResizeObserver(function(entries) {
+           for (let entry of entries) {
+               if (entry.contentBoxSize && 
+                   entry.contentBoxSize[0].inlineSize > 0) {
+                   if (!responsive && observer) {
+                       observer.disconnect();
+                       observer = null;
+                   }
+                   renderPlot();
+                   if (!responsive) {
+                       break;
+                   }
+               }
+           }
+       });
+
+       observer.observe(containerDiv);
+   }
+
+   // ----------
+   })();
+
+   </script></div></div>
+</div>
+<p>Modify the dendrogram and rectangle borders.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dot</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="p">,</span>
+    <span class="n">keys</span><span class="o">=</span><span class="n">markers</span><span class="p">,</span>
+    <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;cell_type_lvl1&quot;</span><span class="p">,</span>
+    <span class="n">dendrogram</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="hll">    <span class="n">dendrogram_color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span>
+</span><span class="hll">    <span class="n">dendrogram_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+</span><span class="hll">    <span class="n">rectangle_color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span>
+</span><span class="hll">    <span class="n">rectangle_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+</span><span class="p">)</span>
+<span class="n">dot</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">   <div id="hHdOeq" ></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+
+   (function() {
+   // ----------
+
+   const forceImmediateRender = false;
+   const responsive = false;
+
+   let sizing = {
+       width_mode: "MIN",
+       height_mode: "SCALED",
+       width: null, 
+       height: null 
+   };
+
+   const preferredWidth = document.body.dataset.letsPlotPreferredWidth;
+   if (preferredWidth !== undefined) {
+       sizing = {
+           width_mode: 'FIXED',
+           height_mode: 'SCALED',
+           width: parseFloat(preferredWidth)
+       };
+   }
+
+   const containerDiv = document.getElementById("hHdOeq");
+   let fig = null;
+
+   function renderPlot() {
+       if (fig === null) {
+           const plotSpec = {
+"data":{
+"cell_type_lvl1":["B Cells","Lymphocytes","B Cells","B Cells","Erythroid","Monocytes","Lymphocytes","Monocytes","Lymphocytes","Monocytes","B Cells","Erythroid","Monocytes","Erythroid","Monocytes","B Cells","Lymphocytes","Erythroid","Lymphocytes","Lymphocytes","Monocytes","Erythroid","B Cells","Erythroid"],
+"variable":["CD79A","CST3","CD79B","PSAP","CD79B","LYZ","CD79A","PSAP","LYZ","CD79B","LYZ","CD79A","CST3","CST3","CD79A","CST3","C1QA","LYZ","PSAP","CD79B","C1QA","PSAP","C1QA","C1QA"],
+"avg_exp":[0.006611169781535864,0.11011239886283875,0.009294817224144936,0.06705227494239807,1.7575407028198242,3.775599956512451,0.06608607620000839,2.156586170196533,0.2624756097793579,0.0795520693063736,0.07903527468442917,1.6982500553131104,2.3115522861480713,0.05863718315958977,0.038867611438035965,0.014405783265829086,0.0016207569278776646,0.1779816746711731,0.286778062582016,0.13475686311721802,0.021221738308668137,0.25333958864212036,4.092900489922613E-4,0.0],
+"pct_exp":[1.9506597819850833,8.980557555807016,2.4670109007458403,17.096959265633966,88.17391304347825,99.60264900662251,6.676267873675548,98.54304635761589,21.37640160477317,12.847682119205297,19.44922547332186,87.34782608695653,99.47019867549669,6.521739130434782,5.099337748344371,4.016064257028113,0.14401810513321675,19.91304347826087,28.78304701162432,13.578849912560436,2.251655629139073,29.17391304347826,0.05737234652897303,0.0],
+"position_x":[2.0,4.0,3.0,1.0,3.0,5.0,2.0,1.0,5.0,3.0,5.0,2.0,4.0,4.0,2.0,4.0,0.0,5.0,1.0,3.0,0.0,1.0,0.0,0.0],
+"position_y":[0.0,3.0,0.0,0.0,2.0,1.0,3.0,1.0,3.0,1.0,0.0,2.0,1.0,2.0,1.0,0.0,3.0,2.0,3.0,3.0,1.0,2.0,0.0,2.0]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"cell_type_lvl1"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"avg_exp"
+},{
+"type":"float",
+"column":"pct_exp"
+},{
+"type":"float",
+"column":"position_x"
+},{
+"type":"float",
+"column":"position_y"
+}]
+},
+"theme":{
+"name":"classic",
+"text":{
+"color":"#1f1f1f",
+"family":"Arial",
+"blank":false
+},
+"axis_title":{
+"blank":true
+},
+"axis_text_x":{
+"angle":90.0,
+"blank":false
+},
+"axis_line":{
+"blank":true
+},
+"legend_text":{
+"size":10.0,
+"blank":false
+},
+"legend_title":{
+"size":12.0,
+"blank":false
+},
+"legend_key_spacing_y":0.0,
+"legend_box_spacing":0.0,
+"panel_border":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"scale_mapper_kind":"color_gradient",
+"low":"#e6e6e6",
+"high":"#D2042D"
+},{
+"aesthetic":"size",
+"range":[2.0,20.0]
+},{
+"aesthetic":"x",
+"breaks":[0.0,1.0,2.0,3.0,4.0,5.0],
+"labels":["C1QA","PSAP","CD79A","CD79B","CST3","LYZ"],
+"limits":[-0.5,6.4],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"y",
+"breaks":[0.0,1.0,2.0,3.0],
+"labels":["B Cells","Monocytes","Erythroid","Lymphocytes"],
+"limits":[-0.5,3.5],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"size",
+"breaks":[25.0,50.0,75.0,100.0],
+"trans":"sqrt"
+}],
+"layers":[{
+"geom":"point",
+"mapping":{
+"x":"position_x",
+"y":"position_y",
+"size":"pct_exp",
+"color":"avg_exp"
+},
+"tooltips":{
+"formats":[],
+"variables":["cell_type_lvl1","variable","avg_exp","pct_exp"]
+},
+"data_meta":{
+},
+"data":{
+}
+},{
+"geom":"path",
+"data":{
+"x":[5.5,6.035357052034639,6.035357052034639,5.5,5.5,6.137826393309181,6.137826393309181,6.035357052034639,5.5,6.4,6.4,6.137826393309181],
+"y":[2.0,2.0,3.0,3.0,1.0,1.0,2.5,2.5,0.0,0.0,1.75,1.75],
+"group":[0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,2.0,2.0,2.0,2.0]
+},
+"mapping":{
+"x":"x",
+"y":"y",
+"group":"group"
+},
+"data_meta":{
+"series_annotations":[{
+"type":"float",
+"column":"x"
+},{
+"type":"float",
+"column":"y"
+},{
+"type":"int",
+"column":"group"
+}]
+},
+"color":"gray",
+"size":1.0
+},{
+"geom":"rect",
+"data":{
+"xmin":[-0.5],
+"xmax":[5.5],
+"ymin":[-0.5],
+"ymax":[3.5]
+},
+"mapping":{
+"xmin":"xmin",
+"xmax":"xmax",
+"ymin":"ymin",
+"ymax":"ymax"
+},
+"inherit_aes":false,
+"data_meta":{
+"series_annotations":[{
+"type":"float",
+"column":"xmin"
+},{
+"type":"float",
+"column":"xmax"
+},{
+"type":"float",
+"column":"ymin"
+},{
+"type":"float",
+"column":"ymax"
+}]
+},
+"color":"gray",
+"size":3.0,
+"fill":"rgba(0,0,0,0)"
+}],
+"metainfo_list":[],
+"spec_id":"3"
+};
+           window.letsPlotCall(function() { fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing); });
+       } else {
+           fig.updateView({});
+       }
+   }
+
+   const renderImmediately = 
+       forceImmediateRender || (
+           sizing.width_mode === 'FIXED' && 
+           (sizing.height_mode === 'FIXED' || sizing.height_mode === 'SCALED')
+       );
+
+   if (renderImmediately) {
+       renderPlot();
+   }
+
+   if (!renderImmediately || responsive) {
+       // Set up observer for initial sizing or continuous monitoring
+       var observer = new ResizeObserver(function(entries) {
+           for (let entry of entries) {
+               if (entry.contentBoxSize && 
+                   entry.contentBoxSize[0].inlineSize > 0) {
+                   if (!responsive && observer) {
+                       observer.disconnect();
+                       observer = null;
+                   }
+                   renderPlot();
+                   if (!responsive) {
+                       break;
+                   }
+               }
+           }
+       });
+
+       observer.observe(containerDiv);
+   }
+
+   // ----------
+   })();
+
+   </script></div></div>
+</div>
+<p>Plot the top genes from a precomputed ranking:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sc</span><span class="o">.</span><span class="n">tl</span><span class="o">.</span><span class="n">rank_genes_groups</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">groupby</span><span class="o">=</span><span class="s2">&quot;cell_type_lvl1&quot;</span><span class="p">)</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">markers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">n_genes</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>WARNING: It seems you use rank_genes_groups on the raw count data. Please logarithmize your data before calling rank_genes_groups.
+</pre></div>
+</div>
+<div class="output text_html">   <div id="WJh54A" ></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+
+   (function() {
+   // ----------
+
+   const forceImmediateRender = false;
+   const responsive = false;
+
+   let sizing = {
+       width_mode: "MIN",
+       height_mode: "SCALED",
+       width: null, 
+       height: null 
+   };
+
+   const preferredWidth = document.body.dataset.letsPlotPreferredWidth;
+   if (preferredWidth !== undefined) {
+       sizing = {
+           width_mode: 'FIXED',
+           height_mode: 'SCALED',
+           width: parseFloat(preferredWidth)
+       };
+   }
+
+   const containerDiv = document.getElementById("WJh54A");
+   let fig = null;
+
+   function renderPlot() {
+       if (fig === null) {
+           const plotSpec = {
+"data":{
+"cell_type_lvl1":["B Cells","Erythroid","Erythroid","Monocytes","Monocytes","Monocytes","Monocytes","Lymphocytes","Erythroid","Lymphocytes","Lymphocytes","B Cells","B Cells","B Cells","Monocytes","Lymphocytes","Monocytes","Erythroid","Monocytes","Erythroid","Lymphocytes","Lymphocytes","Monocytes","Erythroid","Monocytes","B Cells","B Cells","Monocytes","Lymphocytes","B Cells","Lymphocytes","Lymphocytes","Lymphocytes","Lymphocytes","B Cells","Lymphocytes","Lymphocytes","B Cells","Erythroid","Monocytes","Erythroid","B Cells","Erythroid","B Cells","Erythroid","B Cells","Lymphocytes","Monocytes","Lymphocytes","B Cells","Monocytes","Lymphocytes","Erythroid","Erythroid","Erythroid","Monocytes","Erythroid","Erythroid","Monocytes","Monocytes","B Cells","B Cells","Erythroid","B Cells","Erythroid","B Cells","B Cells","Lymphocytes","Monocytes","Erythroid","B Cells","Lymphocytes","Monocytes","Erythroid","Lymphocytes","Monocytes","B Cells","Erythroid","Lymphocytes","Monocytes"],
+"variable":["CD74","HBB","CD3D","GRN","TYROBP","CD74","CD37","HBA2","CD74","CD79A","HBB","HBA1","TYROBP","MNDA","S100A4","IL32","HLA-DRA","CD37","CD3G","S100A4","CD3D","ALAS2","IL32","CD79B","HBA2","CD79A","BCL11B","ALAS2","BCL11B","GRN","S100A6","GRN","S100A4","HLA-DRA","UBB","CD37","MNDA","S100A4","CD79A","UBB","IL32","CD3E","BCL11B","CD37","GRN","CD79B","CD79B","CD3E","CD74","CD3D","CD79B","CD3G","CD3E","HLA-DRA","HBA1","CD79A","MNDA","CD3G","HBB","MNDA","CD3G","HBA2","HBA2","ALAS2","S100A6","HLA-DRA","HBB","HBA1","HBA1","ALAS2","IL32","UBB","CD3D","TYROBP","CD3E","BCL11B","S100A6","UBB","TYROBP","S100A6"],
+"avg_exp":[0.05831320956349373,2.79763126373291,0.08096830546855927,1.455207109451294,2.101731300354004,2.222085475921631,0.9531380534172058,2.0171799659729004,3.033287763595581,0.06608607620000839,2.952873468399048,6.143127918243408,0.010527603328227997,0.009637707844376564,3.0382888317108154,1.218312382698059,2.0469655990600586,2.183640718460083,0.044079992920160294,0.32432061433792114,0.930357813835144,0.0688130110502243,0.09894939512014389,1.7575407028198242,1.9575613737106323,0.006611169781535864,0.014839583076536655,0.05380493402481079,1.1062132120132446,0.008594783954322338,1.0598373413085938,0.10292061418294907,1.0687872171401978,0.29395735263824463,3.1568477153778076,0.6828662753105164,0.043728966265916824,0.04226740822196007,1.6982500553131104,0.9605943560600281,0.10384874790906906,0.010757164098322392,0.07262982428073883,0.014500198885798454,0.1404360830783844,0.009294817224144936,0.13475686311721802,0.053491510450839996,0.5661149621009827,0.012992710806429386,0.0795520693063736,0.7342081665992737,0.061399195343256,2.912881851196289,1.1757912635803223,0.038867611438035965,0.04897335171699524,0.05101563036441803,2.6542725563049316,2.0450942516326904,0.00840826891362667,7.035512924194336,1.860247254371643,2.2028450965881348,0.5526635050773621,0.0452377088367939,8.207131385803223,1.2504665851593018,1.3046469688415527,0.06390366703271866,0.026608336716890335,0.9504413604736328,0.06768525391817093,0.031207755208015442,0.7609887719154358,0.07368151843547821,0.048866111785173416,1.20622718334198,0.168193519115448,3.14500093460083],
+"pct_exp":[15.547905909351693,99.91304347826086,7.91304347826087,95.56291390728477,97.81456953642385,97.48344370860927,84.50331125827815,97.34595206254501,97.43478260869564,6.676267873675548,99.92799094743339,100.0,2.9259896729776247,2.524383247274814,99.66887417218543,63.429688303672464,95.49668874172185,92.95652173913044,6.754966887417218,29.478260869565215,58.131879436271994,7.067174159037136,12.450331125827814,88.17391304347825,99.33774834437085,1.9506597819850833,3.7292025243832474,9.867549668874172,69.40643966670096,2.524383247274814,67.12272399958852,10.647052772348523,61.21798168912663,20.3991358913692,99.77051061388411,59.067997119637894,3.785618763501698,10.843373493975903,87.34782608695653,84.56953642384106,9.478260869565219,3.098106712564544,6.739130434782608,3.9586919104991396,17.391304347826086,2.4670109007458403,13.578849912560436,7.682119205298013,42.06357370640881,3.384968445209409,12.847682119205297,54.06851147001337,6.826086956521739,95.30434782608695,84.95652173913044,5.099337748344371,6.0,5.695652173913043,100.0,97.08609271523179,2.1227768215720024,100.0,97.30434782608695,98.2788296041308,49.608695652173914,12.335054503729202,100.0,83.47906593971814,96.15894039735099,7.304347826086957,6.4830751577739525,67.20502005966465,8.940397350993377,3.4782608695652173,56.6814113774303,9.006622516556291,13.023522662076878,81.43478260869566,11.305421252957515,99.60264900662251],
+"position_x":[8.0,0.0,12.0,19.0,17.0,8.0,5.0,2.0,8.0,7.0,0.0,1.0,17.0,16.0,18.0,14.0,6.0,5.0,13.0,18.0,12.0,4.0,14.0,9.0,2.0,7.0,10.0,4.0,10.0,19.0,15.0,19.0,18.0,6.0,3.0,5.0,16.0,18.0,7.0,3.0,14.0,11.0,10.0,5.0,19.0,9.0,9.0,11.0,8.0,12.0,9.0,13.0,11.0,6.0,1.0,7.0,16.0,13.0,0.0,16.0,13.0,2.0,2.0,4.0,15.0,6.0,0.0,1.0,1.0,4.0,14.0,3.0,12.0,17.0,11.0,10.0,15.0,3.0,17.0,15.0],
+"position_y":[0.0,1.0,1.0,2.0,2.0,2.0,2.0,3.0,1.0,3.0,3.0,0.0,0.0,0.0,2.0,3.0,2.0,1.0,2.0,1.0,3.0,3.0,2.0,1.0,2.0,0.0,0.0,2.0,3.0,0.0,3.0,3.0,3.0,3.0,0.0,3.0,3.0,0.0,1.0,2.0,1.0,0.0,1.0,0.0,1.0,0.0,3.0,2.0,3.0,0.0,2.0,3.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,2.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,3.0,2.0,1.0,0.0,3.0,2.0,1.0,3.0,2.0,0.0,1.0,3.0,2.0]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"cell_type_lvl1"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"avg_exp"
+},{
+"type":"float",
+"column":"pct_exp"
+},{
+"type":"float",
+"column":"position_x"
+},{
+"type":"float",
+"column":"position_y"
+}]
+},
+"theme":{
+"name":"classic",
+"text":{
+"color":"#1f1f1f",
+"family":"Arial",
+"blank":false
+},
+"axis_title":{
+"blank":true
+},
+"axis_text_x":{
+"angle":90.0,
+"blank":false
+},
+"axis_line":{
+"blank":true
+},
+"legend_text":{
+"size":10.0,
+"blank":false
+},
+"legend_title":{
+"size":12.0,
+"blank":false
+},
+"legend_key_spacing_y":0.0,
+"legend_box_spacing":0.0,
+"panel_border":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"scale_mapper_kind":"color_gradient",
+"low":"#e6e6e6",
+"high":"#D2042D"
+},{
+"aesthetic":"size",
+"range":[0.6000000000000001,6.0]
+},{
+"aesthetic":"x",
+"breaks":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"labels":["HBB","HBA1","HBA2","UBB","ALAS2","CD37","HLA-DRA","CD79A","CD74","CD79B","BCL11B","CD3E","CD3D","CD3G","IL32","S100A6","MNDA","TYROBP","S100A4","GRN"],
+"limits":[-0.5,19.5],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"y",
+"breaks":[0.0,1.0,2.0,3.0],
+"labels":["B Cells","Erythroid","Monocytes","Lymphocytes"],
+"limits":[-0.5,4.6345600000000005],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"size",
+"breaks":[25.0,50.0,75.0,100.0],
+"trans":"sqrt"
+}],
+"layers":[{
+"geom":"point",
+"mapping":{
+"x":"position_x",
+"y":"position_y",
+"size":"pct_exp",
+"color":"avg_exp"
+},
+"tooltips":{
+"formats":[],
+"variables":["cell_type_lvl1","variable","avg_exp","pct_exp"]
+},
+"data_meta":{
+},
+"data":{
+}
+},{
+"geom":"path",
+"data":{
+"x":[-0.3,-0.3,4.3,4.3,4.7,4.7,9.3,9.3,9.7,9.7,14.3,14.3,14.7,14.7,19.3,19.3],
+"y":[3.56161472,3.6540368,3.6540368,3.56161472,3.56161472,3.6540368,3.6540368,3.56161472,3.56161472,3.6540368,3.6540368,3.56161472,3.56161472,3.6540368,3.6540368,3.56161472],
+"g":[0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,2.0,2.0,2.0,2.0,3.0,3.0,3.0,3.0]
+},
+"mapping":{
+"x":"x",
+"y":"y",
+"group":"g"
+},
+"data_meta":{
+"series_annotations":[{
+"type":"float",
+"column":"x"
+},{
+"type":"float",
+"column":"y"
+},{
+"type":"int",
+"column":"g"
+}]
+},
+"color":"black",
+"size":0.6
+},{
+"geom":"text",
+"data":{
+"x":[2.0,7.0,12.0,17.0],
+"y":[3.71565152,3.71565152,3.71565152,3.71565152],
+"label":["B Cells","Erythroid","Lymphocytes","Monocytes"]
+},
+"mapping":{
+"x":"x",
+"y":"y",
+"label":"label"
+},
+"data_meta":{
+"series_annotations":[{
+"type":"float",
+"column":"x"
+},{
+"type":"float",
+"column":"y"
+},{
+"type":"str",
+"column":"label"
+}]
+},
+"size_unit":"x",
+"color":"black",
+"size":0.74,
+"angle":90.0,
+"hjust":0.0,
+"vjust":0.5
+},{
+"geom":"rect",
+"data":{
+"xmin":[-0.5],
+"xmax":[19.5],
+"ymin":[-0.5],
+"ymax":[3.5]
+},
+"mapping":{
+"xmin":"xmin",
+"xmax":"xmax",
+"ymin":"ymin",
+"ymax":"ymax"
+},
+"inherit_aes":false,
+"data_meta":{
+"series_annotations":[{
+"type":"float",
+"column":"xmin"
+},{
+"type":"float",
+"column":"xmax"
+},{
+"type":"float",
+"column":"ymin"
+},{
+"type":"float",
+"column":"ymax"
+}]
+},
+"color":"#3f3f3f",
+"size":0.8,
+"fill":"rgba(0,0,0,0)"
+}],
+"metainfo_list":[],
+"spec_id":"4"
+};
+           window.letsPlotCall(function() { fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing); });
+       } else {
+           fig.updateView({});
+       }
+   }
+
+   const renderImmediately = 
+       forceImmediateRender || (
+           sizing.width_mode === 'FIXED' && 
+           (sizing.height_mode === 'FIXED' || sizing.height_mode === 'SCALED')
+       );
+
+   if (renderImmediately) {
+       renderPlot();
+   }
+
+   if (!renderImmediately || responsive) {
+       // Set up observer for initial sizing or continuous monitoring
+       var observer = new ResizeObserver(function(entries) {
+           for (let entry of entries) {
+               if (entry.contentBoxSize && 
+                   entry.contentBoxSize[0].inlineSize > 0) {
+                   if (!responsive && observer) {
+                       observer.disconnect();
+                       observer = null;
+                   }
+                   renderPlot();
+                   if (!responsive) {
+                       break;
+                   }
+               }
+           }
+       });
+
+       observer.observe(containerDiv);
+   }
+
+   // ----------
+   })();
+
+   </script></div></div>
+</div>
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cellestial.dotplot"><code class="docutils literal notranslate"><span class="pre">dotplot()</span></code></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, datavil.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

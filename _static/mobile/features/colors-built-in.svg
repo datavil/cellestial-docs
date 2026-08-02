@@ -1,0 +1,2339 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="600.0" height="600.0">
+  <style type="text/css">
+  .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#psia5ZZ .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#psia5ZZ .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#psia5ZZ .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#psia5ZZ .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#psia5ZZ .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#psia5ZZ .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#psia5ZZ .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#psia5ZZ .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#psia5ZZ .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+.axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#psia5ZZ .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#psia5ZZ .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+.axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#psia5ZZ .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#psia5ZZ .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+.tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+.tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+.tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+  </style>
+  <g id="psia5ZZ">
+    <rect x="0.0" y="0.0" height="600.0" width="600.0" fill="rgb(255,255,255)" fill-opacity="1.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0">
+    </rect>
+  </g>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="6.0" y="6.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#pFhsUwm .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pFhsUwm .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pFhsUwm .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pFhsUwm .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pFhsUwm .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#pFhsUwm .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pFhsUwm .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pFhsUwm .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pFhsUwm .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#d4kiF80 .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pFhsUwm .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pFhsUwm .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#d4kiF80 .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pFhsUwm .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pFhsUwm .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#d4kiF80 .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#d4kiF80 .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#d4kiF80 .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="pFhsUwm">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#cZcnpEK)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#219b9d" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>TEAL</tspan>
+                    </text>
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#219B9D</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="cQtXIoZ">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cevBvo2">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cZcnpEK">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(33,155,157)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="d4kiF80">
+    </g>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="202.0" y="6.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#pOWJaUM .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pOWJaUM .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pOWJaUM .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pOWJaUM .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pOWJaUM .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#pOWJaUM .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pOWJaUM .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pOWJaUM .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pOWJaUM .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dIHdDHN .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pOWJaUM .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pOWJaUM .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dIHdDHN .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pOWJaUM .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pOWJaUM .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dIHdDHN .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dIHdDHN .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dIHdDHN .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="pOWJaUM">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#cqW61yH)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#d2042d" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>RED</tspan>
+                    </text>
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#D2042D</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="ciERKoN">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cdiY94j">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cqW61yH">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(210,4,45)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="dIHdDHN">
+    </g>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="398.0" y="6.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#ppqGV1T .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#ppqGV1T .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#ppqGV1T .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#ppqGV1T .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#ppqGV1T .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#ppqGV1T .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#ppqGV1T .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#ppqGV1T .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#ppqGV1T .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#drhnzah .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#ppqGV1T .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#ppqGV1T .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#drhnzah .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#ppqGV1T .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#ppqGV1T .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#drhnzah .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#drhnzah .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#drhnzah .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="ppqGV1T">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#cuDgZVY)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#e6e6e6" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#000000;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(0,0,0)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>LIGHT_GRAY</tspan>
+                    </text>
+                    <text style="fill:#000000;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(0,0,0)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#000000;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(0,0,0)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#000000;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(0,0,0)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#E6E6E6</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="cgE8Yvp">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cKvEESr">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cuDgZVY">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(230,230,230)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="drhnzah">
+    </g>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="6.0" y="202.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#piH1MWh .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#piH1MWh .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#piH1MWh .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#piH1MWh .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#piH1MWh .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#piH1MWh .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#piH1MWh .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#piH1MWh .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#piH1MWh .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dP2Pz3m .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#piH1MWh .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#piH1MWh .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dP2Pz3m .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#piH1MWh .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#piH1MWh .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dP2Pz3m .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dP2Pz3m .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dP2Pz3m .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="piH1MWh">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#csJfV4v)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#377eb8" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>BLUE</tspan>
+                    </text>
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#377EB8</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="cKWC2Zc">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cptHxlf">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="csJfV4v">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(55,126,184)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="dP2Pz3m">
+    </g>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="202.0" y="202.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#pYB0Jk8 .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pYB0Jk8 .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pYB0Jk8 .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pYB0Jk8 .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pYB0Jk8 .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#pYB0Jk8 .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pYB0Jk8 .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pYB0Jk8 .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pYB0Jk8 .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dbhaEwA .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pYB0Jk8 .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pYB0Jk8 .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dbhaEwA .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pYB0Jk8 .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pYB0Jk8 .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dbhaEwA .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dbhaEwA .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dbhaEwA .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="pYB0Jk8">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#c1cRvqR)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#af1740" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>CHERRY</tspan>
+                    </text>
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#AF1740</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="cr42Otu">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cltC6VC">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="c1cRvqR">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(175,23,64)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="dbhaEwA">
+    </g>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="398.0" y="202.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#pCVAFvX .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pCVAFvX .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pCVAFvX .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pCVAFvX .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pCVAFvX .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#pCVAFvX .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pCVAFvX .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pCVAFvX .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pCVAFvX .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dABbtE1 .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pCVAFvX .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pCVAFvX .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dABbtE1 .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pCVAFvX .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pCVAFvX .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dABbtE1 .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dABbtE1 .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dABbtE1 .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="pCVAFvX">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#cRCFmwt)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#f9f9f9" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#000000;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(0,0,0)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>SNOW</tspan>
+                    </text>
+                    <text style="fill:#000000;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(0,0,0)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#000000;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(0,0,0)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#000000;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(0,0,0)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#F9F9F9</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="cXPqocJ">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cklXHjO">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cRCFmwt">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(249,249,249)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="dABbtE1">
+    </g>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="6.0" y="398.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#pPMP70d .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pPMP70d .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pPMP70d .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pPMP70d .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#pPMP70d .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#pPMP70d .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pPMP70d .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pPMP70d .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pPMP70d .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dDcAMRA .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pPMP70d .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#pPMP70d .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dDcAMRA .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pPMP70d .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#pPMP70d .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dDcAMRA .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dDcAMRA .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dDcAMRA .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="pPMP70d">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#chW5Hl3)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#640d5f" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>PURPLE</tspan>
+                    </text>
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#640D5F</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="cKAa0HW">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cils82c">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="chW5Hl3">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(100,13,95)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="dDcAMRA">
+    </g>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="202.0" y="398.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#phEZEfz .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#phEZEfz .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#phEZEfz .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#phEZEfz .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#phEZEfz .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#phEZEfz .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#phEZEfz .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#phEZEfz .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#phEZEfz .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dnm51Ea .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#phEZEfz .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#phEZEfz .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dnm51Ea .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#phEZEfz .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#phEZEfz .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dnm51Ea .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dnm51Ea .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#dnm51Ea .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="phEZEfz">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#c3vFi8n)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#e73879" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>PINK</tspan>
+                    </text>
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#E73879</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="c7np1v5">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="cptnk9h">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="c3vFi8n">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(231,56,121)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="dnm51Ea">
+    </g>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="196.0" height="196.0" x="398.0" y="398.0">
+    <style type="text/css">
+    .plt-container {
+   font-family: sans-serif;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+text {
+   text-rendering: optimizeLegibility;
+}
+#p2gevjZ .plot-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#p2gevjZ .plot-subtitle {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#p2gevjZ .plot-caption {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#p2gevjZ .plot-tag {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 16.0px;
+
+}
+#p2gevjZ .hyperlink-element {
+fill:#118ed8;
+font-weight: normal;
+font-style: normal;
+
+}
+#p2gevjZ .legend-title {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#p2gevjZ .legend-item {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#p2gevjZ .axis-title-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#p2gevjZ .axis-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#djUMRUh .axis-tooltip-text-x {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#p2gevjZ .axis-title-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 15.0px;
+
+}
+#p2gevjZ .axis-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#djUMRUh .axis-tooltip-text-y {
+fill:#ffffff;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#p2gevjZ .facet-strip-text-x {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#p2gevjZ .facet-strip-text-y {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#djUMRUh .tooltip-text {
+fill:#474747;
+font-weight: normal;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#djUMRUh .tooltip-title {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+#djUMRUh .tooltip-label {
+fill:#474747;
+font-weight: bold;
+font-style: normal;
+font-family: sans-serif;
+font-size: 13.0px;
+
+}
+
+    </style>
+    <g id="p2gevjZ">
+      <path fill-rule="evenodd" fill="rgb(255,255,255)" fill-opacity="1.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z">
+      </path>
+      <g transform="translate(6.0 6.0 ) ">
+        <g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" fill="rgb(255,255,255)" fill-opacity="1.0">
+          </rect>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+          <g transform="">
+            <g>
+            </g>
+          </g>
+        </g>
+        <g clip-path="url(#csIKmbX)" clip-bounds-jfx="[rect (0.0, 0.0), (184.0, 184.0)]">
+          <g transform="">
+            <g>
+              <g buffered-rendering="static">
+                <g>
+                  <g >
+                    <rect fill="#f14a00" stroke="#1f1f1f" stroke-width="1.6500000000000001" x="-7.825000000000017" y="-7.825000000000017" height="199.65000000000003" width="199.65000000000003" transform="rotate(0.0 92.0 92.0 ) " />
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 87.8 ) ">
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>ORANGE</tspan>
+                    </text>
+                    <text style="fill:#ffffff;font-weight:bold;font-size:28.0px;font-family:Arial;" y="28.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g buffered-rendering="static">
+                <g transform="rotate(0.0 92.0 92.0 ) ">
+                  <g transform="translate(92.0 89.0 ) ">
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="0.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      
+                    </text>
+                    <text style="fill:#ffffff;font-size:20.0px;font-family:sans-serif;" y="20.0" fill="rgb(255,255,255)" fill-opacity="1.0" text-anchor="middle">
+                      <tspan>#F14A00</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="cGgomgp">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="c0mHfjz">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+          <defs>
+            <clipPath id="csIKmbX">
+              <rect x="0.0" y="0.0" width="184.0" height="184.0">
+              </rect>
+            </clipPath>
+          </defs>
+        </g>
+        <g>
+          <g transform="translate(0.0 184.0 ) ">
+          </g>
+          <g transform="">
+          </g>
+          <rect x="0.0" y="0.0" height="184.0" width="184.0" stroke="rgb(241,74,0)" stroke-opacity="1.0" stroke-width="13.0" fill-opacity="0.0">
+          </rect>
+        </g>
+      </g>
+      <path fill="rgb(0,0,0)" fill-opacity="0.0" stroke="rgb(71,71,71)" stroke-opacity="1.0" stroke-width="0.0" d="M0.0 0.0 L0.0 196.0 L196.0 196.0 L196.0 0.0 Z" pointer-events="none">
+      </path>
+    </g>
+    <g id="djUMRUh">
+    </g>
+  </svg>
+</svg>

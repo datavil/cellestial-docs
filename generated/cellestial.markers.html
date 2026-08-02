@@ -1,0 +1,2815 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>markers</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=05c22323" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=62b68512"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/cellestial.markers';</script>
+    <script src="../_static/custom.js?v=22fa3d50"></script>
+    <link rel="icon" href="../_static/cellestial.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ridge" href="cellestial.ridge.html" />
+    <link rel="prev" title="scatter" href="cellestial.scatter.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.58.2" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search"
+         aria-label="Search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/cellestial.svg" class="logo__image only-light" alt=""/>
+    <img src="../_static/cellestial.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Cellestial</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../API.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features.html">
+    Features
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../migrating_from_scanpy.html">
+    Migrating from Scanpy
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../quickstart.html">
+    Quickstart
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../philosophy.html">
+    Design Philosophy
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../performance.html">
+    Performance & Scalability
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/datavil/cellestial" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/cellestial" title="PyPI" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/pypi.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../API.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features.html">
+    Features
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../migrating_from_scanpy.html">
+    Migrating from Scanpy
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../quickstart.html">
+    Quickstart
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../philosophy.html">
+    Design Philosophy
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../performance.html">
+    Performance & Scalability
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/datavil/cellestial" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/cellestial" title="PyPI" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/pypi.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../API.html" class="nav-link">API Reference</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">markers</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="markers">
+<h1>markers<a class="headerlink" href="#markers" title="Link to this heading">#</a></h1>
+<p class="mobile-api-warning">
+  API pages include interactive (HTML) plots that would possibly not render correctly on a mobile device.
+</p><dl class="py function">
+<dt class="sig sig-object py" id="cellestial.markers">
+<span class="sig-name descname"><span class="pre">markers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AnnData</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'rank_genes_groups'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_genes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FeatureSpec</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#1f1f1f'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fontface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'bold'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">90.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rank_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#3f3f3f'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'variable'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'score'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rank_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'rank'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'group'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">share_labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">share_axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">FeatureSpec</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">LayerSpec</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">FeatureSpec</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">LayerSpec</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ncol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sharex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sharey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">widths</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heights</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hspace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vspace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">text_kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SupPlotsSpec</span></span></span><a class="headerlink" href="#cellestial.markers" title="Link to this definition">#</a></dt>
+<dd><p>Grid of ranked genes per group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<a class="reference external" href="https://anndata.readthedocs.io/en/latest/generated/anndata.AnnData.html#anndata.AnnData" title="(in anndata v0.13.0.dev184+gb314e745f)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnData</span></code></a>) – The single-cell data object holding the precomputed differential
+expression ranking.</p></li>
+<li><p><strong>groups</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence[str]</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Subset of groups to plot, one panel per group. <cite>None</cite> keeps all
+groups in their stored order.</p></li>
+<li><p><strong>key</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'rank_genes_groups'</span></code>) – The key under which the precomputed ranking is stored on <cite>data</cite>.</p></li>
+<li><p><strong>n_genes</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">20</span></code>) – Number of top genes to show per panel.</p></li>
+<li><p><strong>mapping</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureSpec</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Additional aesthetic mappings, the result of <cite>aes()</cite>. Merged on top of
+the default <cite>aes(x=rank, y=score, label=variable)</cite>.</p></li>
+<li><p><strong>text_color</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'#1f1f1f'</span></code>) – Color of the gene-name text.</p></li>
+<li><p><strong>text_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">4.0</span></code>) – Size of the gene-name text.</p></li>
+<li><p><strong>fontface</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'bold'</span></code>) – Font face of the gene-name text (e.g. ‘plain’, ‘bold’, ‘italic’).</p></li>
+<li><p><strong>angle</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">90.0</span></code>) – Rotation angle of the gene-name text, in degrees.</p></li>
+<li><p><strong>rank_color</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – Whether to color the gene-name text by rank. When True, the best-ranked
+gene is pure red, fading toward light gray for the lowest-ranked.</p></li>
+<li><p><strong>line</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – Whether to draw a dashed path connecting the genes’ <cite>(rank, score)</cite>
+points, showing the score decay across the ranking.</p></li>
+<li><p><strong>line_color</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'#3f3f3f'</span></code>) – Color of the dashed score-curve line.</p></li>
+<li><p><strong>line_size</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">0.4</span></code>) – Size (thickness) of the dashed score-curve line.</p></li>
+<li><p><strong>line_alpha</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">0.6</span></code>) – Alpha (opacity) of the dashed score-curve line.</p></li>
+<li><p><strong>line_kwargs</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Additional parameters passed to the score-curve <cite>geom_path</cite> layer.</p></li>
+<li><p><strong>variable_column</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'variable'</span></code>) – Output column name for the gene/feature names.</p></li>
+<li><p><strong>score_column</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'score'</span></code>) – Output column name for the ranking scores.</p></li>
+<li><p><strong>rank_column</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'rank'</span></code>) – Output column name for the per-group rank index (0-based).</p></li>
+<li><p><strong>group_column</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'group'</span></code>) – Output column name for the group label.</p></li>
+<li><p><strong>interactive</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – Whether to make the plot interactive.</p></li>
+<li><p><strong>share_labels</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>) – Whether to share axis labels across the grid.
+If True, only X labels on bottom row and Y labels on left column are shown.</p></li>
+<li><p><strong>share_axis</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code>) – Whether to share axes across the grid.
+If True, only X axis on bottom row and Y axis on left column is shown.</p></li>
+<li><p><strong>layers</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence[FeatureSpec|LayerSpec]</span> <span class="pre">|</span> <span class="pre">FeatureSpec</span> <span class="pre">|</span> <span class="pre">LayerSpec</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Layers to add to all the plots in the grid.</p></li>
+<li><p><strong>ncol</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">3</span></code>) – Number of columns in grid. If None, shows plots horizontally, in one row.</p></li>
+<li><p><strong>sharex</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Controls sharing of axis limits between subplots in the grid.
+See <a class="reference external" href="https://lets-plot.org/python/pages/api/lets_plot.gggrid.html#lets_plot.gggrid" title="(in lets-plot v4.11.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">lets_plot.gggrid()</span></code></a>.</p></li>
+<li><p><strong>sharey</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Controls sharing of axis limits between subplots in the grid.
+See <a class="reference external" href="https://lets-plot.org/python/pages/api/lets_plot.gggrid.html#lets_plot.gggrid" title="(in lets-plot v4.11.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">lets_plot.gggrid()</span></code></a>.</p></li>
+<li><p><strong>widths</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list[float]</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Relative width of each column of the grid.</p></li>
+<li><p><strong>heights</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list[float]</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Relative height of each row of the grid.</p></li>
+<li><p><strong>hspace</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Cell horizontal/vertical spacing in px.</p></li>
+<li><p><strong>vspace</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span> <span class="pre">|</span> <span class="pre">None</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Cell horizontal/vertical spacing in px.</p></li>
+<li><p><strong>fit</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Whether to stretch each plot to match the aspect ratio of its cell.</p></li>
+<li><p><strong>align</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <em>default</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>) – Whether to align inner areas of plots.</p></li>
+<li><p><strong>guides</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">'auto'</span></code>) – How guides (legends/colorbars) should be treated in the layout.
+See <a class="reference external" href="https://lets-plot.org/python/pages/api/lets_plot.gggrid.html#lets_plot.gggrid" title="(in lets-plot v4.11.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">lets_plot.gggrid()</span></code></a>.</p></li>
+<li><p><strong>**text_kwargs</strong> – Additional parameters for the <cite>geom_text</cite> layer of each panel.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SupPlotsSpec</span></code> – Grid of ranked-genes panels, one per group.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>UnsupportedDataTypeError</strong> – If <cite>data</cite> is not a supported single-cell data object.</p></li>
+<li><p><strong>KeyNotFoundError</strong> – If the ranking result or a requested group is missing.</p></li>
+<li><p><strong>ValueError</strong> – If <cite>n_genes</cite> is out of range.</p></li>
+<li><p><strong>TypeError</strong> – If <cite>groups</cite> is neither a Sequence of strings nor None.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Builds one panel per group from a precomputed ranking, placing the top
+<cite>n_genes</cite> gene names as text at their <cite>(rank, score)</cite> position. Each
+panel is titled <cite>“{group} vs. rest”</cite>.</p>
+<p class="rubric">Examples</p>
+<p>A simple grid of ranked genes per group, with optional score-curve lines.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">scanpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sc</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">cellestial</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">cl</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">pbmc68k_reduced</span><span class="p">()</span>
+
+<span class="n">cl</span><span class="o">.</span><span class="n">markers</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="msSfQ1"></div>
+<script type="text/javascript" data-lets-plot-script="library">
+    if(!window.letsPlotCallQueue) {
+        window.letsPlotCallQueue = [];
+    };
+    window.letsPlotCall = function(f) {
+        window.letsPlotCallQueue.push(f);
+    };
+    (function() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.11.0/js-package/distr/lets-plot.min.js";
+        script.onload = function() {
+            window.letsPlotCall = function(f) {f();};
+            window.letsPlotCallQueue.forEach(function(f) {f();});
+            window.letsPlotCallQueue = [];
+
+        };
+        script.onerror = function(event) {
+            window.letsPlotCall = function(f) {};    // noop
+            window.letsPlotCallQueue = [];
+            var div = document.createElement("div");
+            div.style.color = 'darkred';
+            div.textContent = 'Error loading Lets-Plot JS';
+            document.getElementById("msSfQ1").appendChild(div);
+        };
+        var e = document.getElementById("msSfQ1");
+        e.appendChild(script);
+    })()
+</script>
+</div><div class="output text_html">   <div id="o69x42" ></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+
+   (function() {
+   // ----------
+
+   const forceImmediateRender = false;
+   const responsive = false;
+
+   let sizing = {
+       width_mode: "MIN",
+       height_mode: "SCALED",
+       width: null, 
+       height: null 
+   };
+
+   const preferredWidth = document.body.dataset.letsPlotPreferredWidth;
+   if (preferredWidth !== undefined) {
+       sizing = {
+           width_mode: 'FIXED',
+           height_mode: 'SCALED',
+           width: parseFloat(preferredWidth)
+       };
+   }
+
+   const containerDiv = document.getElementById("o69x42");
+   let fig = null;
+
+   function renderPlot() {
+       if (fig === null) {
+           const plotSpec = {
+"theme":{
+"name":"bw"
+},
+"kind":"subplots",
+"layout":{
+"ncol":3.0,
+"nrow":4.0,
+"guides":"auto",
+"name":"grid"
+},
+"figures":[{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["RGS19","HIST1H4C","IL32","GSTK1","SKP1","TMBIM6","CALM3","COPE","CD3E","CAPN2","ICAM3","TMBIM4-1","MZT2B","PPP2R5C","CLPP","C10orf54","OSTF1","TCEAL8","CD3D","KLF3"],
+"score":[0.3671,0.3305,0.2887,0.2812,0.2758,0.2663,0.249,0.2469,0.2464,0.2393,0.2361,0.2358,0.2354,0.2107,0.2064,0.205,0.2028,0.2026,0.1998,0.1976]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD4+/CD25 T Reg vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"1"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["ITM2A","RPL39","TIMM10","CWC15","CXCR4","LSM5","LSMD1","SUPT4H1","SRSF7","MTDH","SIAH2","CAPN2","EIF3E","PLGRKT","IGJ","APBB1IP","POU2AF1","UCHL3","CCT6A","RP11-277L2.3"],
+"score":[0.2135,0.2023,0.1855,0.1806,0.1708,0.1678,0.1549,0.1535,0.1479,0.1419,0.1392,0.1392,0.1373,0.1361,0.1352,0.1327,0.1314,0.1298,0.1264,0.1262]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD4+/CD45RA+/CD25- Naive T vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"2"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CAPG","GABARAPL2","FDX1","CRIP1","GATA3","HPCAL1","DNAJC1","C20orf27","MIEN1","ACAA1","EMB","DENND2D","EBP","PMVK","SPG21","GZMK","ADD3","MRPS21","CCT6A","GZMA"],
+"score":[0.2506,0.2216,0.2174,0.2125,0.2103,0.2067,0.2046,0.2023,0.1996,0.1972,0.1959,0.1913,0.1908,0.1886,0.1847,0.1837,0.1833,0.1805,0.1774,0.1752]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD4+/CD45RO+ Memory vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"3"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CCL5","GNLY","NKG7","GZMH","CHCHD7","SRSF2","ANXA1","MRFAP1","DUSP2","KLRB1","CST7","IRF1","FYB","GZMK","PSMD7","ANXA5","ANKRD12","RCSD1","CCDC115","EIF3E"],
+"score":[0.4738,0.4564,0.3814,0.3677,0.3673,0.3246,0.2786,0.2726,0.2697,0.2606,0.2551,0.2519,0.2413,0.2403,0.2403,0.233,0.226,0.2088,0.2026,0.2009]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD8+ Cytotoxic T vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"4"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CD8B","CD8A","RP11-291B21.2","CD7","NECAP2","ANAPC16","SAMD3","YWHAB","CARS","HMGA1","S100B","NDFIP1","HMHA1","MRPS25","SSU72","GZMM","POMP","AMICA1","SNHG15","ID2"],
+"score":[0.494,0.4087,0.3839,0.3421,0.3085,0.293,0.2681,0.2674,0.2586,0.2552,0.2481,0.2402,0.2377,0.218,0.2168,0.2141,0.2136,0.2069,0.2047,0.2023]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD8+/CD45RA+ Naive Cytotoxic vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"5"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["C1QA","PSAP","COX14","NEAT1","NUP214","RAB7A","OAS1","HMGB2","SLTM","TMEM176B","SRGN","SOD2","TMEM176A","RAB10","SLC11A1","IFI30","SSR3","COMMD5","TNFSF13B","TYROBP"],
+"score":[0.4287,0.3348,0.3148,0.3002,0.2941,0.2871,0.2794,0.2789,0.2729,0.2718,0.265,0.2583,0.256,0.2549,0.2544,0.2503,0.2496,0.2488,0.2364,0.2355]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD14+ Monocyte vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"6"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CD79A","CD79B","MS4A1","IGJ","IGLL5","SPIB","UBE2J1","SMARCB1","MZB1","CCDC50","C16orf74","CAPG","CD74","TNFRSF13B","FKBP11","AL928768.3","ZNF706","SUB1","PLAC8","HLA-DRB5"],
+"score":[0.3821,0.2758,0.2331,0.2012,0.1934,0.166,0.1643,0.1595,0.1527,0.1488,0.1478,0.1476,0.1416,0.1317,0.1309,0.1299,0.1269,0.1241,0.1237,0.1218]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD19+ B vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"7"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["PRSS57","SNHG7","SERPINB1","C19orf77","SPINK2","IMPDH2","H2AFY","EGFL7","CYTL1","SNHG8","SOX4","C6orf48","HSP90AB1","NFE2","IGFBP7","ZFAS1","EBPL","H1FX","HSD17B11","NME4"],
+"score":[0.1625,0.1451,0.1414,0.1393,0.1244,0.1242,0.1236,0.121,0.1149,0.1142,0.1115,0.0957,0.0951,0.0944,0.0942,0.0922,0.0886,0.0885,0.0883,0.0867]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD34+ vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"8"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["GNLY","NKG7","CD7","CLIC3","SPON2","TYROBP","GZMB","PLAC8","FCER1G","CTSW","CST7","MIEN1","IGFBP7","GZMA","ITGB2","MATK","MSN","DCXR","MCM7","MEA1"],
+"score":[0.2731,0.2326,0.2254,0.2058,0.2046,0.1973,0.1957,0.1824,0.1813,0.1687,0.1597,0.154,0.153,0.1507,0.1431,0.1351,0.1208,0.1188,0.1179,0.1136]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD56+ NK vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"9"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CST3","LYZ","LST1","IRF7","C10orf54","ZNHIT1","CD33","ILK","IL32","CPVL","SRRM2","HLA-DPB1","MNDA","C19orf43","APEX1","GPX1","IFT20","SEPT9","ANXA1","APH1A"],
+"score":[0.5761,0.4112,0.3784,0.3528,0.344,0.3261,0.3113,0.3091,0.3018,0.2982,0.2943,0.292,0.2886,0.2876,0.2831,0.2785,0.2768,0.2725,0.2708,0.2516]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"Dendritic vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"path",
+"mapping":{
+"x":"rank",
+"y":"score"
+},
+"data_meta":{
+},
+"color":"#3f3f3f",
+"size":0.4,
+"alpha":0.6,
+"linetype":"dashed",
+"data":{
+}
+},{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"color":"#1f1f1f",
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"10"
+},"blank","blank"]
+};
+           window.letsPlotCall(function() { fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing); });
+       } else {
+           fig.updateView({});
+       }
+   }
+
+   const renderImmediately = 
+       forceImmediateRender || (
+           sizing.width_mode === 'FIXED' && 
+           (sizing.height_mode === 'FIXED' || sizing.height_mode === 'SCALED')
+       );
+
+   if (renderImmediately) {
+       renderPlot();
+   }
+
+   if (!renderImmediately || responsive) {
+       // Set up observer for initial sizing or continuous monitoring
+       var observer = new ResizeObserver(function(entries) {
+           for (let entry of entries) {
+               if (entry.contentBoxSize && 
+                   entry.contentBoxSize[0].inlineSize > 0) {
+                   if (!responsive && observer) {
+                       observer.disconnect();
+                       observer = null;
+                   }
+                   renderPlot();
+                   if (!responsive) {
+                       break;
+                   }
+               }
+           }
+       });
+
+       observer.observe(containerDiv);
+   }
+
+   // ----------
+   })();
+
+   </script></div></div>
+</div>
+<p>Color the gene names by rank.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cl</span><span class="o">.</span><span class="n">markers</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">rank_color</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">   <div id="3s440u" ></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+
+   (function() {
+   // ----------
+
+   const forceImmediateRender = false;
+   const responsive = false;
+
+   let sizing = {
+       width_mode: "MIN",
+       height_mode: "SCALED",
+       width: null, 
+       height: null 
+   };
+
+   const preferredWidth = document.body.dataset.letsPlotPreferredWidth;
+   if (preferredWidth !== undefined) {
+       sizing = {
+           width_mode: 'FIXED',
+           height_mode: 'SCALED',
+           width: parseFloat(preferredWidth)
+       };
+   }
+
+   const containerDiv = document.getElementById("3s440u");
+   let fig = null;
+
+   function renderPlot() {
+       if (fig === null) {
+           const plotSpec = {
+"theme":{
+"name":"bw"
+},
+"kind":"subplots",
+"layout":{
+"ncol":3.0,
+"nrow":4.0,
+"guides":"auto",
+"name":"grid"
+},
+"figures":[{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["RGS19","HIST1H4C","IL32","GSTK1","SKP1","TMBIM6","CALM3","COPE","CD3E","CAPN2","ICAM3","TMBIM4-1","MZT2B","PPP2R5C","CLPP","C10orf54","OSTF1","TCEAL8","CD3D","KLF3"],
+"score":[0.3671,0.3305,0.2887,0.2812,0.2758,0.2663,0.249,0.2469,0.2464,0.2393,0.2361,0.2358,0.2354,0.2107,0.2064,0.205,0.2028,0.2026,0.1998,0.1976]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD4+/CD25 T Reg vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"11"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["ITM2A","RPL39","TIMM10","CWC15","CXCR4","LSM5","LSMD1","SUPT4H1","SRSF7","MTDH","SIAH2","CAPN2","EIF3E","PLGRKT","IGJ","APBB1IP","POU2AF1","UCHL3","CCT6A","RP11-277L2.3"],
+"score":[0.2135,0.2023,0.1855,0.1806,0.1708,0.1678,0.1549,0.1535,0.1479,0.1419,0.1392,0.1392,0.1373,0.1361,0.1352,0.1327,0.1314,0.1298,0.1264,0.1262]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD4+/CD45RA+/CD25- Naive T vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"12"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CAPG","GABARAPL2","FDX1","CRIP1","GATA3","HPCAL1","DNAJC1","C20orf27","MIEN1","ACAA1","EMB","DENND2D","EBP","PMVK","SPG21","GZMK","ADD3","MRPS21","CCT6A","GZMA"],
+"score":[0.2506,0.2216,0.2174,0.2125,0.2103,0.2067,0.2046,0.2023,0.1996,0.1972,0.1959,0.1913,0.1908,0.1886,0.1847,0.1837,0.1833,0.1805,0.1774,0.1752]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD4+/CD45RO+ Memory vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"13"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CCL5","GNLY","NKG7","GZMH","CHCHD7","SRSF2","ANXA1","MRFAP1","DUSP2","KLRB1","CST7","IRF1","FYB","GZMK","PSMD7","ANXA5","ANKRD12","RCSD1","CCDC115","EIF3E"],
+"score":[0.4738,0.4564,0.3814,0.3677,0.3673,0.3246,0.2786,0.2726,0.2697,0.2606,0.2551,0.2519,0.2413,0.2403,0.2403,0.233,0.226,0.2088,0.2026,0.2009]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD8+ Cytotoxic T vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"14"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CD8B","CD8A","RP11-291B21.2","CD7","NECAP2","ANAPC16","SAMD3","YWHAB","CARS","HMGA1","S100B","NDFIP1","HMHA1","MRPS25","SSU72","GZMM","POMP","AMICA1","SNHG15","ID2"],
+"score":[0.494,0.4087,0.3839,0.3421,0.3085,0.293,0.2681,0.2674,0.2586,0.2552,0.2481,0.2402,0.2377,0.218,0.2168,0.2141,0.2136,0.2069,0.2047,0.2023]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD8+/CD45RA+ Naive Cytotoxic vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"15"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["C1QA","PSAP","COX14","NEAT1","NUP214","RAB7A","OAS1","HMGB2","SLTM","TMEM176B","SRGN","SOD2","TMEM176A","RAB10","SLC11A1","IFI30","SSR3","COMMD5","TNFSF13B","TYROBP"],
+"score":[0.4287,0.3348,0.3148,0.3002,0.2941,0.2871,0.2794,0.2789,0.2729,0.2718,0.265,0.2583,0.256,0.2549,0.2544,0.2503,0.2496,0.2488,0.2364,0.2355]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD14+ Monocyte vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"16"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CD79A","CD79B","MS4A1","IGJ","IGLL5","SPIB","UBE2J1","SMARCB1","MZB1","CCDC50","C16orf74","CAPG","CD74","TNFRSF13B","FKBP11","AL928768.3","ZNF706","SUB1","PLAC8","HLA-DRB5"],
+"score":[0.3821,0.2758,0.2331,0.2012,0.1934,0.166,0.1643,0.1595,0.1527,0.1488,0.1478,0.1476,0.1416,0.1317,0.1309,0.1299,0.1269,0.1241,0.1237,0.1218]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD19+ B vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"17"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["PRSS57","SNHG7","SERPINB1","C19orf77","SPINK2","IMPDH2","H2AFY","EGFL7","CYTL1","SNHG8","SOX4","C6orf48","HSP90AB1","NFE2","IGFBP7","ZFAS1","EBPL","H1FX","HSD17B11","NME4"],
+"score":[0.1625,0.1451,0.1414,0.1393,0.1244,0.1242,0.1236,0.121,0.1149,0.1142,0.1115,0.0957,0.0951,0.0944,0.0942,0.0922,0.0886,0.0885,0.0883,0.0867]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD34+ vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"18"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["GNLY","NKG7","CD7","CLIC3","SPON2","TYROBP","GZMB","PLAC8","FCER1G","CTSW","CST7","MIEN1","IGFBP7","GZMA","ITGB2","MATK","MSN","DCXR","MCM7","MEA1"],
+"score":[0.2731,0.2326,0.2254,0.2058,0.2046,0.1973,0.1957,0.1824,0.1813,0.1687,0.1597,0.154,0.153,0.1507,0.1431,0.1351,0.1208,0.1188,0.1179,0.1136]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD56+ NK vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"19"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CST3","LYZ","LST1","IRF7","C10orf54","ZNHIT1","CD33","ILK","IL32","CPVL","SRRM2","HLA-DPB1","MNDA","C19orf43","APEX1","GPX1","IFT20","SEPT9","ANXA1","APH1A"],
+"score":[0.5761,0.4112,0.3784,0.3528,0.344,0.3261,0.3113,0.3091,0.3018,0.2982,0.2943,0.292,0.2886,0.2876,0.2831,0.2785,0.2768,0.2725,0.2708,0.2516]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"Dendritic vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"20"
+},"blank","blank"]
+};
+           window.letsPlotCall(function() { fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing); });
+       } else {
+           fig.updateView({});
+       }
+   }
+
+   const renderImmediately = 
+       forceImmediateRender || (
+           sizing.width_mode === 'FIXED' && 
+           (sizing.height_mode === 'FIXED' || sizing.height_mode === 'SCALED')
+       );
+
+   if (renderImmediately) {
+       renderPlot();
+   }
+
+   if (!renderImmediately || responsive) {
+       // Set up observer for initial sizing or continuous monitoring
+       var observer = new ResizeObserver(function(entries) {
+           for (let entry of entries) {
+               if (entry.contentBoxSize && 
+                   entry.contentBoxSize[0].inlineSize > 0) {
+                   if (!responsive && observer) {
+                       observer.disconnect();
+                       observer = null;
+                   }
+                   renderPlot();
+                   if (!responsive) {
+                       break;
+                   }
+               }
+           }
+       });
+
+       observer.observe(containerDiv);
+   }
+
+   // ----------
+   })();
+
+   </script></div></div>
+</div>
+<p>Select a subset of groups.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cl</span><span class="o">.</span><span class="n">markers</span><span class="p">(</span>
+    <span class="n">data</span><span class="p">,</span>
+    <span class="n">groups</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;CD14+ Monocyte&quot;</span><span class="p">,</span> <span class="s2">&quot;CD4+/CD25 T Reg&quot;</span><span class="p">,</span> <span class="s2">&quot;CD4+/CD45RO+ Memory&quot;</span><span class="p">,</span> <span class="s2">&quot;CD34+&quot;</span><span class="p">],</span>
+    <span class="n">ncol</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">rank_color</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">   <div id="GrilZC" ></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+
+   (function() {
+   // ----------
+
+   const forceImmediateRender = false;
+   const responsive = false;
+
+   let sizing = {
+       width_mode: "MIN",
+       height_mode: "SCALED",
+       width: null, 
+       height: null 
+   };
+
+   const preferredWidth = document.body.dataset.letsPlotPreferredWidth;
+   if (preferredWidth !== undefined) {
+       sizing = {
+           width_mode: 'FIXED',
+           height_mode: 'SCALED',
+           width: parseFloat(preferredWidth)
+       };
+   }
+
+   const containerDiv = document.getElementById("GrilZC");
+   let fig = null;
+
+   function renderPlot() {
+       if (fig === null) {
+           const plotSpec = {
+"theme":{
+"name":"bw"
+},
+"kind":"subplots",
+"layout":{
+"ncol":2.0,
+"nrow":2.0,
+"guides":"auto",
+"name":"grid"
+},
+"figures":[{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["C1QA","PSAP","COX14","NEAT1","NUP214","RAB7A","OAS1","HMGB2","SLTM","TMEM176B","SRGN","SOD2","TMEM176A","RAB10","SLC11A1","IFI30","SSR3","COMMD5","TNFSF13B","TYROBP"],
+"score":[0.4287,0.3348,0.3148,0.3002,0.2941,0.2871,0.2794,0.2789,0.2729,0.2718,0.265,0.2583,0.256,0.2549,0.2544,0.2503,0.2496,0.2488,0.2364,0.2355]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD14+ Monocyte vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"21"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["RGS19","HIST1H4C","IL32","GSTK1","SKP1","TMBIM6","CALM3","COPE","CD3E","CAPN2","ICAM3","TMBIM4-1","MZT2B","PPP2R5C","CLPP","C10orf54","OSTF1","TCEAL8","CD3D","KLF3"],
+"score":[0.3671,0.3305,0.2887,0.2812,0.2758,0.2663,0.249,0.2469,0.2464,0.2393,0.2361,0.2358,0.2354,0.2107,0.2064,0.205,0.2028,0.2026,0.1998,0.1976]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD4+/CD25 T Reg vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_x":{
+"blank":true
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"22"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["CAPG","GABARAPL2","FDX1","CRIP1","GATA3","HPCAL1","DNAJC1","C20orf27","MIEN1","ACAA1","EMB","DENND2D","EBP","PMVK","SPG21","GZMK","ADD3","MRPS21","CCT6A","GZMA"],
+"score":[0.2506,0.2216,0.2174,0.2125,0.2103,0.2067,0.2046,0.2023,0.1996,0.1972,0.1959,0.1913,0.1908,0.1886,0.1847,0.1837,0.1833,0.1805,0.1774,0.1752]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD4+/CD45RO+ Memory vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"23"
+},{
+"data":{
+"rank":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0],
+"variable":["PRSS57","SNHG7","SERPINB1","C19orf77","SPINK2","IMPDH2","H2AFY","EGFL7","CYTL1","SNHG8","SOX4","C6orf48","HSP90AB1","NFE2","IGFBP7","ZFAS1","EBPL","H1FX","HSD17B11","NME4"],
+"score":[0.1625,0.1451,0.1414,0.1393,0.1244,0.1242,0.1236,0.121,0.1149,0.1142,0.1115,0.0957,0.0951,0.0944,0.0942,0.0922,0.0886,0.0885,0.0883,0.0867]
+},
+"mapping":{
+},
+"data_meta":{
+"series_annotations":[{
+"type":"str",
+"column":"group"
+},{
+"type":"int",
+"column":"rank"
+},{
+"type":"str",
+"column":"variable"
+},{
+"type":"float",
+"column":"score"
+}]
+},
+"guides":{
+"x":{
+"title":"ranking"
+},
+"y":{
+"title":"score"
+}
+},
+"ggtitle":{
+"text":"CD34+ vs. rest"
+},
+"theme":{
+"legend_position":"none",
+"plot_title":{
+"family":"Georgia",
+"size":11.0,
+"hjust":0.5,
+"blank":false
+},
+"axis_title_y":{
+"blank":true
+}
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"color",
+"low":"#ff0000",
+"high":"#e6e6e6",
+"scale_mapper_kind":"color_gradient"
+},{
+"aesthetic":"y",
+"expand":[0.25,0.0]
+}],
+"layers":[{
+"geom":"text",
+"mapping":{
+"x":"rank",
+"y":"score",
+"label":"variable",
+"color":"rank"
+},
+"data_meta":{
+},
+"size":4.0,
+"fontface":"bold",
+"angle":90.0,
+"data":{
+}
+}],
+"metainfo_list":[],
+"spec_id":"24"
+}]
+};
+           window.letsPlotCall(function() { fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing); });
+       } else {
+           fig.updateView({});
+       }
+   }
+
+   const renderImmediately = 
+       forceImmediateRender || (
+           sizing.width_mode === 'FIXED' && 
+           (sizing.height_mode === 'FIXED' || sizing.height_mode === 'SCALED')
+       );
+
+   if (renderImmediately) {
+       renderPlot();
+   }
+
+   if (!renderImmediately || responsive) {
+       // Set up observer for initial sizing or continuous monitoring
+       var observer = new ResizeObserver(function(entries) {
+           for (let entry of entries) {
+               if (entry.contentBoxSize && 
+                   entry.contentBoxSize[0].inlineSize > 0) {
+                   if (!responsive && observer) {
+                       observer.disconnect();
+                       observer = null;
+                   }
+                   renderPlot();
+                   if (!responsive) {
+                       break;
+                   }
+               }
+           }
+       });
+
+       observer.observe(containerDiv);
+   }
+
+   // ----------
+   })();
+
+   </script></div></div>
+</div>
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cellestial.markers"><code class="docutils literal notranslate"><span class="pre">markers()</span></code></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, datavil.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -86,7 +86,7 @@ Overlay categorical labels or gene expression on tissue coordinates.
    import scanpy as sc
    import squidpy as sq
    from pathlib import Path
-   from lets_plot import *
+   from ggrust import *
 
    import cellestial as cl
 
@@ -147,7 +147,7 @@ Overlay categorical labels or gene expression on tissue coordinates.
 
             import cellestial as cl
             import squidpy as sq
-            from lets_plot import *
+            from ggrust import *
 
             data_spatial = cl.datasets.human_lymph_node()
             data_hne = sq.datasets.visium_hne_adata()
@@ -174,7 +174,7 @@ Overlay categorical labels or gene expression on tissue coordinates.
 
             import cellestial as cl
             import squidpy as sq
-            from lets_plot import *
+            from ggrust import *
 
             data_spatial = cl.datasets.human_lymph_node()
             data_hne = sq.datasets.visium_hne_adata()
@@ -252,7 +252,7 @@ Also, cellestial-specific layers, providing utilities, could be added to dimensi
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -289,7 +289,7 @@ Also, cellestial-specific layers, providing utilities, could be added to dimensi
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
             data_velocity = cl.datasets.pancreas()
@@ -392,7 +392,7 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -447,7 +447,7 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -496,7 +496,7 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -543,7 +543,7 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -627,7 +627,7 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -658,7 +658,7 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -700,7 +700,7 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -731,7 +731,7 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -792,7 +792,7 @@ Cellestial ships with quick exploratory plots.
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 
@@ -823,7 +823,7 @@ Cellestial ships with quick exploratory plots.
          .. code-block:: python
 
             import cellestial as cl
-            from lets_plot import *
+            from ggrust import *
 
             data = cl.datasets.pbmc3k()
 

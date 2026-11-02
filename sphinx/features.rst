@@ -10,7 +10,7 @@ Below is an overview of key features with examples.
 
     import scanpy as sc
     from pathlib import Path
-    from lets_plot import *
+    from ggrust import *
 
     import cellestial as cl
 

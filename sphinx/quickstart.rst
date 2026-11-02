@@ -40,7 +40,7 @@ the cached copy.
 
 .. code-block:: python
 
-   from lets_plot import *
+   from ggrust import *
 
    import cellestial as cl
 
@@ -50,7 +50,7 @@ the cached copy.
    :hide-code:
 
    from pathlib import Path
-   from lets_plot import *
+   from ggrust import *
 
    import cellestial as cl
 

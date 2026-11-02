@@ -9,7 +9,7 @@ that return composable plot objects.
 
    import scanpy as sc
    from pathlib import Path
-   from lets_plot import *
+   from ggrust import *
 
    import cellestial as cl
 

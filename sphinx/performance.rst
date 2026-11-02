@@ -6,7 +6,7 @@ The process of building the DataFrame mostly avoids using unnecessary columns al
 Leveraging the *blazing fast* nature of `Polars <https://pola.rs/>`_, **Cellestial** ensures performance.
 
 
-Plotting, the core step, is handled by `Lets-Plot <https://lets-plot.org/python/>`_ which is fast and scalable.
+Plotting, the core step, is handled by `ggrust <https://ggrust.datavil.org/>`_, which renders in Rust and is fast and scalable.
 
 
 Example: 100k cells

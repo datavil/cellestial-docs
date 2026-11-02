@@ -38,7 +38,7 @@
 Cellestial |version|
 ====================
 
-|pypi| |license| |polars| |letsplot|
+|pypi| |license| |polars| |ggrust|
 
 The *grammar of graphics* for single-cell omics.
 
@@ -848,12 +848,12 @@ Documentation
    philosophy
    performance
 
-About Lets-Plot
----------------
+About ggrust
+------------
 
-Cellestial is built on top of a powerful Python library, Lets-Plot. 
-It is the best Python implementation of *ggplot2* with additional features such as **tooltips** and **zooming and panning**.
-`Lets-Plot API <https://lets-plot.org/python/pages/api.html>`_
+Cellestial is built on top of ggrust, a Grammar of Graphics library written in Rust with a
+Lets-Plot compatible Python API, including **tooltips** and **zooming and panning**.
+`ggrust API <https://ggrust.datavil.org/reference/>`_
 
 .. |pypi| image:: https://img.shields.io/pypi/v/cellestial?color=377eb8
    :target: https://pypi.org/project/cellestial/
@@ -867,6 +867,6 @@ It is the best Python implementation of *ggplot2* with additional features such 
    :target: https://www.pola.rs/
    :alt: Powered by Polars
 
-.. |letsplot| image:: https://img.shields.io/badge/Graphics-Lets--Plot-FF00CC?logo=jetbrains&logoColor=white
-   :target: https://lets-plot.org/
-   :alt: Built with Lets-Plot
+.. |ggrust| image:: https://img.shields.io/badge/Graphics-ggrust-CE422B?logo=rust&logoColor=white
+   :target: https://ggrust.datavil.org/
+   :alt: Built with ggrust

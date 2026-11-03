@@ -315,7 +315,7 @@ and ``facet_grid()`` compose with any plot function using ``+``.
       .. code-block:: python
 
          (
-            cl.umap(data, key="cell_type_lvl1")
+            cl.umap(data, key="cell_type_lvl1", add_keys="sample")
             + facet_grid(x="sample",y="cell_type_lvl1")
          )
 
@@ -324,7 +324,7 @@ and ``facet_grid()`` compose with any plot function using ``+``.
 
          save_features_mobile_svg(
             (
-               cl.umap(data, key="cell_type_lvl1")
+               cl.umap(data, key="cell_type_lvl1", add_keys="sample")
                 + facet_grid(x="sample",y="cell_type_lvl1")
             ),
             "facets-grid.svg",

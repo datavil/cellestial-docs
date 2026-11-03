@@ -449,7 +449,7 @@ docs = [
 requires-dist = [
     { name = "anndata", specifier = ">=0.10.8,<1.0" },
     { name = "cellestial", specifier = ">=0.60.0" },
-    { name = "ggrust", specifier = ">=0.1.0,<0.2.0" },
+    { name = "ggrust", specifier = ">=0.3.0,<0.4.0" },
     { name = "matplotlib", marker = "extra == 'extras'", specifier = ">=3.9,<4.0" },
     { name = "polars", extras = ["pyarrow"], specifier = ">=1.30.0,<2.0.0" },
     { name = "scanpy", extras = ["leiden"], marker = "extra == 'extras'", specifier = ">=1.10.4,<2.0.0" },
@@ -1200,19 +1200,6 @@ wheels = [
 ]
 
 [[package]]
-name = "framex"
-version = "1.0.3"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "polars" },
-    { name = "rich-argparse" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/6d/d3/f1cbb92498977e4522954633456ea1c9d1d04334199d03937968d887f98b/framex-1.0.3.tar.gz", hash = "sha256:a11731ca1e77a45cbe3f7db3399771579d401bc5b4ed8fd2d783c69032ef7d27", size = 16237, upload-time = "2025-07-19T16:43:13.041Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/bf/d6/9d188b7312a448289751551e99aad0936d2b0b6a6ed1ce703d3011c42729/framex-1.0.3-py3-none-any.whl", hash = "sha256:568ed2d5ca4dd749648e7a94f86af1ac1f9bd19432e57ef21b9e25b43744bff7", size = 19402, upload-time = "2025-07-19T16:43:12.076Z" },
-]
-
-[[package]]
 name = "frozenlist"
 version = "1.8.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1370,21 +1357,20 @@ wheels = [
 
 [[package]]
 name = "ggrust"
-version = "0.1.0"
+version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "framex" },
     { name = "ipykernel" },
     { name = "polars" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d7/08/bdecf79260875dd2fd4357d5e5cd378d31c0b968e01ceb4c9bc224a72eba/ggrust-0.1.0.tar.gz", hash = "sha256:254b11caa3000c0695c1efdb66ebbc784239d256cff8f296358e157702ca41a3", size = 2057171, upload-time = "2026-11-01T03:36:07.871Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/97/b2/33b678f545a171fd42dba1cd3db47ed7edaabfa8f18b197857e2b6629889/ggrust-0.3.0.tar.gz", hash = "sha256:3e0e8a2b4f4a1466ee7f4151225690b89b6aedff52143dc76513c782f4231f88", size = 2193077, upload-time = "2026-11-03T05:06:46.425Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/50/37/85b6b160233685850ba9d606416f30f79c1cc312b4503a5694cee3cd398e/ggrust-0.1.0-cp311-abi3-macosx_10_12_x86_64.whl", hash = "sha256:7f69dcaf1f4c7a50d5ef8109296697216e6443bd71afcd7901f41f5f151cb7bd", size = 7044563, upload-time = "2026-11-01T03:35:54.707Z" },
-    { url = "https://files.pythonhosted.org/packages/ad/02/38533cf0469a8dff4100ca405af0a41877ee0770e93246931acd206e20e5/ggrust-0.1.0-cp311-abi3-macosx_11_0_arm64.whl", hash = "sha256:6107f233ada127f526523591949df8a279e6502a7ccc5f9aa7dfca89082db7ab", size = 6722279, upload-time = "2026-11-01T03:35:56.966Z" },
-    { url = "https://files.pythonhosted.org/packages/27/30/7029ece0f9a8a0a2098b0ebe6e4425382e57d3f8ff65a11b2488775978ea/ggrust-0.1.0-cp311-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:6aeb2feb42ff9d469ae0fb8613abbbfe8639294ecab32bbba26105bde35dfbc2", size = 7030335, upload-time = "2026-11-01T03:35:58.939Z" },
-    { url = "https://files.pythonhosted.org/packages/e2/54/4fe1d6d2b536437065f08961ad07b1b0bdb0eb02ecebde36b129a0af4b8a/ggrust-0.1.0-cp311-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:826db5b1ab5867f23fd066468f7aa3763630a62e05caf04c218b6e18ba06769f", size = 7308930, upload-time = "2026-11-01T03:36:01.104Z" },
-    { url = "https://files.pythonhosted.org/packages/91/12/0f6f8ffe4daef4ac5bac9009a709ad5ff609c67ae553003830eb69ba477d/ggrust-0.1.0-cp311-abi3-win_amd64.whl", hash = "sha256:ce655ad0eb861fdde62b4d9149f810a45447419e25c4b8499d7999a9cb189780", size = 7264825, upload-time = "2026-11-01T03:36:03.279Z" },
-    { url = "https://files.pythonhosted.org/packages/96/c5/ac5ecfeef9eb7e172c72dd628d96a20d515fd03b38bf80acc4a88357526d/ggrust-0.1.0-cp311-abi3-win_arm64.whl", hash = "sha256:98581d4c95af323efe6c8268eb925cc5b5529089abd7ca8f991730909c308a2f", size = 6730299, upload-time = "2026-11-01T03:36:06.218Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/e7/3c5dffb30a50a43c9a9060f0639d9ab7b916551cdb9fe4d489a7edd48d36/ggrust-0.3.0-cp311-abi3-macosx_10_12_x86_64.whl", hash = "sha256:c034d5a539e1bc60de8e5dbc0f360341fd9514c6ec36cccb209883913fa99bc2", size = 7473016, upload-time = "2026-11-03T05:06:34.338Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/d6/f571add7ebe613bd4c45866fe68edfe90755978cdf685f5d5c62adea343b/ggrust-0.3.0-cp311-abi3-macosx_11_0_arm64.whl", hash = "sha256:f2bb40834bb5929f3431bf0ea0e765706f70beac390aa5084e0c5fbb3e841354", size = 7120691, upload-time = "2026-11-03T05:06:36.094Z" },
+    { url = "https://files.pythonhosted.org/packages/80/87/19887c0d364a6140617f885fe1df3fc8ed72802089d7b95feb8270ac0621/ggrust-0.3.0-cp311-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:81775c0079ec576604fc2de772fd29d80994cc34be08c8ae449d8476f3159a6a", size = 7436414, upload-time = "2026-11-03T05:06:37.893Z" },
+    { url = "https://files.pythonhosted.org/packages/ba/be/fa18b01d11e5abb9e385740ec044f20cc46e9a0a7940221211e4f8f6c2f8/ggrust-0.3.0-cp311-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:b18f0bfa70480d3dc631b3f0eff6b1c8248f71a13f9261659448771abb7eaa7a", size = 7756222, upload-time = "2026-11-03T05:06:39.857Z" },
+    { url = "https://files.pythonhosted.org/packages/e3/9e/415b485ec241fd4c8b6af31c35677a694a55764326e1f1eec7de3b542614/ggrust-0.3.0-cp311-abi3-win_amd64.whl", hash = "sha256:62d9415bb3f2dc88aa795dd1cdc38ecbf80f66831c90bee2d47da36deeec88c5", size = 7716137, upload-time = "2026-11-03T05:06:41.843Z" },
+    { url = "https://files.pythonhosted.org/packages/e6/9f/c256aab95ebcea12b22dd31576626da463908c27e11e9adace81db471066/ggrust-0.3.0-cp311-abi3-win_arm64.whl", hash = "sha256:55db7f3454373d067611b6e361a45dbaefbf1de41816418f13fef29d1826baa7", size = 7130805, upload-time = "2026-11-03T05:06:44.002Z" },
 ]
 
 [[package]]
@@ -3854,18 +3840,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c0/8f/0722ca900cc807c13a6a0c696dacf35430f72e0ec571c4275d2371fca3e9/rich-15.0.0.tar.gz", hash = "sha256:edd07a4824c6b40189fb7ac9bc4c52536e9780fbbfbddf6f1e2502c31b068c36", size = 230680, upload-time = "2026-04-12T08:24:00.75Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl", hash = "sha256:33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb", size = 310654, upload-time = "2026-04-12T08:24:02.83Z" },
-]
-
-[[package]]
-name = "rich-argparse"
-version = "1.8.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "rich" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/6a/e5/1064c43203a357d668cd42435f7a15fe6af51512d85b2104fecb937aa861/rich_argparse-1.8.0.tar.gz", hash = "sha256:679df3d832fa94ad6e4bdb07ded088cd7ea2dddc58ae9b2b46346a40b06cbc0c", size = 38940, upload-time = "2026-05-01T15:18:43.604Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/0b/35/1cceccc5fcb50fa2ed53e2aa278cd032f3902682a73e763fb1ac3be8e6fa/rich_argparse-1.8.0-py3-none-any.whl", hash = "sha256:d2a3ce7854654e2253c578763ab0a32f05016f23a55fadba7b9a91b6c0e92142", size = 25616, upload-time = "2026-05-01T15:18:42.395Z" },
 ]
 
 [[package]]

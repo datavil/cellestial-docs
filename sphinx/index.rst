@@ -67,6 +67,10 @@ Installation
 
          poetry add cellestial
 
+To plot ``SpatialData`` objects, install the ``spatial`` extra, e.g.
+``pip install "cellestial[spatial]"``. AnnData inputs, spatial ones included,
+work without it.
+
 
 
 Examples

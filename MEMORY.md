@@ -462,8 +462,8 @@ interactive: bool = False
 
 ### Default naming parameters
 ```python
-observations_name: str = "Barcode"   # cell identifier column
-variables_name: str = "Variable"      # gene identifier column
+observation_id_column: str = "Barcode"   # cell identifier column
+variable_id_column: str = "Variable"      # gene identifier column
 ```
 
 ## Type annotation style

@@ -1,0 +1,50 @@
+name: docs
+
+on:
+  pull_request:
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # cellestial branch the docs are built against.
+  CELLESTIAL_REF: dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: datavil/cellestial
+          ref: ${{ env.CELLESTIAL_REF }}
+          path: _cellestial
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Cache datasets
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/cellestial
+            ~/.cache/squidpy
+            data
+          key: datasets-${{ hashFiles('sphinx/**/*.rst') }}
+          restore-keys: datasets-
+
+      - name: Install
+        run: |
+          uv sync --group docs
+          uv pip install --no-deps -e _cellestial
+
+      - name: Build
+        run: uv run --no-sync --group docs sphinx-build sphinx/ _build/html/ -a -j auto
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: html
+          path: _build/html
+          retention-days: 7

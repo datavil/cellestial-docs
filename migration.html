@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Migrating to ggrust</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=05c22323" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=fe349105"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/thebelab-helper.js"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'migration';</script>
+    <script src="_static/custom.js?v=22fa3d50"></script>
+    <link rel="icon" href="_static/cellestial.svg"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quickstart" href="quickstart.html" />
+    <link rel="prev" title="Migrating from Scanpy" href="migrating_from_scanpy.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.60.0" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search"
+         aria-label="Search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/cellestial.svg" class="logo__image only-light" alt=""/>
+    <img src="_static/cellestial.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Cellestial</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="API.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="features.html">
+    Features
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="migrating_from_scanpy.html">
+    Migrating from Scanpy
+  </a>
+</li>
+
+
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="#">
+    Migrating to ggrust
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="quickstart.html">
+    Quickstart
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="mudata.html">
+    MuData Support
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="annotated_heatmap.html">
+    Annotated Heatmap
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="publication_figures.html">
+    Publication Figures
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="philosophy.html">
+    Design Philosophy
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="performance.html">
+    Performance & Scalability
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/datavil/cellestial" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/cellestial" title="PyPI" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/pypi.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="API.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="features.html">
+    Features
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="migrating_from_scanpy.html">
+    Migrating from Scanpy
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Migrating to ggrust
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="quickstart.html">
+    Quickstart
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="mudata.html">
+    MuData Support
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="annotated_heatmap.html">
+    Annotated Heatmap
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="publication_figures.html">
+    Publication Figures
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="philosophy.html">
+    Design Philosophy
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="performance.html">
+    Performance & Scalability
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/datavil/cellestial" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/cellestial" title="PyPI" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/pypi.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Migrating to ggrust</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="migrating-to-ggrust">
+<h1>Migrating to ggrust<a class="headerlink" href="#migrating-to-ggrust" title="Link to this heading">#</a></h1>
+<p>Cellestial now renders with <a class="reference external" href="https://github.com/datavil/ggrust">ggrust</a> instead of
+lets-plot. ggrust keeps the lets-plot API, so most code only needs a new import.
+This page lists every breaking change since 0.60.0, each with a before and after.</p>
+<section id="backend-and-setup">
+<h2>Backend and setup<a class="headerlink" href="#backend-and-setup" title="Link to this heading">#</a></h2>
+<p><strong>Import layers, scales and themes from ggrust.</strong> Cellestial returns ggrust plot
+objects, which do not combine with objects made by <code class="docutils literal notranslate"><span class="pre">lets_plot</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">lets_plot</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># after</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ggrust</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p><strong>setup_html is removed.</strong> It was a no-op. Choose notebook output with
+<code class="docutils literal notranslate"><span class="pre">ggrust.display</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">setup_html</span><span class="p">()</span>
+
+<span class="c1"># after</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">ggrust</span>
+<span class="n">ggrust</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;html&quot;</span><span class="p">)</span>  <span class="c1"># or &quot;svg&quot;, &quot;png&quot;</span>
+</pre></div>
+</div>
+<p><strong>spatialdata is optional.</strong> It is only needed to plot <code class="docutils literal notranslate"><span class="pre">SpatialData</span></code> objects.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+pip<span class="w"> </span>install<span class="w"> </span>cellestial
+
+<span class="c1"># after</span>
+pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;cellestial[spatial]&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="layers">
+<h2>Layers<a class="headerlink" href="#layers" title="Link to this heading">#</a></h2>
+<p><strong>arrow_axis returns a theme.</strong> <code class="docutils literal notranslate"><span class="pre">plot=</span></code> and <code class="docutils literal notranslate"><span class="pre">**geom_kwargs</span></code> are gone,
+<code class="docutils literal notranslate"><span class="pre">linetype=</span></code> is a parameter, and arrowhead options go through <code class="docutils literal notranslate"><span class="pre">arrow_kwargs</span></code>.
+<code class="docutils literal notranslate"><span class="pre">length</span></code> is a fraction of the panel, so arrows start at the panel corner.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">umap</span> <span class="o">+</span> <span class="n">cl</span><span class="o">.</span><span class="n">arrow_axis</span><span class="p">(</span><span class="n">plot</span><span class="o">=</span><span class="n">umap</span><span class="p">,</span> <span class="n">linetype</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;closed&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="c1"># after</span>
+<span class="n">umap</span> <span class="o">+</span> <span class="n">cl</span><span class="o">.</span><span class="n">arrow_axis</span><span class="p">(</span><span class="n">linetype</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">,</span> <span class="n">arrow_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;closed&quot;</span><span class="p">})</span>
+</pre></div>
+</div>
+<p><strong>bracket uses ggrust’s stat_compare_means.</strong> Groups below 50 tie-free values get
+R’s exact Wilcoxon test, so their p-values change. Stars use <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> cutoffs and
+p-value labels show 2 significant digits. <code class="docutils literal notranslate"><span class="pre">test=&quot;ttest&quot;</span></code> is Welch’s test.
+<code class="docutils literal notranslate"><span class="pre">test=&quot;student&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">alternative</span></code>, <code class="docutils literal notranslate"><span class="pre">label=&quot;padj&quot;</span></code>, label sequences,
+<code class="docutils literal notranslate"><span class="pre">label_format</span></code>, <code class="docutils literal notranslate"><span class="pre">prefix</span></code>, <code class="docutils literal notranslate"><span class="pre">prefix_style</span></code>, <code class="docutils literal notranslate"><span class="pre">separator</span></code> and <code class="docutils literal notranslate"><span class="pre">threshold</span></code> are removed.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">violin</span> <span class="o">+</span> <span class="n">cl</span><span class="o">.</span><span class="n">bracket</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;padj&quot;</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;p = &quot;</span><span class="p">)</span>
+
+<span class="c1"># after</span>
+<span class="n">violin</span> <span class="o">+</span> <span class="n">cl</span><span class="o">.</span><span class="n">bracket</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;pvalue&quot;</span><span class="p">)</span>             <span class="c1"># shows the adjusted p-value</span>
+<span class="n">violin</span> <span class="o">+</span> <span class="n">cl</span><span class="o">.</span><span class="n">bracket</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;stars&quot;</span><span class="p">,</span> <span class="n">hide_ns</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># replaces threshold=0.05</span>
+</pre></div>
+</div>
+</section>
+<section id="heatmaps">
+<h2>Heatmaps<a class="headerlink" href="#heatmaps" title="Link to this heading">#</a></h2>
+<p><strong>dendrogram_kwargs is removed</strong> from <code class="docutils literal notranslate"><span class="pre">dotplot</span></code>, <code class="docutils literal notranslate"><span class="pre">stacked_violin</span></code>,
+<code class="docutils literal notranslate"><span class="pre">matrixplot</span></code> and <code class="docutils literal notranslate"><span class="pre">heatmap</span></code>. The tree sits in a fixed band beside the panel and
+takes its style from <code class="docutils literal notranslate"><span class="pre">axis_ticks_y</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span> <span class="n">dendrogram</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+           <span class="n">dendrogram_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+
+<span class="c1"># after</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span> <span class="n">dendrogram</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+           <span class="n">dendrogram_color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">dendrogram_size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># or</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span> <span class="n">dendrogram</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">+</span> <span class="n">theme</span><span class="p">(</span>
+    <span class="n">axis_ticks_y</span><span class="o">=</span><span class="n">element_line</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>annotated_heatmap returns one PlotSpec.</strong> Tracks are ggside side bands that zoom
+with the heatmap. <code class="docutils literal notranslate"><span class="pre">layers_all</span></code> now acts as <code class="docutils literal notranslate"><span class="pre">layers</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">plot</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">annotated_heatmap</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">)</span>
+<span class="n">plot</span><span class="o">.</span><span class="n">as_dict</span><span class="p">()[</span><span class="s2">&quot;figures&quot;</span><span class="p">]</span>
+
+<span class="c1"># after</span>
+<span class="n">plot</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="n">annotated_heatmap</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">)</span>
+<span class="n">plot</span><span class="o">.</span><span class="n">as_dict</span><span class="p">()[</span><span class="s2">&quot;layers&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>stacked_violin renames color_by to fill_statistic.</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">stacked_violin</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span> <span class="n">color_by</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">)</span>
+
+<span class="c1"># after</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">stacked_violin</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span> <span class="n">fill_statistic</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Output column parameters end in _column</strong> in <code class="docutils literal notranslate"><span class="pre">dotplot</span></code> and <code class="docutils literal notranslate"><span class="pre">stacked_violin</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">percentage_key</span><span class="o">=</span><span class="s2">&quot;pct&quot;</span><span class="p">,</span> <span class="n">mean_key</span><span class="o">=</span><span class="s2">&quot;avg&quot;</span><span class="p">)</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">stacked_violin</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">aggregate_key</span><span class="o">=</span><span class="s2">&quot;agg&quot;</span><span class="p">)</span>
+
+<span class="c1"># after</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">dotplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">percentage_column</span><span class="o">=</span><span class="s2">&quot;pct&quot;</span><span class="p">,</span> <span class="n">mean_column</span><span class="o">=</span><span class="s2">&quot;avg&quot;</span><span class="p">)</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">stacked_violin</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">keys</span><span class="p">,</span> <span class="n">aggregate_column</span><span class="o">=</span><span class="s2">&quot;agg&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="distributions-and-volcano">
+<h2>Distributions and volcano<a class="headerlink" href="#distributions-and-volcano" title="Link to this heading">#</a></h2>
+<p><strong>Toggles drop the show_ prefix.</strong> The old names are passed through to the geom,
+so they no longer hide anything.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">violin</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;CD3E&quot;</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span> <span class="n">show_points</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">volcano</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">show_threshold_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># after</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">violin</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;CD3E&quot;</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">volcano</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">threshold_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>volcano names its p-value column after its values.</strong> With the default
+<code class="docutils literal notranslate"><span class="pre">use_adjusted_pvalue=True</span></code> the column is <code class="docutils literal notranslate"><span class="pre">pvalue_adj</span></code>. The negative log
+p-value parameter and column are spelled out.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">volcano</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">neg_log_pvalue_column</span><span class="o">=</span><span class="s2">&quot;neg_log_pvalue&quot;</span><span class="p">)</span>
+
+<span class="c1"># after</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">volcano</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">negative_log_pvalue_column</span><span class="o">=</span><span class="s2">&quot;negative_log_pvalue&quot;</span><span class="p">)</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">volcano</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">pvalue_column</span><span class="o">=</span><span class="s2">&quot;pvalue&quot;</span><span class="p">)</span>  <span class="c1"># keep the old p-value column name</span>
+</pre></div>
+</div>
+</section>
+<section id="frames-and-filters">
+<h2>Frames and filters<a class="headerlink" href="#frames-and-filters" title="Link to this heading">#</a></h2>
+<p><strong>observations_name and variables_name are renamed</strong> to <code class="docutils literal notranslate"><span class="pre">observation_id_column</span></code>
+and <code class="docutils literal notranslate"><span class="pre">variable_id_column</span></code> in <code class="docutils literal notranslate"><span class="pre">build_frame</span></code>, the frame helpers and every plot.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">build_frame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">observations_name</span><span class="o">=</span><span class="s2">&quot;Cell&quot;</span><span class="p">)</span>
+
+<span class="c1"># after</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">build_frame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">observation_id_column</span><span class="o">=</span><span class="s2">&quot;Cell&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>groups and drop raise on unknown categories</strong> with <code class="docutils literal notranslate"><span class="pre">KeyNotFoundError</span></code> instead of
+filtering to nothing.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before: a typo gave a blank panel</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">violin</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;CD3E&quot;</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span> <span class="n">groups</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;99&quot;</span><span class="p">])</span>
+
+<span class="c1"># after: keep only categories the column has</span>
+<span class="n">available</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">obs</span><span class="p">[</span><span class="s2">&quot;leiden&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span><span class="p">)</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">violin</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">&quot;CD3E&quot;</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s2">&quot;leiden&quot;</span><span class="p">,</span>
+          <span class="n">groups</span><span class="o">=</span><span class="p">[</span><span class="n">g</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;99&quot;</span><span class="p">]</span> <span class="k">if</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">available</span><span class="p">])</span>
+</pre></div>
+</div>
+<p><strong>spatial and spatials drop scale_axis.</strong> It never changed the rendered plot.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># before</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">spatial</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s2">&quot;MS4A1&quot;</span><span class="p">,</span> <span class="n">scale_axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># after</span>
+<span class="n">cl</span><span class="o">.</span><span class="n">spatial</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s2">&quot;MS4A1&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#backend-and-setup">Backend and setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#layers">Layers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heatmaps">Heatmaps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributions-and-volcano">Distributions and volcano</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frames-and-filters">Frames and filters</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, datavil.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

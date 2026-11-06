@@ -299,8 +299,6 @@ direct equivalent in scanpy:
       + cl.bracket(
          y_padding=0.2,
          label="pvalue",
-         prefix="p",
-         prefix_style="<",
          comparisons=[
             ("Lymphocytes", "Monocytes"),
             ("Monocytes", "B Cells"),
@@ -318,8 +316,6 @@ direct equivalent in scanpy:
          + cl.bracket(
             y_padding=0.2,
             label="pvalue",
-            prefix="p",
-            prefix_style="<",
             comparisons=[
                ("Lymphocytes", "Monocytes"),
                ("Monocytes", "B Cells"),

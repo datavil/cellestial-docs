@@ -20,4 +20,8 @@
    sc.settings.datasetdir = Path.home() / ".cache" / "cellestial" / "datasets"
 
 {% endif %}
+{% if objtype == "data" %}
+.. autodata:: {{ objname }}
+{% else %}
 .. autofunction:: {{ objname }}
+{% endif %}

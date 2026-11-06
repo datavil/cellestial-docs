@@ -590,8 +590,6 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
    bx_brckt = bx + cl.bracket(
       y_padding=0.2,
       label="pvalue",
-      prefix_style="<",
-      prefix="p",
       comparisons=[("Lymphocytes","Monocytes"),("Monocytes", "Erythroid"), ("Monocytes", "B Cells")],
    )
    vln = cl.violin(
@@ -603,8 +601,6 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
    vln_brckt = vln + cl.bracket(
       y_padding=0.2,
       label="pvalue",
-      prefix_style="<",
-      prefix="p",
       comparisons=[("Lymphocytes","Monocytes"),("Monocytes", "Erythroid"), ("Monocytes", "B Cells")],
    )
 
@@ -674,8 +670,6 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
             bx_brckt = bx + cl.bracket(
                 y_padding=0.2,
                 label="pvalue",
-                prefix_style="<",
-                prefix="p",
                 comparisons=[
                     ("Lymphocytes", "Monocytes"),
                     ("Monocytes", "Erythroid"),
@@ -747,8 +741,6 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
             vln_brckt = vln + cl.bracket(
                 y_padding=0.2,
                 label="pvalue",
-                prefix_style="<",
-                prefix="p",
                 comparisons=[
                     ("Lymphocytes", "Monocytes"),
                     ("Monocytes", "Erythroid"),
@@ -844,7 +836,11 @@ Documentation
    :hidden:
 
    migrating_from_scanpy
+   migration
    quickstart
+   mudata
+   annotated_heatmap
+   publication_figures
    philosophy
    performance
 

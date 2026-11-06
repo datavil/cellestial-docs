@@ -315,7 +315,7 @@ and ``facet_grid()`` compose with any plot function using ``+``.
       .. code-block:: python
 
          (
-            cl.umap(data, key="cell_type_lvl1")
+            cl.umap(data, key="cell_type_lvl1", add_keys="sample")
             + facet_grid(x="sample",y="cell_type_lvl1")
          )
 
@@ -324,7 +324,7 @@ and ``facet_grid()`` compose with any plot function using ``+``.
 
          save_features_mobile_svg(
             (
-               cl.umap(data, key="cell_type_lvl1")
+               cl.umap(data, key="cell_type_lvl1", add_keys="sample")
                 + facet_grid(x="sample",y="cell_type_lvl1")
             ),
             "facets-grid.svg",
@@ -428,7 +428,7 @@ Any argument related to color accepts HEX, RGB, or named colors.
 .. dropdown:: Continuous color gradients
 
    Expression plots and any continuous key use a gradient scale.
-   Use ``color_low``, ``color_high``, and optionally ``color_mid`` with ``mid_point``.
+   Use ``color_low``, ``color_high``, and optionally ``color_mid`` with ``midpoint``.
 
    .. code-block:: python
 
@@ -466,7 +466,7 @@ Any argument related to color accepts HEX, RGB, or named colors.
          color_low=cl.BLUE,
          color_mid=cl.SNOW,
          color_high=cl.RED,
-         mid_point="mid"
+         midpoint="mid"
       )
 
    .. jupyter-execute::
@@ -479,7 +479,7 @@ Any argument related to color accepts HEX, RGB, or named colors.
             color_low=cl.BLUE,
             color_mid=cl.SNOW,
             color_high=cl.RED,
-            mid_point="mid"
+            midpoint="mid"
          ),
          "colors-gradient-three.svg",
       )

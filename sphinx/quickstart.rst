@@ -233,8 +233,6 @@ groups.
       + cl.bracket(
          y_padding=0.2,
          label="pvalue",
-         prefix="p",
-         prefix_style="<",
          comparisons=[
             ("Lymphocytes", "Monocytes"),
             ("Monocytes", "Erythroid"),
@@ -258,8 +256,6 @@ groups.
          + cl.bracket(
             y_padding=0.2,
             label="pvalue",
-            prefix="p",
-            prefix_style="<",
             comparisons=[
                ("Lymphocytes", "Monocytes"),
                ("Monocytes", "Erythroid"),

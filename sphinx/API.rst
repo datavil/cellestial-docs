@@ -48,6 +48,7 @@ Heatmap
    ~cellestial.matrixplot
    ~cellestial.dotplot
    ~cellestial.stacked_violin
+   ~cellestial.annotated_heatmap
 
 
 Distributions
@@ -132,6 +133,7 @@ Layers
    ~cellestial.arrow_axis
    ~cellestial.stream
    ~cellestial.bracket
+   ~cellestial.borders
 
 Data Frames
 -----------
@@ -157,6 +159,24 @@ Utility
    ~cellestial.save
    ~cellestial.marker_genes
    ~cellestial.marker_genes_dict
+   ~cellestial.layout
+
+Colors
+------
+
+.. autosummary::
+   :toctree: generated
+   :nosignatures:
+
+   ~cellestial.BLUE
+   ~cellestial.CHERRY
+   ~cellestial.LIGHT_GRAY
+   ~cellestial.ORANGE
+   ~cellestial.PINK
+   ~cellestial.PURPLE
+   ~cellestial.RED
+   ~cellestial.SNOW
+   ~cellestial.TEAL
 
 Datasets
 --------
@@ -166,6 +186,7 @@ Datasets
    :nosignatures:
 
    ~cellestial.datasets.pbmc3k
+   ~cellestial.datasets.pbmc_cite
    ~cellestial.datasets.human_lymph_node
    ~cellestial.datasets.pancreas
    ~cellestial.datasets.breast_cancer_atlas
@@ -179,3 +200,4 @@ Versions Information
    :nosignatures:
 
    ~cellestial.versions
+   ~cellestial.__version__

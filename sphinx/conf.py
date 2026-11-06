@@ -41,17 +41,19 @@ class BetterMock(mock.MagicMock):
 # Explicitly set __bool__ on the class to prevent MagicMock from overriding it
 # BetterMock.__bool__ = lambda self: True
 
-# Only mock lets_plot manually, let autodoc_mock_imports handle the rest
-PlotSpec = type("PlotSpec", (), {"__module__": "lets_plot.plot.core"})
-SupPlotsSpec = type("SupPlotsSpec", (), {"__module__": "lets_plot.plot.subplots"})
-FeatureSpec = type("FeatureSpec", (), {"__module__": "lets_plot.plot.core"})
-LayerSpec = type("LayerSpec", (), {"__module__": "lets_plot.plot.core"})
+# Only mock ggrust manually, let autodoc_mock_imports handle the rest
+PlotSpec = type("PlotSpec", (), {"__module__": "ggrust.plot.core"})
+SupPlotsSpec = type("SupPlotsSpec", (), {"__module__": "ggrust.plot.subplots"})
+FeatureSpec = type("FeatureSpec", (), {"__module__": "ggrust.plot.core"})
+FeatureSpecArray = type("FeatureSpecArray", (), {"__module__": "ggrust.plot.core"})
+LayerSpec = type("LayerSpec", (), {"__module__": "ggrust.plot.core"})
 
-for mod_name in ["lets_plot", "lets_plot.plot", "lets_plot.plot.core", "lets_plot.plot.subplots"]:
+for mod_name in ["ggrust", "ggrust.plot", "ggrust.plot.core", "ggrust.plot.subplots"]:
     mod_mock = BetterMock()
     mod_mock.PlotSpec = PlotSpec
     mod_mock.SupPlotsSpec = SupPlotsSpec
     mod_mock.FeatureSpec = FeatureSpec
+    mod_mock.FeatureSpecArray = FeatureSpecArray
     mod_mock.LayerSpec = LayerSpec
     sys.modules[mod_name] = mod_mock
 
@@ -164,14 +166,14 @@ napoleon_preprocess_types = True
 napoleon_type_aliases = None
 napoleon_attr_annotations = True
 napoleon_type_aliases = {
-    "PlotSpec": ":py:class:`lets_plot.plot.core.PlotSpec`",
-    "FeatureSpec": ":py:class:`lets_plot.plot.core.FeatureSpec`",
-    "LayerSpec": ":py:class:`lets_plot.plot.core.LayerSpec`",
-    "SupPlotsSpec": ":py:class:`lets_plot.plot.core.SupPlotsSpec`",
+    "PlotSpec": ":py:class:`ggrust.plot.core.PlotSpec`",
+    "FeatureSpec": ":py:class:`ggrust.plot.core.FeatureSpec`",
+    "LayerSpec": ":py:class:`ggrust.plot.core.LayerSpec`",
+    "SupPlotsSpec": ":py:class:`ggrust.plot.subplots.SupPlotsSpec`",
 }
 
 napoleon_type_aliases = {
-    "PlotSpec": ":py:class:`~lets_plot.plot.core.PlotSpec`",
+    "PlotSpec": ":py:class:`~ggrust.plot.core.PlotSpec`",
     "AnnData": ":py:class:`~anndata.AnnData`",
 }
 
@@ -179,7 +181,6 @@ python_use_unqualified_type_names = True
 
 
 intersphinx_mapping = {
-    "lets_plot": ("https://lets-plot.org/", None),
     "anndata": ("https://anndata.readthedocs.io/en/latest/", "../assets/anndata-objects.inv"),
     "polars": ("https://docs.pola.rs/api/python/stable/", None),
 }

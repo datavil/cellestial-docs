@@ -1,7 +1,7 @@
 Migrating from Scanpy
 =====================
 
-Cellestial replaces ``scanpy.pl`` with Lets-Plot-based plotting functions
+Cellestial replaces ``scanpy.pl`` with ggrust-based plotting functions
 that return composable plot objects.
 
 .. jupyter-execute::
@@ -9,7 +9,7 @@ that return composable plot objects.
 
    import scanpy as sc
    from pathlib import Path
-   from lets_plot import *
+   from ggrust import *
 
    import cellestial as cl
 
@@ -42,7 +42,7 @@ Key Differences
 
 A handful of mental shifts cover most of the migration:
 
-- **Functions return plot objects.** ``cl.umap(...)`` returns a Lets-Plot
+- **Functions return plot objects.** ``cl.umap(...)`` returns a ggrust
   ``PlotSpec``. Add titles, themes, scales and extra layers with ``+``.
   The function returns the plot; display or save it explicitly as needed.
 - **One color slot is named** ``key`` **, not** ``color``. The ``key`` can be
@@ -56,7 +56,7 @@ A handful of mental shifts cover most of the migration:
 - **Saving is a separate call.** Use ``cl.save(plot, "umap.png")`` instead of
   passing ``save=`` to the plotting function.
 - **Interactivity is on by default.** Tooltips, zoom and pan ship with every
-  plot through the Lets-Plot toolbar.
+  plot through the ggrust toolbar.
 
 
 Function Reference
@@ -83,7 +83,7 @@ Function Reference
      - Pass the embedding name through ``use_key=``.
    * - ``sc.pl.scatter``
      - ``cl.scatter``
-     - Takes a Lets-Plot ``aes(x=..., y=..., color=...)`` mapping.
+     - Takes a ggrust ``aes(x=..., y=..., color=...)`` mapping.
    * - ``sc.pl.dotplot``
      - ``cl.dotplot``
      - ``var_names=`` → ``keys=``, ``groupby=`` → ``group_by=``.

@@ -8,7 +8,7 @@ API Reference
      API pages include interactive (HTML) plots that would possibly not render correctly on a mobile device.
    </p>
 
-Cellestial is built on top of Lets-Plot. For further customization options, functionalities, utilities and many more please refer to `Lets-Plot API <https://lets-plot.org/python/pages/api.html>`_.
+Cellestial is built on `ggrust <https://github.com/datavil/ggrust>`_. Its layers, scales, themes and utilities follow the `lets-plot API <https://lets-plot.org/python/pages/api.html>`_, so that reference covers further customization.
 
 Could not find what you are looking for?
 

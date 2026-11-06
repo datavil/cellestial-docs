@@ -2,7 +2,7 @@ Features
 ========
 
 **Cellestial** is built on the layered principles of the grammar of graphics,
-inheriting the full composability of `Lets-Plot <https://lets-plot.org>`_.
+inheriting the full composability of `ggrust <https://github.com/datavil/ggrust>`_.
 Below is an overview of key features with examples.
 
 .. jupyter-execute::
@@ -10,7 +10,7 @@ Below is an overview of key features with examples.
 
     import scanpy as sc
     from pathlib import Path
-    from lets_plot import *
+    from ggrust import *
 
     import cellestial as cl
 
@@ -90,7 +90,7 @@ See more on `layer_tooltips() <https://lets-plot.org/python/pages/api/lets_plot.
 
    .. tab-item:: Custom
 
-      For full control, pass a ``layer_tooltips()`` object from Lets-Plot.
+      For full control, pass a ``layer_tooltips()`` object from ggrust.
       This lets you rename labels, format values, and add fixed lines.
 
       .. code-block:: python
@@ -128,7 +128,7 @@ See more on `layer_tooltips() <https://lets-plot.org/python/pages/api/lets_plot.
 Interactivity
 -------------
 
-Lets-Plot provides a toolbar (``ggtb``) that enables zooming and panning. 
+ggrust provides a toolbar (``ggtb``) that enables zooming and panning. 
 Cellestial exposes this through the ``interactive`` parameter on every
 plot function, or you can append ``+ ggtb()`` yourself for full control.
 
@@ -183,7 +183,7 @@ plot function, or you can append ``+ ggtb()`` yourself for full control.
 
       .. raw:: html
 
-         <img class="mobile-plot" src="_static/mobile/features/ggtb-umap.svg" alt="UMAP with Lets-Plot toolbar example" loading="lazy" />
+         <img class="mobile-plot" src="_static/mobile/features/ggtb-umap.svg" alt="UMAP with toolbar example" loading="lazy" />
 
       This also works on grids.
 
@@ -201,7 +201,7 @@ plot function, or you can append ``+ ggtb()`` yourself for full control.
 
       .. raw:: html
 
-         <img class="mobile-plot" src="_static/mobile/features/ggtb-umaps.svg" alt="UMAP grid with Lets-Plot toolbar example" loading="lazy" />
+         <img class="mobile-plot" src="_static/mobile/features/ggtb-umaps.svg" alt="UMAP grid with toolbar example" loading="lazy" />
 
 The toolbar appears above the plot and provides:
 
@@ -209,13 +209,13 @@ The toolbar appears above the plot and provides:
 - **Pan** - click and drag to move around
 - **Reset** - return to the original view
 
-Check Lets-Plot's `Interactivity demo <https://lets-plot.org/examples/demo/interact_pan_zoom.html>`_.
+ggrust follows lets-plot here, see its `Interactivity demo <https://lets-plot.org/examples/demo/interact_pan_zoom.html>`_.
 
 
 Saving and Exporting
 --------------------
 
-Cellestial plots are standard Lets-Plot objects which support two approaches to exporting:
+Cellestial plots are standard ggrust objects which support two approaches to exporting:
 ``ggsave()`` function and ``to_*``methods. 
 
 
@@ -271,13 +271,13 @@ Cellestial plots are standard Lets-Plot objects which support two approaches to 
          umap.to_png("figures/umap.png", w=8, h=6, unit="in", dpi=300)
          umap.to_svg("figures/umap.svg", w=200, h=150, unit="mm")
 
-Check Lets-Plot's `Cookbook for exporting plots <https://lets-plot.org/examples/cookbook/export.html>`_.
+See also lets-plot's `Cookbook for exporting plots <https://lets-plot.org/examples/cookbook/export.html>`_.
 
 Facets
 ------
 
 Faceting splits a single plot into a grid of panels, one per category.
-Cellestial plots are standard Lets-Plot ``PlotSpec`` objects, so ``facet_wrap()``
+Cellestial plots are standard ggrust ``PlotSpec`` objects, so ``facet_wrap()``
 and ``facet_grid()`` compose with any plot function using ``+``.
 
 .. tab-set::
@@ -342,7 +342,7 @@ Any argument related to color accepts HEX, RGB, or named colors.
 
 - HEX - e.g. ``"#1f1f1f"``
 - RGB/RGBA - e.g. ``"rgb(0, 0, 255)"``, ``"rgba(0, 0, 255, 0.5)"``.
-- Named colors, see `Lets-Plot Named Colors <https://lets-plot.org/python/pages/named_colors.html>`_.
+- Named colors, see `lets-plot Named Colors <https://lets-plot.org/python/pages/named_colors.html>`_.
 
 .. dropdown:: Built-in constants
 
@@ -378,7 +378,7 @@ Any argument related to color accepts HEX, RGB, or named colors.
 
 .. dropdown:: Hex, RGB, and named colors
 
-   Any color Lets-Plot accepts works in cellestial parameters.
+   Any color ggrust accepts works in cellestial parameters.
 
    .. code-block:: python
 
@@ -685,7 +685,7 @@ Grids
 -----
 
 Plural plot functions return a ``SupPlotsSpec`` grid, one plot per key, laid out
-in a configurable grid. For custom grids from arbitrary plots, use Lets-Plot's
+in a configurable grid. For custom grids from arbitrary plots, use ggrust's
 ``gggrid()`` directly.
 
 .. dropdown:: Plural functions
@@ -764,7 +764,7 @@ in a configurable grid. For custom grids from arbitrary plots, use Lets-Plot's
 
 .. dropdown:: Custom grids with gggrid
 
-   Mix and match different plot types in a single grid using Lets-Plot's ``gggrid()``.
+   Mix and match different plot types in a single grid using ggrust's ``gggrid()``.
 
    .. code-block:: python
 
@@ -781,7 +781,7 @@ in a configurable grid. For custom grids from arbitrary plots, use Lets-Plot's
 
    .. raw:: html
 
-      <img class="mobile-plot" src="_static/mobile/features/grids-custom.svg" alt="Custom Lets-Plot grid example" loading="lazy" />
+      <img class="mobile-plot" src="_static/mobile/features/grids-custom.svg" alt="Custom ggrust grid example" loading="lazy" />
 
    Set unequal column widths with ``widths``:
 

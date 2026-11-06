@@ -40,7 +40,7 @@ the cached copy.
 
 .. code-block:: python
 
-   from lets_plot import *
+   from ggrust import *
 
    import cellestial as cl
 
@@ -50,7 +50,7 @@ the cached copy.
    :hide-code:
 
    from pathlib import Path
-   from lets_plot import *
+   from ggrust import *
 
    import cellestial as cl
 
@@ -109,7 +109,7 @@ Two Cellestial-specific touches in the call above:
 - ``legend_ondata=True`` writes group labels directly on top of the clusters
   and removes the side legend.
 
-Everything after the ``+`` is plain Lets-Plot. ``scale_color_hue()`` swaps in a
+Everything after the ``+`` is plain ggrust. ``scale_color_hue()`` swaps in a
 ggplot-style hue palette.
 
 
@@ -162,7 +162,7 @@ Cellestial Layers
 -----------------
 
 Cellestial adds a small set of single-cell-specific layers on top of
-Lets-Plot. They compose with ``+`` like any other geom.
+ggrust. They compose with ``+`` like any other geom.
 
 ``cluster_outlines`` draws a contour around the cells that belong to one or
 more groups, which is handy when calling out a population in a figure.
@@ -347,11 +347,11 @@ rows reorder themselves into something interpretable. ``group_bars`` and
 without changing the rest of the call.
 
 
-Composing With Lets-Plot
-------------------------
+Composing With ggrust
+---------------------
 
-Cellestial plots are Lets-Plot ``PlotSpec`` objects, which means anything in
-the Lets-Plot toolbox composes the same way. A few common moves:
+Cellestial plots are ggrust ``PlotSpec`` objects, which means anything in
+the ggrust toolbox composes the same way. A few common moves:
 
 .. code-block:: python
 
@@ -398,7 +398,7 @@ the Lets-Plot toolbox composes the same way. A few common moves:
 
 .. raw:: html
 
-   <img class="mobile-plot" src="_static/mobile/quickstart/lets-plot-composition.svg" alt="Lets-Plot composition grid example" loading="lazy" />
+   <img class="mobile-plot" src="_static/mobile/quickstart/lets-plot-composition.svg" alt="ggrust composition grid example" loading="lazy" />
 
 ``gggrid`` arranges plots side by side, ``ggsize`` pins the figure size, and
 themes, scales and titles all combine through ``+`` exactly as in ggplot.
@@ -478,7 +478,7 @@ RNA velocity stream on a UMAP:
 Saving Plots
 ------------
 
-``cl.save`` writes any Cellestial or Lets-Plot figure to PNG, SVG, PDF or
+``cl.save`` writes any Cellestial or ggrust figure to PNG, SVG, PDF or
 HTML. The format is picked from the file extension.
 
 .. code-block:: python

@@ -1,90 +1,76 @@
+# AGENTS.md
 
-# Project Instructions
+Read this file fully before touching the docs. It is the contract for every agent
+(human or AI) working on **cellestial-docs**, the Sphinx site for
+[cellestial](https://github.com/datavil/cellestial) at cellestial.datavil.org.
+Design philosophy lives in [philosophy.md](philosophy.md). Lessons learned live in
+[MEMORY.md](MEMORY.md). The library's own contract is cellestial's `AGENTS.md`.
 
-## Preferences
-- Keep explanations brief and to the point.
-- Ask questions when necessary for complex tasks.
-- think before coding: ask when unsure, don't silently pick one interpretation and run with it
-- simplicity first: minimum code, any overengineering shows at a glance
-- surgical edits: only touch what's required, don't fix up neighboring code on the way by
-- goal-driven: translate fuzzy instructions into verifiable targets before starting
+## Vision
 
-## Code Style
-- use polars over pandas.
-- use ruff style formatting & import sorting, Numpy docstrings style.
-- In polars, use lazyframes when they will provide performance benefits.
-- use lets-plot over matplotlib or seaborn.
-- modularity is crucial.
-- use expressive naming for variables and parameters such as "group_index" over "grp_idx". 
-- Avoid abbreviations for variable and parameter names unless it is well-known convention such as "n" for sample size "X" for matrix and similar.
-- prefer naming dataframes "frame" over "df".
-- Cellestial uses poetry for package management and virtual environment.
-- In general follow the best practises around the python ecosystem.
-- prefer robustness over flexibility.
-- just like Rust, Python functions should preferably return single type.
+- The site shows cellestial as users meet it: biologists in notebooks. Every
+  example is real code run at build time (`jupyter-execute`) on a dataset from
+  `cellestial.datasets`, so the docs never drift from the library.
+- Backend: [ggrust](https://github.com/datavil/ggrust), a grammar of graphics engine
+  with a lets-plot compatible API. Examples import `from ggrust import *`, never
+  `lets_plot`. Plots render as interactive HTML in the pages and as static SVG for
+  mobile.
+- Inputs: AnnData, MuData and SpatialData. Singular functions return `PlotSpec`,
+  plural ones `SupPlotsSpec`.
 
-## Principles
-### 1. Think Before Coding
+## Golden rules
 
-**Don't assume. Don't hide confusion. Surface tradeoffs.**
+1. **Think before writing.** State assumptions. If a request has more than one
+   reading, say so and ask. Do not pick one silently.
+2. **Simplicity first.** Short pages, short examples. No speculative sections.
+3. **Be surgical.** Every changed line traces to the request. Do not "improve"
+   adjacent pages, wording or formatting. If you must touch anything outside the
+   requested part, **ask the user first**.
+4. **Goal-driven.** Turn fuzzy tasks into checks ("add a page" -> "it builds with no
+   new warnings and its plots render").
+5. **Build before handing over.** Run a full build and compare warnings with the
+   previous build. No new warnings, no missing references.
+6. **Verify visuals.** Open the built pages and look: plots render, no console
+   errors, labels and legends stay inside the plot area. Render PNGs of new examples
+   and read them.
+7. **Commit each significant step, then push.** Never deploy unless the user asks.
+8. Robustness over flexibility. Ask the user when unsure.
 
-LLMs often pick an interpretation silently and run with it. This principle forces explicit reasoning:
+## Writing style
 
-- **State assumptions explicitly** — If uncertain, ask rather than guess
-- **Present multiple interpretations** — Don't pick silently when ambiguity exists
-- **Push back when warranted** — If a simpler approach exists, say so
-- **Stop when confused** — Name what's unclear and ask for clarification
+- Brief. One idea per paragraph, examples over prose.
+- No em dashes anywhere: pages, code, comments, chat.
+- Full words in example code: `group_index` not `grp_idx`, `frame` not `df`.
+- Single backticks in docstrings, double backticks for literals in `.rst`.
+- Never name AnnData slots (`adata.obs`, `uns`) or scanpy APIs as the way to use
+  cellestial. Show the cellestial call.
+- Polars over pandas in examples, lets-plot style `+` composition for styling.
 
-### 2. Simplicity First
-
-**Minimum code that solves the problem. Nothing speculative.**
-
-Combat the tendency toward overengineering:
-
-- No features beyond what was asked
-- No abstractions for single-use code
-- No "flexibility" or "configurability" that wasn't requested
-- No error handling for impossible scenarios
-- If 200 lines could be 50, rewrite it
-
-**The test:** Would a senior engineer say this is overcomplicated? If yes, simplify.
-
-### 3. Surgical Changes
-
-**Touch only what you must. Clean up only your own mess.**
-
-When editing existing code:
-
-- Don't "improve" adjacent code, comments, or formatting
-- Don't refactor things that aren't broken
-- Match existing style, even if you'd do it differently
-- If you notice unrelated dead code, mention it — don't delete it
-
-When your changes create orphans:
-
-- Remove imports/variables/functions that YOUR changes made unused
-- Don't remove pre-existing dead code unless asked
-
-**The test:** Every changed line should trace directly to the user's request.
-
-### 4. Goal-Driven Execution
-
-**Define success criteria. Loop until verified.**
-
-Transform imperative tasks into verifiable goals:
-
-| Instead of... | Transform to... |
-|--------------|-----------------|
-| "Add validation" | "Write tests for invalid inputs, then make them pass" |
-| "Fix the bug" | "Write a test that reproduces it, then make it pass" |
-| "Refactor X" | "Ensure tests pass before and after" |
-
-For multi-step tasks, state a brief plan:
+## Layout
 
 ```
-1. [Step] → verify: [check]
-2. [Step] → verify: [check]
-3. [Step] → verify: [check]
+sphinx/
+  conf.py           extensions, theme, ggrust stand-ins for autodoc
+  index.rst         landing page and gallery
+  API.rst           autosummary of every public export (keep in sync with __all__)
+  *.rst             guides (quickstart, features, migration, mudata, ...)
+  _templates/       autosummary templates for the generated API pages
+  _static/          css, js, images; generated SVGs (gitignored)
+assets/             README images
+build.sh            local build against a cellestial checkout
+deploy.sh           build and publish to gh-pages (only when asked)
 ```
 
+## Commands
 
+Package management is **uv**.
+
+```bash
+./build.sh                                   # build against $CELLESTIAL_PATH, open it
+CELLESTIAL_PATH=/path/to/cellestial ./build.sh -E
+uv run --no-sync --group docs sphinx-build sphinx/ _build/html/ -a -j auto
+```
+
+To build against an unreleased cellestial branch, check it out with
+`git worktree add` and point `CELLESTIAL_PATH` at it. Never switch the branches of
+someone else's checkout.

@@ -52,3 +52,8 @@ assets/first-umap.svg
 assets/heatmap.svg
 assets/ridge.svg
 assets/spatial-categorical.svg
+
+# Build logs
+stdout.txt
+stderr.txt
+build_out.txt

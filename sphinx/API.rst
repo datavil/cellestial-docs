@@ -164,19 +164,34 @@ Utility
 Colors
 ------
 
-.. autosummary::
-   :toctree: generated
-   :nosignatures:
+Color constants, shown by ``cl.show_colors()``.
 
-   ~cellestial.BLUE
-   ~cellestial.CHERRY
-   ~cellestial.LIGHT_GRAY
-   ~cellestial.ORANGE
-   ~cellestial.PINK
-   ~cellestial.PURPLE
-   ~cellestial.RED
-   ~cellestial.SNOW
-   ~cellestial.TEAL
+.. py:data:: cellestial.BLUE
+   :value: "#377EB8"
+
+.. py:data:: cellestial.CHERRY
+   :value: "#AF1740"
+
+.. py:data:: cellestial.LIGHT_GRAY
+   :value: "#E6E6E6"
+
+.. py:data:: cellestial.ORANGE
+   :value: "#F14A00"
+
+.. py:data:: cellestial.PINK
+   :value: "#E73879"
+
+.. py:data:: cellestial.PURPLE
+   :value: "#640D5F"
+
+.. py:data:: cellestial.RED
+   :value: "#D2042D"
+
+.. py:data:: cellestial.SNOW
+   :value: "#F9F9F9"
+
+.. py:data:: cellestial.TEAL
+   :value: "#219B9D"
 
 Datasets
 --------
@@ -200,4 +215,7 @@ Versions Information
    :nosignatures:
 
    ~cellestial.versions
-   ~cellestial.__version__
+
+.. py:data:: cellestial.__version__
+
+   The installed cellestial version.

@@ -35,6 +35,8 @@ Dimensionality Reduction
    ~cellestial.pcas
    ~cellestial.tsnes
    ~cellestial.expressions
+   ~cellestial.blend
+   ~cellestial.embedding_density
 
 
 Heatmap
@@ -48,6 +50,8 @@ Heatmap
    ~cellestial.matrixplot
    ~cellestial.dotplot
    ~cellestial.stacked_violin
+   ~cellestial.tracksplot
+   ~cellestial.annotated_heatmap
 
 
 Distributions
@@ -132,6 +136,8 @@ Layers
    ~cellestial.arrow_axis
    ~cellestial.stream
    ~cellestial.bracket
+   ~cellestial.highlight
+   ~cellestial.borders
 
 Data Frames
 -----------
@@ -155,6 +161,7 @@ Utility
    ~cellestial.get_figure
    ~cellestial.get_figures
    ~cellestial.save
+   ~cellestial.layout
    ~cellestial.marker_genes
    ~cellestial.marker_genes_dict
 
@@ -169,6 +176,7 @@ Datasets
    ~cellestial.datasets.human_lymph_node
    ~cellestial.datasets.pancreas
    ~cellestial.datasets.breast_cancer_atlas
+   ~cellestial.datasets.pbmc_cite
    ~cellestial.datasets.from_url
    ~cellestial.datasets.from_cellxgene
 

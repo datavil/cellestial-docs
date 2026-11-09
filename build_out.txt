@@ -5,35 +5,87 @@ loading intersphinx inventory 'anndata' from ../assets/anndata-objects.inv ...
 building [mo]: all of 0 po files
 writing output... 
 building [html]: all source files
-updating environment: [new config] 65 added, 0 changed, 0 removed
+updating environment: [new config] 64 added, 0 changed, 0 removed
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
 executing cellestial.cluster_outlines
 reading sources... [  8%] API .. generated/cellestial.arrow_axis
-Fontconfig error: Cannot load default config file: No such file: (null)
-executing cellestial.ridges
-executing cellestial.scatter
-executing cellestial.show_colors
-reading sources... [ 15%] generated/cellestial.bar .. generated/cellestial.build_frame
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
 executing cellestial.dimensional
 executing cellestial.dimensionals
 executing cellestial.dotplot
+reading sources... [ 15%] generated/cellestial.bar .. generated/cellestial.build_frame
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+executing cellestial.ridges
+executing cellestial.scatter
+executing cellestial.show_colors
+executing cellestial.spatial
 reading sources... [ 23%] generated/cellestial.cluster_outlines .. generated/cellestial.datasets.human_lymph_node
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
 executing cellestial.elbow
 executing cellestial.expression
 executing cellestial.expressions
 executing cellestial.get_figure
 executing cellestial.get_figures
 reading sources... [ 31%] generated/cellestial.datasets.pancreas .. generated/cellestial.dotplot
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
 executing cellestial.marker_genes
 executing cellestial.marker_genes_dict
 executing cellestial.markers
 executing cellestial.matrixplot
 executing cellestial.ondata_legend
 reading sources... [ 38%] generated/cellestial.elbow .. generated/cellestial.get_figures
-executing cellestial.tsnes
 executing cellestial.umap
 executing cellestial.umaps
 executing cellestial.versions
 executing cellestial.violin
+executing cellestial.violins
 reading sources... [ 46%] generated/cellestial.get_mapping .. generated/cellestial.histograms
 executing cellestial.pca
 executing cellestial.pcas
@@ -41,55 +93,39 @@ executing cellestial.plot
 executing cellestial.retrieve
 executing cellestial.ridge
 reading sources... [ 54%] generated/cellestial.marker_genes .. generated/cellestial.ondata_legend
-executing cellestial.get_mapping
-executing cellestial.heatmap
-executing cellestial.highest_expressed_genes
-executing cellestial.histogram
-executing cellestial.histograms
-reading sources... [ 62%] generated/cellestial.pca .. generated/cellestial.ridge
-executing cellestial.violins
-executing cellestial.volcano
-executing cellestial.volcanos
-executing cellestial.xyplot
-executing cellestial.xyplots
-reading sources... [ 69%] generated/cellestial.ridges .. generated/cellestial.slice
 executing cellestial.bar
 executing cellestial.boxplot
 executing cellestial.boxplots
 executing cellestial.bracket
 executing cellestial.build_frame
-reading sources... [ 77%] generated/cellestial.spatial .. generated/cellestial.tsne
-executing cellestial.spatial
+reading sources... [ 62%] generated/cellestial.pca .. generated/cellestial.ridge
+executing cellestial.get_mapping
+executing cellestial.heatmap
+executing cellestial.highest_expressed_genes
+executing cellestial.histogram
+executing cellestial.histograms
+reading sources... [ 69%] generated/cellestial.ridges .. generated/cellestial.spatial
+executing base
+executing features
+executing cellestial.arrow_axis
+reading sources... [ 77%] generated/cellestial.spatials .. generated/cellestial.tsnes
+executing migrating_from_scanpy
+executing quickstart
+reading sources... [ 85%] generated/cellestial.umap .. generated/cellestial.violins
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
 executing cellestial.spatials
 executing cellestial.stacked_violin
 executing cellestial.stream
 executing cellestial.tsne
-reading sources... [ 85%] generated/cellestial.tsnes .. generated/cellestial.violin
+executing cellestial.tsnes
+reading sources... [ 92%] generated/cellestial.volcano .. index
+executing cellestial.volcano
+executing cellestial.volcanos
+executing cellestial.xyplot
+executing cellestial.xyplots
 executing index
-executing migrating_from_scanpy
-executing quickstart
-reading sources... [ 92%] generated/cellestial.violins .. generated/cellestial.xyplots
-executing features
-executing cellestial.arrow_axis
-reading sources... [100%] index .. quickstart
+reading sources... [100%] migrating_from_scanpy .. quickstart
 
-WARNING: autodoc: failed to import 'slice' from module 'cellestial'; the following exception was raised:
-Traceback (most recent call last):
-  File "/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/sphinx/util/inspect.py", line 461, in safe_getattr
-    return getattr(obj, name, *defargs)
-AttributeError: module 'cellestial' has no attribute 'slice'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/sphinx/ext/autodoc/_dynamic/_importer.py", line 150, in _import_from_module_and_path
-    obj = get_attr(obj, mangled_name)
-  File "/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/sphinx/ext/autodoc/_shared.py", line 142, in __call__
-    return safe_getattr(obj, name, *defargs)
-  File "/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/sphinx/util/inspect.py", line 477, in safe_getattr
-    raise AttributeError(name) from exc
-AttributeError: slice
- [autodoc.import_object]
 WARNING: Cell printed to stderr:
 /Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
   foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
@@ -111,6 +147,28 @@ WARNING: Cell printed to stderr:
   self.stats[group_name, "logfoldchanges"] = np.log2(
 
 WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[0]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[1]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[2]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[3]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[4]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[5]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[6]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[7]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[8]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[9]': font family 'Georgia' is not embedded; Liberation Sans was used (ggrust embeds Liberation Sans and Liberation Mono)
+  return method()
+
+WARNING: Cell printed to stderr:
 /Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
   foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
 /Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
@@ -129,76 +187,83 @@ WARNING: Cell printed to stderr:
   self.expm1_func(mean_rest) + 1e-9
 /Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
   self.stats[group_name, "logfoldchanges"] = np.log2(
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
 
 WARNING: Cell printed to stderr:
 CellestialWarning: Multiple keys provided; `group_by='cell_type_lvl1'` cannot share the x-axis with the variable column.
 Falling back to `group_by='variable'`. For a per-key panel, use the plural variant (violins).
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
 
 WARNING: Cell printed to stderr:
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
-  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
-  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[0].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[1].layers[0]': removed 9442 rows containing missing, non-finite or out-of-limits values (stat_ydensity); pass na_rm=True to silence
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[1].layers[1]': removed 9442 rows containing missing, non-finite or out-of-limits values (geom_jitter); pass na_rm=True to silence
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[1].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[2].layers[0]': removed 1 rows containing missing, non-finite or out-of-limits values (stat_ydensity); pass na_rm=True to silence
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[2].layers[1]': removed 1 rows containing missing, non-finite or out-of-limits values (geom_jitter); pass na_rm=True to silence
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[2].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[3].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
 
 WARNING: Cell printed to stderr:
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
-  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
-  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'layers[0]': removed 1767 rows containing missing, non-finite or out-of-limits values (stat_count); pass na_rm=True to silence
+  return method()
 
 WARNING: Cell printed to stderr:
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
-  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
-  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
-  self.expm1_func(mean_rest) + 1e-9
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
-  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
 
 WARNING: Cell printed to stderr:
 CellestialWarning: Multiple keys provided; `group_by='cell_type_lvl1'` cannot share the x-axis with the variable column.
 Falling back to `group_by='variable'`. For a per-key panel, use the plural variant (boxplots).
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
 
-/Users/zaf4/datavil/cellestial/cellestial/single/heatmap/stacked_violin.py:docstring of cellestial.single.heatmap.stacked_violin.stacked_violin:114: WARNING: Inline strong start-string without end-string. [docutils]
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[0].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[1].layers[0]': removed 9442 rows containing missing, non-finite or out-of-limits values (stat_boxplot); pass na_rm=True to silence
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[1].layers[2]': removed 9442 rows containing missing, non-finite or out-of-limits values (geom_jitter); pass na_rm=True to silence
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[1].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[2].layers[0]': removed 1 rows containing missing, non-finite or out-of-limits values (stat_boxplot); pass na_rm=True to silence
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[2].layers[2]': removed 1 rows containing missing, non-finite or out-of-limits values (geom_jitter); pass na_rm=True to silence
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[2].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[3].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
 WARNING: Cell printed to stderr:
 /Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
   foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
@@ -219,59 +284,27 @@ WARNING: Cell printed to stderr:
 /Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
   self.stats[group_name, "logfoldchanges"] = np.log2(
 
-/Users/zaf4/datavil/cellestial-docs/sphinx/index.rst:832: WARNING: Title underline too short.
-
-Documentation
--------- [docutils]
 WARNING: Cell printed to stderr:
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/seaborn/_base.py:1447: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
-You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
-A typical example is when you are setting values in a column of a DataFrame, like:
-
-df["col"][row_indexer] = value
-
-Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-
-  self.plot_data[axis] = cat_data
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/seaborn/_base.py:1447: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
-You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
-A typical example is when you are setting values in a column of a DataFrame, like:
-
-df["col"][row_indexer] = value
-
-Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-
-  self.plot_data[axis] = cat_data
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/seaborn/categorical.py:508: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
-You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
-A typical example is when you are setting values in a column of a DataFrame, like:
-
-df["col"][row_indexer] = value
-
-Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-
-  sub_data[self.orient] = adjusted_data
-/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/seaborn/categorical.py:419: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
-You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
-A typical example is when you are setting values in a column of a DataFrame, like:
-
-df["col"][row_indexer] = value
-
-Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-
-  data[col] = inv(data[col])
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
 
 WARNING: Cell printed to stderr:
-/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_61105/1357945157.py:1: FutureWarning: Use `squidpy.pl.spatial_scatter` instead.
-  sc.pl.spatial(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[0].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'figures[1].theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
 
 /Users/zaf4/datavil/cellestial-docs/sphinx/_templates/autoapi/python/module.rst:5: ERROR: Error in "py:module" directive:
 maximum 1 argument(s) allowed, 3 supplied.
@@ -281,17 +314,76 @@ maximum 1 argument(s) allowed, 3 supplied.
 maximum 1 argument(s) allowed, 3 supplied.
 
 .. currentmodule:: {{ module }} [docutils]
-WARNING: invalid signature for autofunction ('{{ objname }}') [autodoc]
-WARNING: don't know which module to import for autodocumenting '{{ objname }}' (try placing a "module" or "currentmodule" directive in the document, or giving an explicit module name) [autodoc]
 /Users/zaf4/datavil/cellestial-docs/sphinx/features.rst:218: WARNING: Inline literal start-string without end-string. [docutils]
 WARNING: Cell printed to stderr:
-Fontconfig error: Cannot load default config file: No such file: (null)
+/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_76748/1425367268.py:12: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  (features_mobile_example_dir / filename).write_text(plot.to_svg(), encoding="utf-8")
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
 
+WARNING: Cell printed to stderr:
+/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_76748/1425367268.py:12: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  (features_mobile_example_dir / filename).write_text(plot.to_svg(), encoding="utf-8")
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_76748/1425367268.py:12: GgrustWarning: at 'layers[0].mid_point': geom_point does not support option 'mid_point' (yet); it was ignored. Supported: alpha, color, fill, orientation, shape, size, size_unit, stroke, x, y
+  (features_mobile_example_dir / filename).write_text(plot.to_svg(), encoding="utf-8")
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'layers[0].mid_point': geom_point does not support option 'mid_point' (yet); it was ignored. Supported: alpha, color, fill, orientation, shape, size, size_unit, stroke, x, y
+  return method()
+
+WARNING: Cell printed to stderr:
+/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_76787/2738085534.py:15: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  (migrating_mobile_example_dir / filename).write_text(plot.to_svg(), encoding="utf-8")
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_76787/2738085534.py:15: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  (migrating_mobile_example_dir / filename).write_text(plot.to_svg(), encoding="utf-8")
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+WARNING: Cell printed to stderr:
+/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_76787/1357945157.py:1: FutureWarning: Use `squidpy.pl.spatial_scatter` instead.
+  sc.pl.spatial(
+
+WARNING: Cell printed to stderr:
+/var/folders/ws/j58hs23n6tg57rw7jg1wwlr00000gn/T/ipykernel_76865/3390352864.py:11: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  (quickstart_mobile_example_dir / filename).write_text(plot.to_svg(), encoding="utf-8")
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/IPython/core/formatters.py:406: GgrustWarning: at 'theme.legend_title.face': unknown word(s) ["Bold"] in font face 'Bold' were ignored (case-sensitive); expected plain, bold, italic or bold_italic; Plain was used
+  return method()
+
+/Users/zaf4/datavil/cellestial/cellestial/single/heatmap/stacked_violin.py:docstring of cellestial.single.heatmap.stacked_violin.stacked_violin:118: WARNING: Inline strong start-string without end-string. [docutils]
+WARNING: Cell printed to stderr:
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: overflow encountered in expm1
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:480: RuntimeWarning: invalid value encountered in divide
+  foldchanges = (self.expm1_func(mean_group) + 1e-9) / (
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:481: RuntimeWarning: overflow encountered in expm1
+  self.expm1_func(mean_rest) + 1e-9
+/Users/zaf4/datavil/cellestial-docs/.venv/lib/python3.14/site-packages/scanpy/tools/_rank_genes_groups.py:483: RuntimeWarning: divide by zero encountered in log2
+  self.stats[group_name, "logfoldchanges"] = np.log2(
+
+/Users/zaf4/datavil/cellestial-docs/sphinx/index.rst:838: WARNING: Title underline too short.
+
+Documentation
+-------- [docutils]
 looking for now-outdated files... none found
 pickling environment... done
 checking consistency... /Users/zaf4/datavil/cellestial-docs/sphinx/_templates/autoapi/python/module.rst: WARNING: document isn't included in any toctree [toc.not_included]
 /Users/zaf4/datavil/cellestial-docs/sphinx/_templates/autosummary/base.rst: WARNING: document isn't included in any toctree [toc.not_included]
-/Users/zaf4/datavil/cellestial-docs/sphinx/generated/cellestial.slice.rst: WARNING: document isn't included in any toctree [toc.not_included]
 done
 preparing documents... done
 copying assets... 
@@ -312,23 +404,23 @@ writing output... [ 38%] generated/cellestial.expression .. generated/cellestial
 writing output... [ 46%] generated/cellestial.heatmap .. generated/cellestial.marker_genes
 writing output... [ 54%] generated/cellestial.marker_genes_dict .. generated/cellestial.pca
 writing output... [ 62%] generated/cellestial.pcas .. generated/cellestial.ridges
-writing output... [ 69%] generated/cellestial.save .. generated/cellestial.spatial
-writing output... [ 77%] generated/cellestial.spatials .. generated/cellestial.tsnes
-writing output... [ 85%] generated/cellestial.umap .. generated/cellestial.violins
-writing output... [ 92%] generated/cellestial.volcano .. index
-writing output... [100%] migrating_from_scanpy .. quickstart
+writing output... [ 69%] generated/cellestial.save .. generated/cellestial.spatials
+writing output... [ 77%] generated/cellestial.stacked_violin .. generated/cellestial.umap
+writing output... [ 85%] generated/cellestial.umaps .. generated/cellestial.volcano
+writing output... [ 92%] generated/cellestial.volcanos .. migrating_from_scanpy
+writing output... [100%] performance .. quickstart
 
 generating indices... genindex done
 writing additional pages... search done
 copying images... [ 17%] ../_build/jupyter_execute/migrating_from_scanpy_1_0.png
 copying images... [ 33%] ../_build/jupyter_execute/migrating_from_scanpy_3_0.png
 copying images... [ 50%] ../_build/jupyter_execute/migrating_from_scanpy_5_0.png
-copying images... [ 67%] ../_build/jupyter_execute/migrating_from_scanpy_7_1.png
+copying images... [ 67%] ../_build/jupyter_execute/migrating_from_scanpy_7_0.png
 copying images... [ 83%] ../_build/jupyter_execute/migrating_from_scanpy_10_1.png
 copying images... [100%] _static/breast_cancer_atlas_umap.png
 
 dumping search index in English (code: en)... done
 dumping object inventory... done
-build succeeded, 22 warnings.
+build succeeded, 35 warnings.
 
 The HTML pages are in _build/html.

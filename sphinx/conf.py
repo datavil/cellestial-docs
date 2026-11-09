@@ -47,7 +47,13 @@ SupPlotsSpec = type("SupPlotsSpec", (), {"__module__": "ggrust.plot.subplots"})
 FeatureSpec = type("FeatureSpec", (), {"__module__": "ggrust.plot.core"})
 LayerSpec = type("LayerSpec", (), {"__module__": "ggrust.plot.core"})
 
-for mod_name in ["ggrust", "ggrust.plot", "ggrust.plot.core", "ggrust.plot.subplots"]:
+for mod_name in [
+    "ggrust",
+    "ggrust.errors",
+    "ggrust.plot",
+    "ggrust.plot.core",
+    "ggrust.plot.subplots",
+]:
     mod_mock = BetterMock()
     mod_mock.PlotSpec = PlotSpec
     mod_mock.SupPlotsSpec = SupPlotsSpec

@@ -773,6 +773,7 @@ Cellestial ships with quick exploratory plots.
       key="B2M",
       alpha=0.6,
       group_by="cell_type_lvl1",
+      fill="cell_type_lvl1",
    ) + scale_fill_hue()
 
    hexp = cl.highest_expressed_genes(data, n=20) + scale_fill_viridis()
@@ -806,6 +807,7 @@ Cellestial ships with quick exploratory plots.
                     key="B2M",
                     alpha=0.6,
                     group_by="cell_type_lvl1",
+                    fill="cell_type_lvl1",
                 )
                 + scale_fill_hue()
             )
@@ -848,6 +850,7 @@ Documentation
    :hidden:
 
    migrating_from_scanpy
+   migrating_to_v1
    quickstart
    philosophy
    performance

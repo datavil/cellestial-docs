@@ -365,12 +365,12 @@ Any argument related to color accepts HEX, RGB, or named colors.
 
    .. code-block:: python
 
-      cl.tsne(data, key="leiden",color=cl.TEAL)
+      cl.tsne(data, geom_color=cl.TEAL)
 
    .. jupyter-execute::
       :hide-code:
 
-      save_features_mobile_svg(cl.tsne(data, key="leiden",color=cl.TEAL), "colors-constant.svg")
+      save_features_mobile_svg(cl.tsne(data, geom_color=cl.TEAL), "colors-constant.svg")
 
    .. raw:: html
 
@@ -414,12 +414,12 @@ Any argument related to color accepts HEX, RGB, or named colors.
 
    .. code-block:: python
 
-      cl.umap(data, color="blue")
+      cl.umap(data, geom_color="blue")
 
    .. jupyter-execute::
       :hide-code:
 
-      save_features_mobile_svg(cl.umap(data, color="blue"), "colors-blue.svg")
+      save_features_mobile_svg(cl.umap(data, geom_color="blue"), "colors-blue.svg")
 
    .. raw:: html
 
@@ -428,7 +428,7 @@ Any argument related to color accepts HEX, RGB, or named colors.
 .. dropdown:: Continuous color gradients
 
    Expression plots and any continuous key use a gradient scale.
-   Use ``color_low``, ``color_high``, and optionally ``color_mid`` with ``mid_point``.
+   Use ``color_low``, ``color_high``, and optionally ``color_mid`` with ``midpoint``.
 
    .. code-block:: python
 
@@ -466,7 +466,7 @@ Any argument related to color accepts HEX, RGB, or named colors.
          color_low=cl.BLUE,
          color_mid=cl.SNOW,
          color_high=cl.RED,
-         mid_point="mid"
+         midpoint="mid"
       )
 
    .. jupyter-execute::
@@ -479,7 +479,7 @@ Any argument related to color accepts HEX, RGB, or named colors.
             color_low=cl.BLUE,
             color_mid=cl.SNOW,
             color_high=cl.RED,
-            mid_point="mid"
+            midpoint="mid"
          ),
          "colors-gradient-three.svg",
       )
@@ -512,9 +512,9 @@ Any argument related to color accepts HEX, RGB, or named colors.
 Layers
 ------
 
-Cellestial layers return a ``DeferredLayer`` that can be added to an existing plot with
+Cellestial layer functions return a layer that can be added to an existing plot with
 the ``+`` operator. The receiving plot is handed to the layer at ``+`` time, so there is
-no need to pass it explicitly — the layer introspects the plot's data and aesthetics
+no need to pass it explicitly: the layer introspects the plot's data and aesthetics
 itself.
 
 .. dropdown:: arrow_axis
@@ -816,13 +816,13 @@ for further plot customization.
 
       .. code-block:: python
 
-         cl.umap(data, "cell_type_lvl1", mapping=aes(size="CD14"),variable_keys="CD14")
+         cl.umap(data, "cell_type_lvl1", mapping=aes(size="CD14"),add_keys="CD14")
 
       .. jupyter-execute::
          :hide-code:
 
          save_features_mobile_svg(
-            cl.umap(data, "cell_type_lvl1", mapping=aes(size="CD14"),variable_keys="CD14"),
+            cl.umap(data, "cell_type_lvl1", mapping=aes(size="CD14"),add_keys="CD14"),
             "mapping-size.svg",
          )
 
@@ -859,8 +859,8 @@ for further plot customization.
                data,
                mapping=aes(size="CD14", fill="cell_type_lvl1"),
                shape=21,
-               variable_keys="CD14",
-               color="black",
+               add_keys="CD14",
+               geom_color="black",
                stroke=0.3,
             )
             + scale_fill_viridis()
@@ -875,8 +875,8 @@ for further plot customization.
                   data,
                   mapping=aes(size="CD14", fill="cell_type_lvl1"),
                   shape=21,
-                  variable_keys="CD14",
-                  color="black",
+                  add_keys="CD14",
+                  geom_color="black",
                   stroke=0.3,
                )
                + scale_fill_viridis()

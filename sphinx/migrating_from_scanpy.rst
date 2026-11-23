@@ -80,7 +80,7 @@ Function Reference
      -
    * - ``sc.pl.embedding``
      - ``cl.dimensional`` / ``cl.dimensionals``
-     - Pass the embedding name through ``use_key=``.
+     - ``basis=`` → ``embedding_key=``.
    * - ``sc.pl.scatter``
      - ``cl.scatter``
      - Takes a ggrust ``aes(x=..., y=..., color=...)`` mapping.

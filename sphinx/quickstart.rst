@@ -113,6 +113,9 @@ Two Cellestial-specific touches in the call above:
 - ``legend_ondata=True`` writes group labels directly on top of the clusters
   and removes the side legend.
 
+Add ``outline=True`` to draw a scanpy-style border around the point cloud;
+``outline_width`` and ``outline_color`` tune it.
+
 Everything after the ``+`` is plain ggrust. ``scale_color_hue()`` swaps in a
 ggplot-style hue palette.
 
@@ -489,6 +492,10 @@ HTML. The format is picked from the file extension.
 
    plot = cl.umap(data, key="cell_type_lvl1", axis_type="arrow")
    cl.save(plot, "umap.png", path="figures", w=8, h=6, unit="in", dpi=300)
+
+``cl.save`` forwards every keyword to ggrust's ``ggsave``. Pass ``dpi`` and
+``unit`` explicitly when you need print resolution; otherwise the ``ggsave``
+defaults apply.
 
 
 Where To Next

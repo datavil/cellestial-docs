@@ -180,6 +180,39 @@ Datasets
    ~cellestial.datasets.from_url
    ~cellestial.datasets.from_cellxgene
 
+Errors
+------
+
+All error classes live in ``cl.errors``. Each one subclasses ``CellestialError`` and the builtin it replaces.
+
+.. autosummary::
+   :toctree: generated
+   :nosignatures:
+
+   ~cellestial.errors.CellestialError
+   ~cellestial.errors.CellestialWarning
+   ~cellestial.errors.UnknownParameterError
+   ~cellestial.errors.KeyNotFoundError
+   ~cellestial.errors.VariableNotFoundError
+   ~cellestial.errors.InvalidArgumentError
+   ~cellestial.errors.InvalidArgumentTypeError
+   ~cellestial.errors.EmptySelectionError
+   ~cellestial.errors.DuplicateKeysError
+   ~cellestial.errors.AmbiguousColumnError
+   ~cellestial.errors.AmbiguousVariableError
+   ~cellestial.errors.ConflictingLengthError
+   ~cellestial.errors.DendrogramMismatchError
+   ~cellestial.errors.GridIndexError
+   ~cellestial.errors.IncompleteDownloadError
+   ~cellestial.errors.InvalidColorError
+   ~cellestial.errors.InvalidComparisonError
+   ~cellestial.errors.InvalidPlotSpecError
+   ~cellestial.errors.MissingAestheticError
+   ~cellestial.errors.MissingPlotDataError
+   ~cellestial.errors.NonCategoricalColumnError
+   ~cellestial.errors.UnsupportedDataTypeError
+   ~cellestial.errors.UnsupportedGeometryError
+
 Versions Information
 --------------------
 .. autosummary::

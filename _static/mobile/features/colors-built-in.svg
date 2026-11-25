@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" font-family="&#39;Liberation Sans&#39;, Arial, Helvetica, sans-serif">
+<rect width="600" height="600" fill="#ffffff"/>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="6" y="6" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#219b9d" stroke-width="13">
+<rect x="12" y="12" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip0"><rect x="12" y="12" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip0)">
+<g fill="#219b9d" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="4.17" y="4.17" width="199.65" height="199.65"/>
+</g>
+<text x="104" y="99.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#ffffff" text-anchor="middle">TEAL</text>
+<text x="104" y="120.93" font-size="20" xml:space="preserve" fill="#ffffff" text-anchor="middle">#219B9D</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="202" y="6" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#d2042d" stroke-width="13">
+<rect x="208" y="12" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip1"><rect x="208" y="12" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip1)">
+<g fill="#d2042d" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="200.18" y="4.17" width="199.65" height="199.65"/>
+</g>
+<text x="300" y="99.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#ffffff" text-anchor="middle">RED</text>
+<text x="300" y="120.93" font-size="20" xml:space="preserve" fill="#ffffff" text-anchor="middle">#D2042D</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="398" y="6" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#e6e6e6" stroke-width="13">
+<rect x="404" y="12" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip2"><rect x="404" y="12" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip2)">
+<g fill="#e6e6e6" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="396.17" y="4.17" width="199.65" height="199.65"/>
+</g>
+<text x="496" y="99.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#000000" text-anchor="middle">LIGHT_GRAY</text>
+<text x="496" y="120.93" font-size="20" xml:space="preserve" fill="#000000" text-anchor="middle">#E6E6E6</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="6" y="202" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#377eb8" stroke-width="13">
+<rect x="12" y="208" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip3"><rect x="12" y="208" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip3)">
+<g fill="#377eb8" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="4.17" y="200.18" width="199.65" height="199.65"/>
+</g>
+<text x="104" y="295.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#ffffff" text-anchor="middle">BLUE</text>
+<text x="104" y="316.93" font-size="20" xml:space="preserve" fill="#ffffff" text-anchor="middle">#377EB8</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="202" y="202" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#af1740" stroke-width="13">
+<rect x="208" y="208" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip4"><rect x="208" y="208" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip4)">
+<g fill="#af1740" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="200.18" y="200.18" width="199.65" height="199.65"/>
+</g>
+<text x="300" y="295.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#ffffff" text-anchor="middle">CHERRY</text>
+<text x="300" y="316.93" font-size="20" xml:space="preserve" fill="#ffffff" text-anchor="middle">#AF1740</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="398" y="202" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#f9f9f9" stroke-width="13">
+<rect x="404" y="208" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip5"><rect x="404" y="208" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip5)">
+<g fill="#f9f9f9" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="396.17" y="200.18" width="199.65" height="199.65"/>
+</g>
+<text x="496" y="295.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#000000" text-anchor="middle">SNOW</text>
+<text x="496" y="316.93" font-size="20" xml:space="preserve" fill="#000000" text-anchor="middle">#F9F9F9</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="6" y="398" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#640d5f" stroke-width="13">
+<rect x="12" y="404" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip6"><rect x="12" y="404" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip6)">
+<g fill="#640d5f" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="4.17" y="396.17" width="199.65" height="199.65"/>
+</g>
+<text x="104" y="491.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#ffffff" text-anchor="middle">PURPLE</text>
+<text x="104" y="512.93" font-size="20" xml:space="preserve" fill="#ffffff" text-anchor="middle">#640D5F</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="202" y="398" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#e73879" stroke-width="13">
+<rect x="208" y="404" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip7"><rect x="208" y="404" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip7)">
+<g fill="#e73879" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="200.18" y="396.17" width="199.65" height="199.65"/>
+</g>
+<text x="300" y="491.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#ffffff" text-anchor="middle">PINK</text>
+<text x="300" y="512.93" font-size="20" xml:space="preserve" fill="#ffffff" text-anchor="middle">#E73879</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+<g class="figure">
+<g fill="#ffffff" stroke="none">
+<rect x="398" y="398" width="196" height="196"/>
+</g>
+<g class="tile">
+<g fill="#ffffff" stroke="#f14a00" stroke-width="13">
+<rect x="404" y="404" width="184" height="184"/>
+</g>
+<clipPath id="gg88476e51249a-clip8"><rect x="404" y="404" width="184" height="184"/></clipPath>
+<g class="panel" clip-path="url(#gg88476e51249a-clip8)">
+<g fill="#f14a00" stroke="#1f1f1f" stroke-width="1.65">
+<rect x="396.17" y="396.17" width="199.65" height="199.65"/>
+</g>
+<text x="496" y="491.71" font-size="28" xml:space="preserve" font-weight="bold" fill="#ffffff" text-anchor="middle">ORANGE</text>
+<text x="496" y="512.93" font-size="20" xml:space="preserve" fill="#ffffff" text-anchor="middle">#F14A00</text>
+</g>
+<g class="axis-x">
+</g>
+<g class="axis-y">
+</g>
+</g>
+<g class="titles">
+</g>
+</g>
+</svg>

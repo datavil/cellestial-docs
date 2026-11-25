@@ -172,6 +172,7 @@ Datasets
    :toctree: generated
    :nosignatures:
 
+   ~cellestial.datasets.bone_marrow
    ~cellestial.datasets.pbmc3k
    ~cellestial.datasets.human_lymph_node
    ~cellestial.datasets.pancreas

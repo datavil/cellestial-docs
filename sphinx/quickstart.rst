@@ -48,7 +48,7 @@ the cached copy.
 
    import cellestial as cl
 
-   data = cl.datasets.pbmc3k()
+   data = cl.datasets.bone_marrow()
 
 .. jupyter-execute::
    :hide-code:
@@ -58,7 +58,7 @@ the cached copy.
 
    import cellestial as cl
 
-   data = cl.datasets.pbmc3k()
+   data = cl.datasets.bone_marrow()
    quickstart_mobile_example_dir = Path("sphinx/_static/mobile/quickstart")
    quickstart_mobile_example_dir.mkdir(parents=True, exist_ok=True)
 

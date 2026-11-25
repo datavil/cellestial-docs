@@ -15,7 +15,7 @@ that return composable plot objects.
 
    sc.settings.verbosity = 0
 
-   data = cl.datasets.pbmc3k()
+   data = cl.datasets.bone_marrow()
    spatial_data = cl.datasets.human_lymph_node()
    migrating_mobile_example_dir = Path("sphinx/_static/mobile/migrating-from-scanpy")
    migrating_mobile_example_dir.mkdir(parents=True, exist_ok=True)

@@ -96,7 +96,7 @@ Overlay categorical labels or gene expression on tissue coordinates.
 
    sc.settings.datasetdir = Path.home() / ".cache" / "cellestial" / "datasets"
 
-   data = cl.datasets.pbmc3k()
+   data = cl.datasets.bone_marrow()
    data_spatial = cl.datasets.human_lymph_node()
    data_hne = sq.datasets.visium_hne_adata()
    data_velocity = cl.datasets.pancreas()
@@ -258,7 +258,7 @@ Also, cellestial-specific layers, providing utilities, could be added to dimensi
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             dims = gggrid(
                 [
@@ -295,7 +295,7 @@ Also, cellestial-specific layers, providing utilities, could be added to dimensi
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
             data_velocity = cl.datasets.pancreas()
 
             outlined = (
@@ -398,7 +398,7 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             markers = [
                 "PSAP",
@@ -453,7 +453,7 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             markers = [
                 "PSAP",
@@ -502,7 +502,7 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             markers = [
                 "PSAP",
@@ -549,7 +549,7 @@ Cellestial offers heatmap variants, with built-in dendrogram features.
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             markers = [
                 "PSAP",
@@ -633,7 +633,7 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             bx = (
                 cl.boxplot(
@@ -664,7 +664,7 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             bx = (
                 cl.boxplot(
@@ -706,7 +706,7 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             vln = (
                 cl.violin(
@@ -737,7 +737,7 @@ Cellestial comes with distribution (boxplot and violin) plots with built-in stat
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             vln = (
                 cl.violin(
@@ -799,7 +799,7 @@ Cellestial ships with quick exploratory plots.
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             rdg = (
                 cl.ridge(
@@ -831,7 +831,7 @@ Cellestial ships with quick exploratory plots.
             import cellestial as cl
             from ggrust import *
 
-            data = cl.datasets.pbmc3k()
+            data = cl.datasets.bone_marrow()
 
             hexp = cl.highest_expressed_genes(data, n=20) + scale_fill_viridis()
 

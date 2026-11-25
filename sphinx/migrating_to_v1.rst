@@ -120,10 +120,21 @@ Some failures changed class: unknown keys now raise
 Dataset Changes
 ---------------
 
-``cl.datasets.pbmc3k()`` now loads ``pbmc3k_pped_v2.h5ad``. Its
-``cell_type_lvl1`` column had "B Cells" and "Erythroid" swapped and left the
-erythroblast cluster null; the labels are corrected and the column has no
-nulls. Code that filtered or counted null ``cell_type_lvl1`` cells finds none.
+The dataset that ``cl.datasets.pbmc3k()`` used to load is renamed to
+:func:`~cellestial.datasets.bone_marrow`. It was never the 10x PBMC 3k: it holds
+about 17,000 bone marrow mononuclear cells (samples ``s1d1`` and ``s1d3``) from
+the scanpy "Preprocessing and clustering" tutorial, with the same
+``cell_type_lvl1`` and ``leiden_res_*`` columns. Replace
+``cl.datasets.pbmc3k()`` with ``cl.datasets.bone_marrow()`` to keep the old
+data. Its ``cell_type_lvl1`` column had "B Cells" and "Erythroid" swapped and
+left the erythroblast cluster null; the labels are corrected and the column has
+no nulls.
+
+:func:`~cellestial.datasets.pbmc3k` now loads the real 10x Genomics PBMC 3k:
+2,638 cells processed as in the scanpy PBMC 3k tutorial, annotated in
+``cell_type``. Code written for the old ``pbmc3k`` raises
+:class:`~cellestial.errors.KeyNotFoundError` on ``cell_type_lvl1`` or
+``leiden_res_0.02``.
 
 
 New in v1
